@@ -1,0 +1,103 @@
+// ELEMENTS
+// -- NAVIGATION
+$nav-top-height: 0px
+$nav-main-height: 80px
+$nav-total-height: $nav-top-height + $nav-main-height
+// -- HOME
+$home-hero-height: 462px
+
+// TEXT & ELEMENT COLORS
+$open-sans: Open Sans
+$roboto: "Roboto Condensed"
+
+
+
+// MAIN CONTAINER
+$container-width: 80%
+$margin-center: 0px auto 0px auto
+// SUBPAGE CONTAINER
+$sub-container-width: 1280px
+$sub-container-offset: 1024px
+
+// THE GRID
+$one-sixth: 16.66666%
+$one-fifth: 20%
+$quarter: 25%
+$two-sixths: 33.33333%
+$one-third: 33.33333%
+$two-fifths: 40%
+$half: 50%
+$three-fifths: 60%
+$three-quarter: 75%
+$four-fifths: 80%
+$five-sixths: 83.33333%
+$full: 100%
+$two-thirds: 66.66667%
+.full
+  width: 100%
+.container
+  width: $container-width
+.quarter
+  width: $quarter
+  float: left
+.half
+  width: $half
+  float: left
+.three-quarter
+  width: $three-quarter
+  float: left
+.full
+  width: $full
+  float: left
+.one-third
+  width: $one-third
+  float: left
+.two-thirds
+  width: $two-thirds
+  float: left
+// body
+//   @include scrollbars(.5em, slategray)
+//   background: $prime-color3
+
+
+figure img
+  width: 100%
+//
+.sub
+  text-align: center
+  width: 75%
+  margin: 0px auto 50px auto
+  @media screen and (max-width: 768px)
+    width: 100%
+    @media screen and (max-width: 480px)
+      width: 90%
+// //
+// .subpage
+//   .hero
+//     width: 100%
+//     padding: 0px
+//     position: relative
+//     .banner
+//       height: 40vh
+//       min-height: 50vh
+//       max-height: 50vh
+//       background-repeat: no-repeat
+//       background-attachment: fixed
+//       background-size: contain
+//       background-position: center top
+//       +clearfix
+.clearfix
+  clear: both
+  content: ""
+  display: table
+.pagination
+  text-align: center
+
+// PARENT ELEMENTS
+header, nav, section, main, footer
+  +clearfix
+// CHILD ELEMENT
+article, figure, figcaption, aside, details, .item, .sub-item
+  float: left
+  
+

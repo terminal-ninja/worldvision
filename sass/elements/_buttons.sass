@@ -1,0 +1,106 @@
+// SHARING ICONS
+a .fa
+  background: $prime-color3
+  padding: 9px
+  @include vendor-prefix('border-radius','15px')
+  width: 30px
+  height: 30px
+  color: white
+  &.fa-google-plus
+    padding: 8px 5px
+// BUTTONS
+.btn-container
+  +clearfix
+input, select
+  border: 1px solid $light-grey
+.full-btn
+  width: 100%
+  display: block
+  text-align: center
+  a
+    display: block
+.button, .wysija-submit
+  float: left
+  padding: 9px 0px
+  // height: 42px
+  a, button, input, submit
+    padding:  12px 18px
+    text-decoration: none
+    font-weight: 500
+    font-size: 0.85em
+    -webkit-appearance: none
+    border: 0
+    border-radius: 20px
+    @include vendor-prefix('border-radius','3px')
+    &:hover
+      cursor: pointer
+    &.primary
+      background: $prime-color1
+      color: $white
+      @include vendor-prefix('transition','all 0.3s ease')
+      a
+        text-decoration: none
+        color: $whitest
+      &:hover
+        background: $prime-color2 //$prime-color1-lightened
+        color: $whitest
+    &.primary-outline
+      background: transparent
+      box-shadow: 0 0 0 2px $prime-color1 inset
+      color: $prime-color1
+      @include vendor-prefix('transition','all 0.3s ease')
+      &:hover
+        background: $prime-color1
+        color: $whitest
+        box-shadow: 0 0 0 2px $prime-color1 inset
+    &.secondary
+      background: $prime-color2
+      color: $white
+      @include vendor-prefix('transition','all 0.3s ease')
+      &:hover
+        background: $prime-color1
+        color: $white
+    &.tertiary
+      background: $whitest
+      color: $prime-color1
+      border: 0px
+      @include vendor-prefix('transition','all 0.3s ease')
+      &:hover
+        background: $prime-color1-lightened
+        color: $whitest
+    &.rounded
+      @include vendor-prefix('border-radius','5px')
+    &.block
+      display: block
+  .has-icon
+    background: $prime-color1
+    color: $white
+    @include vendor-prefix('transition','all 0.3s ease')
+    padding: 11px
+    border-left: 1px solid $white
+    height: 42px
+    +clearfix
+    &:hover
+      background: $white
+      color: $prime-color1
+      > .icon
+        &.login
+          background-image: url('../images/icons/login-hover.png')
+        &.cart
+          background-image: url('../images/icons/cart-hover.png')
+    .icon
+      width: 19px
+      height: 16px
+      background-repeat: no-repeat
+      background-position: center center
+      display: inline-block
+      @include vendor-prefix('transition','all 0.3s ease')
+      &.login
+        background-image: url('../images/icons/login.png')
+      &.cart
+        background-image: url('../images/icons/cart.png')
+    p
+      display: inline-block
+      -webkit-margin-before: 0em
+      -webkit-margin-after: 0em
+      padding: 0px 6px

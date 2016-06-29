@@ -1,0 +1,24 @@
+header.navigation
+  .top-nav
+    +clearfix
+    background: $prime-color1
+    font-family: Calibri, $open-sans
+    font-weight: bold
+    text-transform: uppercase
+    a
+      color: white
+      @include vendor-prefix('transition','all 0.3s ease')
+      &:hover
+        color: $prime-color1
+    .item
+      float: right
+      background: $prime-color2
+      margin-left: 2px
+      display: table
+      .text, span
+        display: table-cell
+        vertical-align: middle
+      span
+        padding: 0 10px
+      .text
+        padding: 10px 0px 10px 10px

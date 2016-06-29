@@ -1,0 +1,112 @@
+.bx-wrapper
+  margin: 0 auto 0
+  .bx-viewport
+    border: 0px !important
+    left: 0px
+    @include vendor-prefix('box-shadow','0 0 0')
+    // margin-top: 80px
+  .bx-pager
+    bottom: 0px
+    a.active
+      background: $prime-color1 !important
+.bxslider
+  visibility: hidden
+  img
+    width: 100%
+.hero-slider
+  width: 100%
+  padding: 0px
+  position: relative
+  visibiliy: 0
+  // margin-top: 80px
+  // height: 333px
+  overflow: hidden
+  .bx-wrapper .bx-viewport
+    height: 333px !important
+  .button
+    margin-top: 15px
+    a:hover
+      background: $prime-color2
+  .overlay
+    position: absolute
+    bottom: 265px
+    left: 6%
+    width: 40%
+  .hero-carousel
+    h2
+      font-weight: 500
+      color: #fff
+      font-size: 35px
+      line-height: 42px
+      margin-bottom: 2px
+      text-transform: none
+
+//
+// .hero
+//   width: 100%
+//   margin: 50px auto 0px auto
+//   height: 333px
+//   overflow: hidden
+//   .hero-image
+//     height: 333px
+//     overflow: hidden
+//     position: relative
+//     img
+//       position: absolute
+//       right: 0
+//     .overlay
+//       position: absolute
+//       left: 0
+//       bottom: 60px
+//       width: 500px
+//       background: $prime-color1
+//       margin: 19% 0 0 0
+//       padding: 10px 0 10px 45px
+//       h1
+//         color: #fff
+//         text-align: left
+//         margin: 0
+//       p
+//         color: #fff
+//         margin: 0
+
+
+//RESPONSIVE
+
+.hero-slider
+  .overlay
+    @media screen and (max-width: 1024px)
+      padding-right: 100px
+      width: 100%
+      @media screen and (max-width: 480px)
+        padding-right: 10px
+        bottom: 185px
+  .hero-carousel h2
+    @media screen and (max-width: 480px)
+      font-size: 27px
+  .bx-controls-direction
+    @media screen and (max-width: 480px)
+      display: none
+  .bx-wrapper .bx-viewport
+    @media screen and (max-width: 1024px)
+      height: 360px !important
+  .hero-carousel h2
+    font-size: 30px
+    line-height: 37px
+.hero
+  .hero-image
+    .overlay
+      @media screen and (max-width: 480px)
+        width: 100%
+    //     height: 360px
+    // .overlay
+    //   @media screen and (max-width: 1024px)
+    //     width: 65%
+    //     @media screen and (max-width: 768px)
+    //       width: 91%
+    //       margin: 30% 0 0 0
+
+.news-slider
+  @media screen and (max-width: 480px)
+    .overlay
+      bottom: 50px

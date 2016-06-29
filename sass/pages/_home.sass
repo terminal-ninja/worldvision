@@ -1,0 +1,52 @@
+.home
+  p
+    font-family: Calibri
+    font-weight: bold
+    line-height: 1.5em
+    margin-top: 10px
+    height: 100px
+  .services
+    article
+      width: $one-third
+      padding: 0 42px
+      text-align: center
+      &:nth-child(2)
+        border-right: 1px solid $greyish
+        border-left: 1px solid $greyish
+      
+      .button
+        text-align: center
+        float: none
+        a
+          font-family: Calibri
+          font-weight: bold
+          text-transform: uppercase
+      figure
+        background: $prime-color1
+        width: 200px
+        height: 200px
+        @include vendor-prefix('border-radius','100px')
+        margin: 0 auto
+        float: none
+        img
+          width: initial
+          padding: 30px 0 0px 60px
+        .text
+          color: white
+          text-transform: uppercase
+          text-align: center
+          padding: 17px 0 0 0
+          margin: 0
+
+  .news
+    article
+      width: $one-third
+      padding: 0 50px 0 0
+      &:nth-child(1)
+        .item
+          float: right
+      .item
+        width: 220px
+        figure
+          float: none
+          
