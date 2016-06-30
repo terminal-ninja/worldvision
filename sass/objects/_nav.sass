@@ -1,10 +1,10 @@
 header.navigation
   .inner
-    background: rgba(255, 255, 255, 0.57)
-    font-family: Calibri, $open-sans
-    text-transform: uppercase
-    width: 95%
-    margin: 10px auto
+    background: $prime-color1
+    font-family: $open-sans
+    // text-transform: uppercase
+    // width: 95%
+    // margin: 10px auto
     +clearfix
     .logo
       float: left
@@ -13,8 +13,8 @@ header.navigation
       li
         font-weight: bold
         display: inline-block
-        padding: 26px 0
         a
+          color: white
           padding: 0 10px
     .sub-item
       padding: 18px 10px 
@@ -64,8 +64,7 @@ header.navigation
       background-color: #F5F5F5
       border-radius: 1px
   ul.slimmenu
-    background: white
-    margin: 0
+    margin: 25px 0 0 0
     padding: 0
     list-style-type: none
     &:before,
@@ -85,6 +84,7 @@ header.navigation
           position: static
           display: none
         a
+          color: white
           display: block
           width: auto
           border-bottom: 1px solid rgba(0, 0, 0, 0.075)
@@ -106,12 +106,15 @@ header.navigation
       &.has-submenu
         margin-right: 10px
       a
+        color: white
         display: block
         width: auto
         padding: 10px 20px 10px 20px
         font-weight: bold
         text-decoration: none
         @extend .hvr-grow
+        &:hover
+          color: white
       ul
         margin: 0
         list-style-type: none
@@ -122,6 +125,7 @@ header.navigation
           width: 250px
           border-left: 0
           a
+            color: white
             display: block
             width: auto
             color: $grey

@@ -42,24 +42,20 @@
         </script>
 
   <header class="navigation" role="banner">
-    <div class="top-nav">
-      <a href="#" class="item">
-        <div class="text">find your nearest hospital</div><span><img src="<?php echo get_template_directory_uri(); ?>/img/icons/quote-icon.png"/></span>
-      </a>
-      <a href="#" class="item">
-        <div class="text">get an instant quote</div><span><img src="<?php echo get_template_directory_uri(); ?>/img/icons/map-icon.png"/></span>
-      </a>
-    </div>
     <div class="inner">
-      <a href="<?php echo get_home_url(); ?>"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/img/logo/aimslogo.png"/></a>      
-        
+        <a href="<?php echo get_home_url(); ?>"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/img/logo/logo.png"/></a>
+
         <?php html5blank_nav(); ?>
+        <a href="<?php echo get_home_url(); ?>"><img class="logo-main" src="<?php echo get_template_directory_uri(); ?>/img/logo/wv-logo.jpg"/></a>
         
-        <div class="sub-item">
-            <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
-            <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
-            <a href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-        </div>
+        <div class="item">
+            <div class="button">
+                <a href="#" class="primary">WV Login</a>
+            </div>
+            <div class="button">
+                <a href="#" class="primary primary-inv">DONATE</a>
+            </div>
+        </div> 
     </div>
   </header>
 
