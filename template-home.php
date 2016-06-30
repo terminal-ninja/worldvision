@@ -1,6 +1,11 @@
 <?php /* Template Name: Home Page Template */ get_header(); ?>
+  
+  <section>
+    <h1 class="heading">Where we work</h1>
+  </section>
+  
 
-  <section class="content services">
+  <!-- <section class="content services">
     <article>
       <figure>
         <img src="<?php echo get_template_directory_uri(); ?>/img/icons/services-icon.png" alt="">
@@ -65,5 +70,5 @@
         <img src="<?php echo get_template_directory_uri(); ?>/img/areas-operation.png" alt="">
       </figure>
     </article>
-  </section>
+  </section> -->
 <?php get_footer(); ?>

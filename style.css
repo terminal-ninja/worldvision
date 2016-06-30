@@ -2397,10 +2397,20 @@ li {
       background: #000; }
   .bx-wrapper .bx-prev {
     left: 10px;
-    background: url(img/hero/controls.png) no-repeat 0 -32px; }
+    background: url(img/hero/controls.png) no-repeat 0 -32px;
+    -webkit-transition: all 0s ease;
+    -moz-transition: all 0s ease;
+    -ms-transition: all 0s ease;
+    -o-transition: all 0s ease;
+    transition: all 0s ease; }
   .bx-wrapper .bx-next {
     right: 10px;
-    background: url(img/hero/controls.png) no-repeat -43px -32px; }
+    background: url(img/hero/controls.png) no-repeat -43px -32px;
+    -webkit-transition: all 0s ease;
+    -moz-transition: all 0s ease;
+    -ms-transition: all 0s ease;
+    -o-transition: all 0s ease;
+    transition: all 0s ease; }
   .bx-wrapper .bx-prev:hover {
     background-position: 0 0; }
   .bx-wrapper .bx-next:hover {
@@ -2462,7 +2472,8 @@ li {
   width: 100%; }
 
 .container {
-  width: 80%; }
+  width: 80%;
+  margin: 0 auto; }
 
 .quarter {
   width: 25%;
@@ -2519,10 +2530,10 @@ article, figure, figcaption, aside, details, .item, .sub-item {
   float: left; }
 
 body {
-  font-family: Arial, Helvetica; }
+  font-family: Open Sans, Arial, Helvetica; }
 
 h1, h2, h3, h4, h6, h1 span, h2 span, h3 span, h4 span, h6 span, h1 a, h2 a, h3 a, h4 a, h6 a {
-  font-family: Calibri, Open Sans;
+  font-family: Open Sans;
   font-weight: Bold; }
 
 .content a {
@@ -2554,7 +2565,7 @@ section {
 
 h1 {
   color: #514b47;
-  font-size: 33px;
+  font-size: 50px;
   text-align: center;
   position: relative;
   -webkit-margin-before: 0em;
@@ -2566,14 +2577,14 @@ h1 {
 
 h2 {
   color: #514b47;
-  font-size: 27px;
+  font-size: 35px;
   -webkit-margin-before: 0em;
   -webkit-margin-after: 0em;
   margin: 1em 0; }
 
 h3 {
   color: #514b47;
-  font-size: 18px;
+  font-size: 25px;
   -webkit-margin-before: 0em;
   -webkit-margin-after: 0em;
   margin: 1em 0; }
@@ -2595,7 +2606,7 @@ h5 {
 h3 span {
   color: #ff7800; }
 
-p {
+p, footer .top .item a {
   font-size: 0.9em;
   font-weight: normal;
   color: #6f7373;
@@ -6950,7 +6961,7 @@ input, select {
         background-image: url("../images/icons/login.png"); }
       .button .has-icon .icon.cart, .wysija-submit .has-icon .icon.cart {
         background-image: url("../images/icons/cart.png"); }
-    .button .has-icon p, .wysija-submit .has-icon p {
+    .button .has-icon p, .button .has-icon footer .top .item a, footer .top .item .button .has-icon a, .wysija-submit .has-icon p, .wysija-submit .has-icon footer .top .item a, footer .top .item .wysija-submit .has-icon a {
       display: inline-block;
       -webkit-margin-before: 0em;
       -webkit-margin-after: 0em;
@@ -7074,32 +7085,58 @@ header.navigation .inner {
     padding-left: 2%; }
 
 footer {
-  width: 100%;
-  background: #514b47;
   color: white;
   font-weight: bold; }
   footer::after {
     clear: both;
     content: "";
     display: table; }
-  footer .item {
-    padding: 25px; }
-    footer .item:nth-child(2) {
-      float: right; }
-      footer .item:nth-child(2) a {
-        color: white;
-        font-weight: bold;
-        padding: 0 10px;
-        -webkit-transition: all 0.3s ease;
-        -moz-transition: all 0.3s ease;
-        -ms-transition: all 0.3s ease;
-        -o-transition: all 0.3s ease;
-        transition: all 0.3s ease; }
-        footer .item:nth-child(2) a:hover {
-          color: white;
-          border-bottom: 1px solid white; }
-    footer .item:nth-child(1) .sub-item:nth-child(1) {
-      padding: 6px 20px; }
+  footer section {
+    width: 100%; }
+  footer .top {
+    width: 100%;
+    padding: 0; }
+    footer .top .item {
+      min-height: 300px; }
+      footer .top .item:nth-child(1) {
+        width: 10%;
+        background: #514b47; }
+      footer .top .item:nth-child(2) {
+        width: 25%;
+        background: #514b47;
+        padding-right: 5%; }
+      footer .top .item:nth-child(3) {
+        width: 25%;
+        background: #514b47;
+        padding-right: 5%; }
+      footer .top .item:nth-child(4) {
+        width: 10%;
+        background: #514b47;
+        padding-right: 1%; }
+      footer .top .item:nth-child(5) {
+        width: 20%;
+        background: #58524e;
+        padding-left: 5%; }
+        footer .top .item:nth-child(5) input {
+          height: 40px;
+          margin: 20px 0; }
+        footer .top .item:nth-child(5) .button {
+          float: right; }
+      footer .top .item:nth-child(6) {
+        width: 10%;
+        background: #58524e; }
+      footer .top .item h3 {
+        color: #ff7800;
+        text-transform: uppercase;
+        font-weight: 300; }
+      footer .top .item p, footer .top .item a {
+        color: white; }
+  footer .bottom {
+    padding: 20px 0;
+    background: black;
+    color: white; }
+    footer .bottom a, footer .bottom p, footer .bottom .top .item a, footer .top .item .bottom a {
+      color: white; }
 
 header.navigation .inner {
   background: #ff7800;
@@ -7277,55 +7314,5 @@ header.navigation ul.slimmenu {
         vertical-align: middle;
         float: right;
         margin: 11px -3px 0 0px; }
-
-.home p {
-  font-family: Calibri;
-  font-weight: bold;
-  line-height: 1.5em;
-  margin-top: 10px;
-  height: 100px; }
-.home .services article {
-  width: 33.33333%;
-  padding: 0 42px;
-  text-align: center; }
-  .home .services article:nth-child(2) {
-    border-right: 1px solid #ddd;
-    border-left: 1px solid #ddd; }
-  .home .services article .button {
-    text-align: center;
-    float: none; }
-    .home .services article .button a {
-      font-family: Calibri;
-      font-weight: bold;
-      text-transform: uppercase; }
-  .home .services article figure {
-    background: #ff7800;
-    width: 200px;
-    height: 200px;
-    -webkit-border-radius: 100px;
-    -moz-border-radius: 100px;
-    -ms-border-radius: 100px;
-    -o-border-radius: 100px;
-    border-radius: 100px;
-    margin: 0 auto;
-    float: none; }
-    .home .services article figure img {
-      width: initial;
-      padding: 30px 0 0px 60px; }
-    .home .services article figure .text {
-      color: white;
-      text-transform: uppercase;
-      text-align: center;
-      padding: 17px 0 0 0;
-      margin: 0; }
-.home .news article {
-  width: 33.33333%;
-  padding: 0 50px 0 0; }
-  .home .news article:nth-child(1) .item {
-    float: right; }
-  .home .news article .item {
-    width: 220px; }
-    .home .news article .item figure {
-      float: none; }
 
 /*# sourceMappingURL=style.css.map */
