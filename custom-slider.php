@@ -7,10 +7,25 @@
               <li>
                 <img src="<?php the_sub_field('image'); ?>">
                 <div class="overlay">
-                  <h2 class="hero-heading"><?php the_sub_field('headline'); ?></h2>
-                  <!-- <div class="button">
-                    <a href="<?php the_field('pagepost_link'); ?>" class="primary"><?php //the_sub_field('button'); ?></a>
-                  </div> -->
+                  <div class="item">
+                    <h1 class="hero-heading"><?php the_sub_field('headline'); ?>I Love School</h1>
+                    <p>Every child needs to be educated for life… <br>
+                      You can help us to help them!</p>
+                    <div class="button">
+                      <a href="<?php the_field('pagepost_link'); ?>" class="secondary"><?php the_sub_field('button'); ?>EDUCATE THEM</a>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <figure>
+                      <img src="<?php echo get_template_directory_uri(); ?>/img/kid.jpg" alt="">
+                    </figure>
+                    <h2>Education Funding</h2>
+                    <p>Every child needs to be educated for life… </p>
+                    <div class="button">
+                      <a href="<?php the_field('pagepost_link'); ?>" class="secondary"><?php the_sub_field('button'); ?>LEARN MORE</a>
+                    </div>
+                  </div>
+                  
                 </div>
               </li>
           <?php endwhile;
