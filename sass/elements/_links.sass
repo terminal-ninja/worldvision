@@ -1,9 +1,10 @@
 a
   color: $prime-color1
+  text-decoration: none
   @include vendor-prefix('transition','all 0.3s ease')
   &:hover
     color: tint($prime-color1, 40%)
 .inv
   @include vendor-prefix('transition','all 0.3s ease')
   &:hover
-    color: $prime-color1
+    color: $prime-color1 !important

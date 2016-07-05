@@ -43,11 +43,16 @@
 
   <header class="navigation" role="banner">
     <div class="inner">
-        <a href="<?php echo get_home_url(); ?>"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/img/logo/logo.png"/></a>
+        <figure>
+            <a href="<?php echo get_home_url(); ?>"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/img/logo/logo.png"/></a>
+        </figure>
 
         <?php html5blank_nav(); ?>
-        <a href="<?php echo get_home_url(); ?>"><img class="logo-main" src="<?php echo get_template_directory_uri(); ?>/img/logo/wv-logo.jpg"/></a>
-        
+
+        <figure>
+            <a href="<?php echo get_home_url(); ?>"><img class="logo-main" src="<?php echo get_template_directory_uri(); ?>/img/logo/wv-logo.jpg"/></a>
+        </figure>
+
         <div class="item">
             <div class="button">
                 <a href="#" class="primary">WV Login</a>

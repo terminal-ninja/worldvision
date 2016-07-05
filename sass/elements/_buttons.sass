@@ -30,8 +30,6 @@ input, select
     font-size: 0.8em
     -webkit-appearance: none
     border: 0
-    border-radius: 20px
-    @include vendor-prefix('border-radius','3px')
     &:hover
       cursor: pointer
     &.primary
@@ -61,11 +59,11 @@ input, select
         color: $whitest
         box-shadow: 0 0 0 2px $prime-color1 inset
     &.secondary
-      background: $prime-color2
+      background: $prime-color1
       color: $white
       @include vendor-prefix('transition','all 0.3s ease')
       &:hover
-        background: $prime-color1
+        background: tint($prime-color1, 30%) !important
         color: $white
     &.tertiary
       background: $whitest

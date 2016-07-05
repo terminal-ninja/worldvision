@@ -1,1 +1,53 @@
+h1
+  color: $prime-color1
+  font-size: 50px
+  // text-align: center
+  // text-transform: uppercase
+  span
+    font-weight: 600
+    color: $prime-color1
+  -webkit-margin-before: 0em
+  -webkit-margin-after: 0em
+  margin: 1em 0
+h2
+  color: $prime-color1
+  font-size: 35px
+  // text-transform: uppercase
+  -webkit-margin-before: 0em
+  -webkit-margin-after: 0em
+  margin: 1em 0
+h3
+  color: $prime-color2
+  font-size: 25px
+  -webkit-margin-before: 0em
+  -webkit-margin-after: 0em
+  margin: 1em 0
+h4
+  color: $prime-color2
+  font-size: 1.2em
+  -webkit-margin-before: 0em
+  -webkit-margin-after: 0em
+  margin: 1em 0
+h5
+  color: $prime-color2
+  font-size: 1em
+  margin: 1em 0
+  -webkit-margin-before: 0em
+  -webkit-margin-after: 0em
+h3 span
+  color: $prime-color1
 
+.heading
+  position: relative
+  text-align: center
+  &:before
+    content: ""
+    width: 25%
+    border-top: 1px solid $prime-color1
+    @include position(absolute, 35px null null 0px)
+  &:after
+    content: ""
+    border-top: 1px solid $prime-color1
+    width: 25%
+    border-top: 1px solid $prime-color1
+    @include position(absolute, 35px 0px null null)    

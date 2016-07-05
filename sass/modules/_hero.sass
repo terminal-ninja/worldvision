@@ -1,3 +1,18 @@
+.bx-prev:hover
+  background-position: 0 0
+.bx-next:hover
+  background-position: -43px 0
+.bx-wrapper .bx-controls-direction a
+  height: 97px
+.bx-wrapper
+  .bx-prev
+    background: url(img/hero/controls.png) no-repeat 0 -97px
+    left: 6%
+    @include vendor-prefix('transition','fade 0.5s ease')
+  .bx-next
+    background: url(img/hero/controls.png) no-repeat -43px -97px
+    right: 6%
+    @include vendor-prefix('transition','fade 0.5s ease')
 .bx-wrapper
   margin: 0 auto 0
   .bx-viewport
@@ -22,24 +37,48 @@
   // height: 333px
   overflow: hidden
   .bx-wrapper .bx-viewport
-    height: 333px !important
+    // height: 700px !important
   .button
     margin-top: 15px
     a:hover
       background: $prime-color2
   .overlay
     position: absolute
-    bottom: 265px
-    left: 6%
-    width: 40%
-  .hero-carousel
+    bottom: 0
+    left: 17%
+    // width: 40%
+    +clearfix
+    .item
+      &:nth-child(1)
+        width: 400px
+        margin-right: 50px
+      &:nth-child(2)
+        background: rgba(255, 255, 255, 0.8)
+        padding: 10px 10px 30px 10px
+        figure
+          width: 350px
+          float: none
+
+    h1
+      margin: 0
     h2
-      font-weight: 500
-      color: #fff
-      font-size: 35px
-      line-height: 42px
-      margin-bottom: 2px
-      text-transform: none
+      color: black
+      font-size: 26px
+      line-height: 37px
+      margin: 5px 0
+    p
+      font-size: 1.1em
+      line-height: 2em
+      color: black
+
+  // .hero-carousel
+  //   h2
+  //     font-weight: 500
+  //     color: #fff
+  //     font-size: 35px
+  //     line-height: 42px
+  //     margin-bottom: 2px
+  //     text-transform: none
 
 //
 // .hero
@@ -89,10 +128,10 @@
       display: none
   .bx-wrapper .bx-viewport
     @media screen and (max-width: 1024px)
-      height: 360px !important
-  .hero-carousel h2
-    font-size: 30px
-    line-height: 37px
+      height: 700px !important
+  // .hero-carousel h2
+  //   font-size: 30px
+  //   line-height: 37px
 .hero
   .hero-image
     .overlay

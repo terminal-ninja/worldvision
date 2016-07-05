@@ -21,6 +21,7 @@ $(document).ready(function(){
   }
 
   $('.bxslider').bxSlider({
+    pager: false, 
     adaptiveHeight: true,
     responsive: true,
     pause: 5000,
