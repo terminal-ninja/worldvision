@@ -2601,6 +2601,9 @@ article, figure, figcaption, aside, details, .item, .sub-item {
   font-style: italic;
   font-weight: 600;
   src: url("fonts/OpenSans-SemiboldItalic.eot?#iefix") format("embedded-opentype"), url("fonts/OpenSans-SemiboldItalic.woff2") format("woff2"), url("fonts/OpenSans-SemiboldItalic.woff") format("woff"), url("fonts/OpenSans-SemiboldItalic.ttf") format("truetype"), url("fonts/OpenSans-SemiboldItalic.svg#Open Sans") format("svg"); }
+.block {
+  float: none; }
+
 body {
   font-family: Open Sans, Arial, Helvetica; }
 
@@ -6981,17 +6984,12 @@ h1 {
   font-size: 50px;
   -webkit-margin-before: 0em;
   -webkit-margin-after: 0em;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
   margin: 1em 0; }
   h1 span {
     font-weight: 600;
     color: #ff7800; }
-
-h2 {
-  color: #ff7800;
-  font-size: 35px;
-  -webkit-margin-before: 0em;
-  -webkit-margin-after: 0em;
-  margin: 1em 0; }
 
 h3 {
   color: #514b47;
@@ -7015,7 +7013,12 @@ h5 {
   -webkit-margin-after: 0em; }
 
 h3 span {
-  color: #ff7800; }
+  color: #ff7800;
+  margin: 1em 0; }
+
+h2 {
+  color: #ff7800;
+  font-size: 35px; }
 
 .heading {
   position: relative;
@@ -7025,7 +7028,7 @@ h3 span {
     width: 25%;
     border-top: 1px solid #ff7800;
     position: absolute;
-    top: 35px;
+    top: 25px;
     left: 0px; }
   .heading:after {
     content: "";
@@ -7033,7 +7036,7 @@ h3 span {
     width: 25%;
     border-top: 1px solid #ff7800;
     position: absolute;
-    top: 35px;
+    top: 25px;
     right: 0px; }
 
 a {
@@ -7478,5 +7481,12 @@ header.navigation ul.slimmenu {
       float: none; }
       .home .about article .item .button:nth-child(2) {
         margin: 0 20px; }
+
+.home .work article:nth-child(1) {
+  width: 66.66667%;
+  padding-right: 2%; }
+.home .work article:nth-child(2) {
+  width: 33.33333%;
+  padding-left: 2%; }
 
 /*# sourceMappingURL=style.css.map */

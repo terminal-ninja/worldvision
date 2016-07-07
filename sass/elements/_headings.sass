@@ -8,10 +8,6 @@ h1
     color: $prime-color1
   -webkit-margin-before: 0em
   -webkit-margin-after: 0em
-  margin: 1em 0
-h2
-  color: $prime-color1
-  font-size: 35px
   // text-transform: uppercase
   -webkit-margin-before: 0em
   -webkit-margin-after: 0em
@@ -36,6 +32,10 @@ h5
   -webkit-margin-after: 0em
 h3 span
   color: $prime-color1
+  margin: 1em 0
+h2
+  color: $prime-color1
+  font-size: 35px
 
 .heading
   position: relative
@@ -44,10 +44,10 @@ h3 span
     content: ""
     width: 25%
     border-top: 1px solid $prime-color1
-    @include position(absolute, 35px null null 0px)
+    @include position(absolute, 25px null null 0px)
   &:after
     content: ""
     border-top: 1px solid $prime-color1
     width: 25%
     border-top: 1px solid $prime-color1
-    @include position(absolute, 35px 0px null null)    
+    @include position(absolute, 25px 0px null null)    

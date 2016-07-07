@@ -1,10 +1,16 @@
 <?php /* Template Name: Home Page Template */ get_header(); ?>
   
-  <section>
+  <section class="work">
     <article>
       <h2 class="heading">Where we work</h2>
       <div class="item">
-        
+      
+        <?php $folio_loop = new WP_Query( array( 'portfolio_categories' => 'image-slider-1', 'post_type' => 'html5-blank', 'posts_per_page' => get_post_meta($post->ID, 'ep_portfolio_posts_per_page', true), 'orderby' => 'menu_order' ) ); ?>
+
+    <?php while ( $folio_loop->have_posts() ) : $folio_loop->the_post(); ?>
+
+    <?php endwhile; ?>
+
       </div>
       <div class="item">
         
@@ -18,25 +24,19 @@
             if( have_rows('custom_slider') ):
                 while ( have_rows('custom_slider') ) : the_row(); ?>
                   <li>
-                    <img src="<?php the_sub_field('image'); ?>">
-                    <div class="overlay">
-                      <div class="item">
-                        <h1 class="hero-heading"><?php the_sub_field('headline'); ?>I Love School</h1>
-                        <p>Every child needs to be educated for life… <br>
-                          You can help us to help them!</p>
-                        <div class="button">
-                          <a href="<?php the_field('pagepost_link'); ?>" class="secondary"><?php the_sub_field('button'); ?>EDUCATE THEM</a>
-                        </div>
-                      </div>
-                      <div class="item">
-                        <figure>
-                          <img src="<?php echo get_template_directory_uri(); ?>/img/kid.jpg" alt="">
-                        </figure>
-                        <h2>Education Funding</h2>
-                        <p>Every child needs to be educated for life… </p>
-                        <div class="button">
-                          <a href="<?php the_field('pagepost_link'); ?>" class="secondary"><?php the_sub_field('button'); ?>LEARN MORE</a>
-                        </div>
+                    <div class="item block">
+                      <figure>
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/work.jpg" alt="">
+                      </figure>
+                      <h3>Kagiso goes to parliament</h3>
+                    </div>
+                    <div class="item block">
+                      <p>Teenager Kagiso, previously a World Vision sponsored child from Soweto, was chosen to represent the children of Gauteng at a point sitting of the Annual Nelson Mandela Children’s Fund, and World.</p>
+                    </div>
+                    <div class="item block">
+                      <time>27 May 2016</time>
+                      <div class="button">
+                        <a href="#" class="primary">Read More</a>
                       </div>
                     </div>
                   </li>
@@ -48,9 +48,16 @@
       </main>
     </article>
   </section>
+<<<<<<< HEAD
   <section class="inspired">
     <div class="container">
       <article class="white">
+=======
+
+  <section>
+    <div class="container">
+      <article>
+>>>>>>> master
       <h2>Inspired To See No Child Without</h2>
         <p>World Vision's Child Sponsorship programme changes the lives of thousands of children every year. Our vision of creating a better world for our children works on the simple yet powerful principle that the best way to change the life of a needy child is to change the world in which he/she lives!</p>
       </article>
