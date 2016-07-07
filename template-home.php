@@ -48,43 +48,43 @@
       </main>
     </article>
   </section>
-  <section>
+  <section class="inspired">
     <div class="container">
-      <article>
-      <h2 class="heading">Inspired To See No Child Without</h2>
+      <article class="white">
+      <h2>Inspired To See No Child Without</h2>
         <p>World Vision's Child Sponsorship programme changes the lives of thousands of children every year. Our vision of creating a better world for our children works on the simple yet powerful principle that the best way to change the life of a needy child is to change the world in which he/she lives!</p>
       </article>
       <div class="button">
-        <a href="#" class="primary">SPONSOR</a>
+        <a href="#" class="primary primary-inv">SPONSOR</a>
       </div>
     </div>
   </section>
 
   <h2 class="heading">Our Way</h2>
 
-  <section>
+  <section class="ourway black">
     <article>
-      <img src="<?php echo get_template_directory_uri(); ?>/img/" alt="">
+      <img class="heading" src="<?php echo get_template_directory_uri(); ?>/img/" alt="">
       <h2>Health</h2>
       <p>Improving the health of women and the children by focusing on seven important health elements for mothers and 11 important health elements for children, thus contributing to the reduction of under-five and maternal mortality.</p>
     </article>
     <article>
-      <img src="<?php echo get_template_directory_uri(); ?>/img/" alt="">
+      <img class="heading" src="<?php echo get_template_directory_uri(); ?>/img/" alt="">
       <h2>Health</h2>
       <p>Improving the health of women and the children by focusing on seven important health elements for mothers and 11 important health elements for children, thus contributing to the reduction of under-five and maternal mortality.</p>
     </article>
     <article>
-      <img src="<?php echo get_template_directory_uri(); ?>/img/" alt="">
+      <img class="heading" src="<?php echo get_template_directory_uri(); ?>/img/" alt="">
       <h2>Health</h2>
       <p>Improving the health of women and the children by focusing on seven important health elements for mothers and 11 important health elements for children, thus contributing to the reduction of under-five and maternal mortality.</p>
     </article>
     <article>
-      <img src="<?php echo get_template_directory_uri(); ?>/img/" alt="">
+      <img class="heading" src="<?php echo get_template_directory_uri(); ?>/img/" alt="">
       <h2>Health</h2>
       <p>Improving the health of women and the children by focusing on seven important health elements for mothers and 11 important health elements for children, thus contributing to the reduction of under-five and maternal mortality.</p>
     </article>
     <article>
-      <img src="<?php echo get_template_directory_uri(); ?>/img/" alt="">
+      <img class="heading" src="<?php echo get_template_directory_uri(); ?>/img/" alt="">
       <h2>Health</h2>
       <p>Improving the health of women and the children by focusing on seven important health elements for mothers and 11 important health elements for children, thus contributing to the reduction of under-five and maternal mortality.</p>
     </article>

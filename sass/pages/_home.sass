@@ -1,4 +1,23 @@
 .home
+  .inspired
+    width: $full
+    background-image: url('img/rectangle.jpg')
+    padding-top: 0
+    article
+      width: $two-thirds
+  .ourway
+    article
+      &:nth-child(1), &:nth-child(2), &:nth-child(4), &:nth-child(5)
+        width: $half
+      &:nth-child(1), &:nth-child(3), &:nth-child(5)
+        background: $grey1
+      &:nth-child(2), &:nth-child(4)
+        background: $grey2
+      padding: 2px
+ 
+    // .our-way
+    //   &:before
+    //     width: 40% !important
   // p
   //   font-family: Calibri
   //   font-weight: bold
