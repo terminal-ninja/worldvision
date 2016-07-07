@@ -2541,6 +2541,9 @@ header::after, nav::after, section::after, main::after, footer::after {
 article, figure, figcaption, aside, details, .item, .sub-item {
   float: left; }
 
+.block {
+  float: none; }
+
 /* Bold */
 @font-face {
   font-family: Open Sans;
@@ -2601,9 +2604,6 @@ article, figure, figcaption, aside, details, .item, .sub-item {
   font-style: italic;
   font-weight: 600;
   src: url("fonts/OpenSans-SemiboldItalic.eot?#iefix") format("embedded-opentype"), url("fonts/OpenSans-SemiboldItalic.woff2") format("woff2"), url("fonts/OpenSans-SemiboldItalic.woff") format("woff"), url("fonts/OpenSans-SemiboldItalic.ttf") format("truetype"), url("fonts/OpenSans-SemiboldItalic.svg#Open Sans") format("svg"); }
-.block {
-  float: none; }
-
 body {
   font-family: Open Sans, Arial, Helvetica; }
 
@@ -7450,6 +7450,12 @@ header.navigation ul.slimmenu {
         float: right;
         margin: 11px -3px 0 0px; }
 
+.home .work article:nth-child(1) {
+  width: 66.66667%;
+  padding-right: 2%; }
+.home .work article:nth-child(2) {
+  width: 33.33333%;
+  padding-left: 2%; }
 .home .inspired {
   width: 100%;
   background-image: url("img/rectangle.jpg");
@@ -7481,12 +7487,5 @@ header.navigation ul.slimmenu {
       float: none; }
       .home .about article .item .button:nth-child(2) {
         margin: 0 20px; }
-
-.home .work article:nth-child(1) {
-  width: 66.66667%;
-  padding-right: 2%; }
-.home .work article:nth-child(2) {
-  width: 33.33333%;
-  padding-left: 2%; }
 
 /*# sourceMappingURL=style.css.map */
