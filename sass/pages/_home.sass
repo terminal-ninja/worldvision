@@ -7,14 +7,31 @@
       &:nth-child(2)
         width: $one-third
         padding-left: 2%
-
-
+      .bxslider
+        figure
+          width: 40%
+        h3
+          width: 60%
+          float: left
+          margin: 0
+          color: white
+          padding: 9px 18px
+        time
+          color: $prime-color1
+          padding: 10px 20px 0 0
+        .item
+          &:nth-child(1)
+            background: $prime-color1
   .inspired
     width: $full
     background-image: url('img/rectangle.jpg')
     padding-top: 0
+    .container
+      width: 65%
     article
       width: $two-thirds
+    .button
+      margin: 12% 0 0 6%
   .ourway
     article
       &:nth-child(1), &:nth-child(2), &:nth-child(4), &:nth-child(5)
@@ -24,6 +41,8 @@
       &:nth-child(2), &:nth-child(4)
         background: $grey2
       border: 2px solid white
+      img
+        display: inline
   .about
     background-image: url('img/kid2.jpg')
     background-size: cover

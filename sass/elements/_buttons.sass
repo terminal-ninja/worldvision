@@ -43,6 +43,12 @@ input, select
         color: $whitest
       &:hover
         background: tint($prime-color1, 30%)
+    &.sml
+      padding: 5px 9px
+      font-weight: 500
+    &.lrg
+      padding: 16px 24px
+      font-size: 1.2em
     &.primary-inv
       background: white !important
       color: $prime-color1 !important
@@ -77,6 +83,9 @@ input, select
       @include vendor-prefix('border-radius','5px')
     &.block
       display: block
+    &.border
+      border: 1px solid $prime-color1 !important
+
   .has-icon
     background: $prime-color1
     color: $white

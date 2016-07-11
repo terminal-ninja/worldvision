@@ -2542,7 +2542,13 @@ article, figure, figcaption, aside, details, .item, .sub-item {
   float: left; }
 
 .block {
-  float: none; }
+  float: none !important; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
 
 /* Bold */
 @font-face {
@@ -2621,6 +2627,12 @@ h1, h2, h3, h4, h6, h1 span, h2 span, h3 span, h4 span, h6 span, h1 a, h2 a, h3 
 
 .black h1, .black h2, .black h3, .black h4, .black h6, .black h1 span, .black h2 span, .black h3 span, .black h4 span, .black h6 span, .black h1 a, .black h2 a, .black h3 a, .black h4 a, .black h6 a, .black p, .black footer .top .item a, footer .top .item .black a {
   color: black; }
+
+.black {
+  color: black; }
+
+.center {
+  text-align: center; }
 
 .float-left {
   float: left; }
@@ -6886,6 +6898,12 @@ input, select {
         color: white; }
       .button a.primary:hover, .button button.primary:hover, .button input.primary:hover, .button submit.primary:hover, .wysija-submit a.primary:hover, .wysija-submit button.primary:hover, .wysija-submit input.primary:hover, .wysija-submit submit.primary:hover {
         background: #ffa14d; }
+    .button a.sml, .button button.sml, .button input.sml, .button submit.sml, .wysija-submit a.sml, .wysija-submit button.sml, .wysija-submit input.sml, .wysija-submit submit.sml {
+      padding: 5px 9px;
+      font-weight: 500; }
+    .button a.lrg, .button button.lrg, .button input.lrg, .button submit.lrg, .wysija-submit a.lrg, .wysija-submit button.lrg, .wysija-submit input.lrg, .wysija-submit submit.lrg {
+      padding: 16px 24px;
+      font-size: 1.2em; }
     .button a.primary-inv, .button button.primary-inv, .button input.primary-inv, .button submit.primary-inv, .wysija-submit a.primary-inv, .wysija-submit button.primary-inv, .wysija-submit input.primary-inv, .wysija-submit submit.primary-inv {
       background: white !important;
       color: #ff7800 !important; }
@@ -6936,6 +6954,8 @@ input, select {
       border-radius: 5px; }
     .button a.block, .button button.block, .button input.block, .button submit.block, .wysija-submit a.block, .wysija-submit button.block, .wysija-submit input.block, .wysija-submit submit.block {
       display: block; }
+    .button a.border, .button button.border, .button input.border, .button submit.border, .wysija-submit a.border, .wysija-submit button.border, .wysija-submit input.border, .wysija-submit submit.border {
+      border: 1px solid #ff7800 !important; }
   .button .has-icon, .wysija-submit .has-icon {
     background: #ff7800;
     color: #F7F7F7;
@@ -6991,6 +7011,13 @@ h1 {
     font-weight: 600;
     color: #ff7800; }
 
+h2 {
+  color: #ff7800;
+  font-size: 35px;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  margin: 1em 0; }
+
 h3 {
   color: #514b47;
   font-size: 25px;
@@ -7015,10 +7042,6 @@ h5 {
 h3 span {
   color: #ff7800;
   margin: 1em 0; }
-
-h2 {
-  color: #ff7800;
-  font-size: 35px; }
 
 .heading {
   position: relative;
@@ -7061,19 +7084,19 @@ a {
 
 li {
   font-size: 0.9em;
-  font-weight: normal;
-  color: #066e73; }
+  font-weight: normal; }
 
 ul.navigation li {
   list-style-type: none; }
 
 p, footer .top .item a {
-  font-size: 0.9em;
+  font-size: 0.8em;
   font-weight: normal;
   color: #6f7373;
   -webkit-margin-before: 0em;
   -webkit-margin-after: 0em;
-  margin: 0.5em 0; }
+  margin: 1em 0;
+  line-height: 24px; }
 
 header.navigation .inner {
   background: #ff7800; }
@@ -7456,12 +7479,29 @@ header.navigation ul.slimmenu {
 .home .work article:nth-child(2) {
   width: 33.33333%;
   padding-left: 2%; }
+.home .work article .bxslider figure {
+  width: 40%; }
+.home .work article .bxslider h3 {
+  width: 60%;
+  float: left;
+  margin: 0;
+  color: white;
+  padding: 9px 18px; }
+.home .work article .bxslider time {
+  color: #ff7800;
+  padding: 10px 20px 0 0; }
+.home .work article .bxslider .item:nth-child(1) {
+  background: #ff7800; }
 .home .inspired {
   width: 100%;
   background-image: url("img/rectangle.jpg");
   padding-top: 0; }
+  .home .inspired .container {
+    width: 65%; }
   .home .inspired article {
     width: 66.66667%; }
+  .home .inspired .button {
+    margin: 12% 0 0 6%; }
 .home .ourway article {
   border: 2px solid white; }
   .home .ourway article:nth-child(1), .home .ourway article:nth-child(2), .home .ourway article:nth-child(4), .home .ourway article:nth-child(5) {
@@ -7470,6 +7510,8 @@ header.navigation ul.slimmenu {
     background: #f4f4f4; }
   .home .ourway article:nth-child(2), .home .ourway article:nth-child(4) {
     background: #ededed; }
+  .home .ourway article img {
+    display: inline; }
 .home .about {
   background-image: url("img/kid2.jpg");
   background-size: cover;

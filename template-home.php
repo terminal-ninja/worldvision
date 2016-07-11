@@ -24,19 +24,19 @@
             if( have_rows('custom_slider') ):
                 while ( have_rows('custom_slider') ) : the_row(); ?>
                   <li>
-                    <div class="item block">
+                    <div class="item">
                       <figure>
                         <img src="<?php echo get_template_directory_uri(); ?>/img/work.jpg" alt="">
                       </figure>
                       <h3>Kagiso goes to parliament</h3>
                     </div>
-                    <div class="item block">
-                      <p>Teenager Kagiso, previously a World Vision sponsored child from Soweto, was chosen to represent the children of Gauteng at a point sitting of the Annual Nelson Mandela Children’s Fund, and World.</p>
+                    <div class="item">
+                      <p class="black">Teenager Kagiso, previously a World Vision sponsored child from Soweto, was chosen to represent the children of Gauteng at a point sitting of the Annual Nelson Mandela Children’s Fund, and World.</p>
                     </div>
-                    <div class="item block">
-                      <time>27 May 2016</time>
+                    <div class="item">
+                      <time class="left">27 May 2016</time>
                       <div class="button">
-                        <a href="#" class="primary">Read More</a>
+                        <a href="#" class="primary primary-inv sml border">Read More</a>
                       </div>
                     </div>
                   </li>
@@ -56,7 +56,7 @@
         <p>World Vision's Child Sponsorship programme changes the lives of thousands of children every year. Our vision of creating a better world for our children works on the simple yet powerful principle that the best way to change the life of a needy child is to change the world in which he/she lives!</p>
       </article>
       <div class="button">
-        <a href="#" class="primary primary-inv">SPONSOR</a>
+        <a href="#" class="primary primary-inv lrg">SPONSOR</a>
       </div>
     </div>
   </section>
@@ -64,43 +64,43 @@
   <h2 class="heading">Our Way</h2>
 
   <section class="ourway black">
-    <article>
-      <img class="heading" src="<?php echo get_template_directory_uri(); ?>/img/" alt="">
+    <article class="center">
+      <img class="heading" src="<?php echo get_template_directory_uri(); ?>/img/icons/heart.png" alt="">
       <h2>Health</h2>
       <p>Improving the health of women and the children by focusing on seven important health elements for mothers and 11 important health elements for children, thus contributing to the reduction of under-five and maternal mortality.</p>
-      <div class="button">
+      <div class="button block">
         <a href="#" class="secondary">DONATE</a>
       </div>
     </article>
-    <article>
-      <img class="heading" src="<?php echo get_template_directory_uri(); ?>/img/" alt="">
+    <article class="center">
+      <img class="heading" src="<?php echo get_template_directory_uri(); ?>/img/icons/book.png" alt="">
       <h2>Health</h2>
       <p>Improving the health of women and the children by focusing on seven important health elements for mothers and 11 important health elements for children, thus contributing to the reduction of under-five and maternal mortality.</p>
-      <div class="button">
+      <div class="button block">
         <a href="#" class="secondary">DONATE</a>
       </div>
     </article>
-    <article>
-      <img class="heading" src="<?php echo get_template_directory_uri(); ?>/img/" alt="">
+    <article class="center">
+      <img class="heading" src="<?php echo get_template_directory_uri(); ?>/img/icons/paper.png" alt="">
       <h2>Health</h2>
       <p>Improving the health of women and the children by focusing on seven important health elements for mothers and 11 important health elements for children, thus contributing to the reduction of under-five and maternal mortality.</p>
-      <div class="button">
+      <div class="button block">
         <a href="#" class="secondary">DONATE</a>
       </div>
     </article>
-    <article>
-      <img class="heading" src="<?php echo get_template_directory_uri(); ?>/img/" alt="">
+    <article class="center">
+      <img class="heading" src="<?php echo get_template_directory_uri(); ?>/img/icons/child.png" alt="">
       <h2>Health</h2>
       <p>Improving the health of women and the children by focusing on seven important health elements for mothers and 11 important health elements for children, thus contributing to the reduction of under-five and maternal mortality.</p>
-      <div class="button">
+      <div class="button block">
         <a href="#" class="secondary">DONATE</a>
       </div>
     </article>
-    <article>
-      <img class="heading" src="<?php echo get_template_directory_uri(); ?>/img/" alt="">
+    <article class="center">
+      <img class="heading" src="<?php echo get_template_directory_uri(); ?>/img/icons/tap.png" alt="">
       <h2>Health</h2>
       <p>Improving the health of women and the children by focusing on seven important health elements for mothers and 11 important health elements for children, thus contributing to the reduction of under-five and maternal mortality.</p>
-      <div class="button">
+      <div class="button block">
         <a href="#" class="secondary">DONATE</a>
       </div>
     </article>

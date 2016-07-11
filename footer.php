@@ -32,7 +32,7 @@
 						<p>Subscribe to our Newsletter</p>
 						<input type="text">
 						<div class="button">
-                <a href="#" class="primary primary-inv">SUBSCRIBE</a>
+                <a href="#" class="primary primary-inv sml">SUBSCRIBE</a>
             </div>
 					</div>
 					<div class="item"><br></div>
