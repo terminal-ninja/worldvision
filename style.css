@@ -6839,18 +6839,7 @@ a img.aligncenter {
   padding: 0 4px 5px; }
 
 a .fa {
-  background: #58524e;
-  padding: 9px;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  -ms-border-radius: 15px;
-  -o-border-radius: 15px;
-  border-radius: 15px;
-  width: 30px;
-  height: 30px;
-  color: white; }
-  a .fa.fa-google-plus {
-    padding: 8px 5px; }
+  color: #58524e; }
 
 .btn-container::after {
   clear: both;

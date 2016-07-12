@@ -40,25 +40,16 @@
 
 				<section class="bottom">
 					<div class="container">
-					<p class="copyright">
-						&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>.
-						<a class="inv" href="http://www.esoft.co.za/" title="eSoft">Powered by eSoft Development & Technologies</a> 
-					</p>
-					</div>
-					<!-- /copyright -->
-
-
-					<!-- copyright -->
-					<!-- <div class="item">
-						<div class="sub-item">
-							Follow us
-						</div>
-						<div class="sub-item">
+						<p class="copyright">
+							&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>.
+							<a class="inv" href="http://www.esoft.co.za/" title="eSoft">Powered by eSoft Development & Technologies</a> 
+						</p>
+						<div class="item">
+							<a href=""><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
 							<a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
 							<a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
-							<a href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a>
 						</div>
-				</div> -->
+					</div>
 				</section>
 
 			</footer>
