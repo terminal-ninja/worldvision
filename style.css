@@ -7032,17 +7032,17 @@ h3 span {
   color: #ff7800;
   margin: 1em 0; }
 
-.heading {
+.heading, .icon-heading {
   position: relative;
   text-align: center; }
-  .heading:before {
+  .heading:before, .icon-heading:before {
     content: "";
     width: 25%;
     border-top: 1px solid #ff7800;
     position: absolute;
     top: 25px;
     left: 0px; }
-  .heading:after {
+  .heading:after, .icon-heading:after {
     content: "";
     border-top: 1px solid #ff7800;
     width: 25%;
@@ -7050,6 +7050,12 @@ h3 span {
     position: absolute;
     top: 25px;
     right: 0px; }
+
+.icon-heading {
+  width: 100%;
+  text-align: center; }
+  .icon-heading img {
+    width: initial; }
 
 a {
   color: #ff7800;
@@ -7072,11 +7078,23 @@ a {
     color: #ff7800 !important; }
 
 li {
-  font-size: 0.9em;
-  font-weight: normal; }
+  font-size: 0.8em;
+  font-weight: normal;
+  margin-left: 2.5em; }
 
 ul.navigation li {
   list-style-type: none; }
+
+.tick li {
+  list-style-type: none;
+  text-align: left; }
+  .tick li:before {
+    content: "";
+    font-family: "FontAwesome";
+    float: left;
+    margin-left: -1.5em;
+    margin-top: 3px;
+    color: #ff7800; }
 
 p, footer .top .item a {
   font-size: 0.8em;
@@ -7377,6 +7395,7 @@ header.navigation ul.slimmenu {
     header.navigation ul.slimmenu.collapsed li .sub-toggle {
       height: 40px; }
   header.navigation ul.slimmenu li {
+    margin: 0;
     position: relative;
     float: left;
     display: inline-block;
@@ -7492,6 +7511,7 @@ header.navigation ul.slimmenu {
   .home .inspired .button {
     margin: 12% 0 0 6%; }
 .home .ourway article {
+  padding: 20px;
   border: 2px solid white; }
   .home .ourway article:nth-child(1), .home .ourway article:nth-child(2), .home .ourway article:nth-child(4), .home .ourway article:nth-child(5) {
     width: 50%; }
@@ -7499,8 +7519,13 @@ header.navigation ul.slimmenu {
     background: #f4f4f4; }
   .home .ourway article:nth-child(2), .home .ourway article:nth-child(4) {
     background: #ededed; }
+  .home .ourway article:nth-child(3) {
+    width: 100%; }
   .home .ourway article img {
     display: inline; }
+  .home .ourway article:nth-child(5) ul {
+    width: 209px;
+    margin: 0 auto; }
 .home .about {
   background-image: url("img/kid2.jpg");
   background-size: cover;

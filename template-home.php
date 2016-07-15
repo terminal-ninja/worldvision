@@ -65,41 +65,71 @@
 
   <section class="ourway black">
     <article class="center">
-      <img class="heading" src="<?php echo get_template_directory_uri(); ?>/img/icons/heart.png" alt="">
+      <figure class="icon-heading">
+        <img class="heading" src="<?php echo get_template_directory_uri(); ?>/img/icons/heart.png" alt="">
+      </figure>
       <h2>Health</h2>
       <p>Improving the health of women and the children by focusing on seven important health elements for mothers and 11 important health elements for children, thus contributing to the reduction of under-five and maternal mortality.</p>
+      <ul class="tick">
+        <li>For the Mother.</li>
+        <li>For the Child.</li>
+      </ul>
       <div class="button block">
         <a href="#" class="secondary">DONATE</a>
       </div>
     </article>
     <article class="center">
-      <img class="heading" src="<?php echo get_template_directory_uri(); ?>/img/icons/book.png" alt="">
-      <h2>Health</h2>
-      <p>Improving the health of women and the children by focusing on seven important health elements for mothers and 11 important health elements for children, thus contributing to the reduction of under-five and maternal mortality.</p>
+      <figure class="icon-heading">
+        <img class="heading" src="<?php echo get_template_directory_uri(); ?>/img/icons/book.png" alt="">
+      </figure>
+      <h2>Education</h2>
+      <ul class="tick">
+        <li>Working with school governing bodies to increase capacity</li>
+        <li>Advocating for quality education and bringing ‘drop-outs’ back to school</li>
+        <li>Developing life skills among children</li>
+        <li>A special focus on Early Childhood Development (ECD) in partnership with the department of Education</li>
+      </ul>
       <div class="button block">
         <a href="#" class="secondary">DONATE</a>
       </div>
     </article>
     <article class="center">
-      <img class="heading" src="<?php echo get_template_directory_uri(); ?>/img/icons/paper.png" alt="">
-      <h2>Health</h2>
-      <p>Improving the health of women and the children by focusing on seven important health elements for mothers and 11 important health elements for children, thus contributing to the reduction of under-five and maternal mortality.</p>
+      <figure class="icon-heading">
+        <img class="heading" src="<?php echo get_template_directory_uri(); ?>/img/icons/paper.png" alt="">
+      </figure>
+      <h2>Economic Development</h2>
+      <p>Building capacities of disadvantaged communities and providing initial resource for them to start small businesses like:</p>
       <div class="button block">
         <a href="#" class="secondary">DONATE</a>
       </div>
     </article>
     <article class="center">
-      <img class="heading" src="<?php echo get_template_directory_uri(); ?>/img/icons/child.png" alt="">
-      <h2>Health</h2>
-      <p>Improving the health of women and the children by focusing on seven important health elements for mothers and 11 important health elements for children, thus contributing to the reduction of under-five and maternal mortality.</p>
+      <figure class="icon-heading">
+        <img class="heading" src="<?php echo get_template_directory_uri(); ?>/img/icons/child.png" alt="">
+      </figure>
+      <h2>Child Protection</h2>
+      <ul class="tick">
+        <li>Building community awareness and conscientisation</li>
+        <li>Establishing and strengthening reporting and referral mechanisms</li>
+        <li>Providing quality support to vulnerable families</li>
+        <li>Building life skills and resilience to protect children (with a specific focus on the spiritual nurture and active participation of the children themselves as agents of change)</li>
+      </ul>
       <div class="button block">
         <a href="#" class="secondary">DONATE</a>
       </div>
     </article>
     <article class="center">
-      <img class="heading" src="<?php echo get_template_directory_uri(); ?>/img/icons/tap.png" alt="">
-      <h2>Health</h2>
-      <p>Improving the health of women and the children by focusing on seven important health elements for mothers and 11 important health elements for children, thus contributing to the reduction of under-five and maternal mortality.</p>
+      <figure class="icon-heading">
+        <img  src="<?php echo get_template_directory_uri(); ?>/img/icons/tap.png" alt="">
+      </figure>
+      <h2>Wash</h2>
+      <ul class="tick">
+        <li>Drilling boreholes</li>
+        <li>Education on health sanitation</li>
+        <li>Water Tanks</li>
+        <li>Flow Campaign – Drought</li>
+        <li>Global 6k Walk/Run for Water</li>
+      </ul>
       <div class="button block">
         <a href="#" class="secondary">DONATE</a>
       </div>

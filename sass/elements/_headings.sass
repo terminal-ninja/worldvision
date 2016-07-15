@@ -40,7 +40,7 @@ h3 span
   color: $prime-color1
   margin: 1em 0
 
-
+// ADDS LINE DECORATION TO HEADINGS
 .heading
   position: relative
   text-align: center
@@ -54,4 +54,12 @@ h3 span
     border-top: 1px solid $prime-color1
     width: 25%
     border-top: 1px solid $prime-color1
-    @include position(absolute, 25px 0px null null)    
+    @include position(absolute, 25px 0px null null)
+// ADDS LINE DECORATION TO ICONS
+.icon-heading
+  width: 100%
+  text-align: center
+  @extend .heading
+  img
+    width: initial
+

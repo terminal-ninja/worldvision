@@ -1,35 +1,25 @@
 <?php /* Template Name: What We Believe Template */ get_header(); ?>
 
-  <h2 class="heading">About Us</h2>
-  
+  <h2 class="heading">What We Believe</h2>
   <section>
-    <h2>World Vision International</h2>
-    <p>World Vision is a Christian humanitarian organization dedicated to working with children, families, and their communities worldwide to reach their full potential by tackling the root causes of poverty and injustice. Working in nearly 100 countries around the world, we serve all people, regardless of religion, race, ethnicity, or gender. 
-    <a href="">Click here for World Vision International</a>
-    <h2>World Vision South Africa</h2>
-    </p>
-  </section>
-  <section class="ourway black">
-    <article class="center">
-      <h2>We love people</h2>
-      <p>Motivated by our Christian faith, and the belief that no child should live in poverty, World Vision works alongside communities, to improve the wellbeing of children.</p>
-    </article>
-    <article class="center">
-      <h2>We believe in people power</h2>
-      <p>Child sponsorship connects people to fight poverty enabling sponsors to make a positive and real difference to the life of the sponsored child within their family and community and gain an insight into the reality of life in developing countries. People's lives are changed on either side of the child sponsorship connection.</p>
-    </article>
-    <article class="center">
-      <h2>Three million people can't be wrong!</h2>
-      <p>Globally, World Vision supporters currently sponsor 3.4 million children in almost 100 countries, with over 54,000 children supported in South Africa.</p>
-    </article>
-    <article class="center">
-      <h2>Our people do their job very well</h2>
-      <p>With over SO years’ experience in delivering quality child focused, community based, transformational development programs, World Vision is the largest privately funded international relief, development and advocacy charity in the world. World Vision's highly trained and experienced staff manage Child Sponsorship Projects locally, and the input of the community is foundational to the development work undertaken.</p>
-    </article>
-    <article class="center">
-      <h2>Why support our work?</h2>
-      <p>World Vision believes that though children are born into poverty, they don't have to live their lives that way. When you sponsor a child with World Vision, you are joining with us in a global movement to tackle and end child poverty.</p>
-    </article>
+    <div id="tabs">
+      <ul>
+        <li><a href="#tabs-1">Vision and Mission</a></li>
+        <li><a href="#tabs-2">Statement of Faith</a></li>
+        <li><a href="#tabs-3">Core Values</a></li>
+        <li><a href="#tabs-4">Covenant of Partnership</a></li>
+      </ul>
+      <div id="tabs-1">
+        <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+      </div>
+      <div id="tabs-2">
+        <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+      </div>
+      <div id="tabs-3">
+        <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+        <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+      </div>
+    </div>
   </section>
 
 <?php get_footer(); ?>

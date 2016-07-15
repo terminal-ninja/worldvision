@@ -1,6 +1,19 @@
 li
-  font-size: 0.9em
+  font-size: 0.8em
   font-weight: normal
+  margin-left: 2.5em
   // color: $text-dark
 ul.navigation li
   list-style-type: none
+
+.tick
+  li
+    list-style-type: none
+    text-align: left
+    &:before
+      content: '\f058'
+      font-family: 'FontAwesome'
+      float: left
+      margin-left: -1.5em
+      margin-top: 3px
+      color: $prime-color1
