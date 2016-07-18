@@ -2,12 +2,12 @@
 
   <h2 class="heading">About Us</h2>
   
-  <section>
-    <h2>World Vision International</h2>
-    <p>World Vision is a Christian humanitarian organization dedicated to working with children, families, and their communities worldwide to reach their full potential by tackling the root causes of poverty and injustice. Working in nearly 100 countries around the world, we serve all people, regardless of religion, race, ethnicity, or gender. 
+  <section class="center">
+    <h2 class="heading-grey">World Vision International</h2>
+    <p>World Vision is a Christian humanitarian organization dedicated to working with children, families, and their communities worldwide to reach their full potential by tac1kling the root causes of poverty and injustice. Working in nearly 100 countries around the world, we serve all people, regardless of religion, race, ethnicity, or gender. 
     <a href="">Click here for World Vision International</a>
-    <h2>World Vision South Africa</h2>
     </p>
+    <h2 class="heading-grey">World Vision South Africa</h2>
   </section>
   <section class="ourway black">
     <article class="center">

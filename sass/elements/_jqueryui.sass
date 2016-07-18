@@ -1,0 +1,32 @@
+// MODULE - JQUERY TABS
+.ui-tabs-nav
+  li
+    list-style-type: none
+    display: inline-block
+    
+    a
+      text-decoration: none
+      padding: 10px 15px
+      margin-bottom: -1px
+.ui-state-default a
+  @include vendor-prefix('transition','all 0.3s ease')
+  outline: none
+  border: 1px solid white
+.ui-tabs-active
+  a
+    color: $grey
+    background: $whitest
+    border: 1px solid #ddd
+    border-bottom-color: transparent
+    @include vendor-prefix('border-radius','4px')
+    display: inline-block
+    outline: none
+.ui-tabs-panel
+  background: $whitest
+  border-left: 1px solid #ddd
+  border-right: 1px solid #ddd
+  border-bottom: 1px solid #ddd
+  border-top: 1px solid #ddd
+  @include vendor-prefix('border-radius','4px')
+  padding: 25px
+  +clearfix

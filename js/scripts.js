@@ -20,6 +20,8 @@ $(document).ready(function(){
     }
   }
 
+  $( "#whatwebelieve" ).tabs();
+
   $('.bxslider').bxSlider({
     pager: false, 
     adaptiveHeight: true,

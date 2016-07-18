@@ -6991,6 +6991,7 @@ input, select {
 h1 {
   color: #ff7800;
   font-size: 50px;
+  font-weight: 600;
   -webkit-margin-before: 0em;
   -webkit-margin-after: 0em;
   -webkit-margin-before: 0em;
@@ -7003,6 +7004,7 @@ h1 {
 h2 {
   color: #ff7800;
   font-size: 35px;
+  font-weight: 600;
   -webkit-margin-before: 0em;
   -webkit-margin-after: 0em;
   margin: 1em 0; }
@@ -7010,6 +7012,7 @@ h2 {
 h3 {
   color: #514b47;
   font-size: 25px;
+  font-weight: 600;
   -webkit-margin-before: 0em;
   -webkit-margin-after: 0em;
   margin: 1em 0; }
@@ -7017,12 +7020,14 @@ h3 {
 h4 {
   color: #514b47;
   font-size: 1.2em;
+  font-weight: 600;
   -webkit-margin-before: 0em;
   -webkit-margin-after: 0em;
   margin: 1em 0; }
 
 h5 {
   color: #514b47;
+  font-weight: 600;
   font-size: 1em;
   margin: 1em 0;
   -webkit-margin-before: 0em;
@@ -7056,6 +7061,12 @@ h3 span {
   text-align: center; }
   .icon-heading img {
     width: initial; }
+
+.heading-grey {
+  background: #f4f4f4;
+  border-top: 1px solid #ff7800;
+  padding: 30px 100px;
+  display: inline-block; }
 
 a {
   color: #ff7800;
@@ -7104,6 +7115,53 @@ p, footer .top .item a {
   -webkit-margin-after: 0em;
   margin: 1em 0;
   line-height: 24px; }
+
+.ui-tabs-nav li {
+  list-style-type: none;
+  display: inline-block; }
+  .ui-tabs-nav li a {
+    text-decoration: none;
+    padding: 10px 15px;
+    margin-bottom: -1px; }
+
+.ui-state-default a {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  outline: none;
+  border: 1px solid white; }
+
+.ui-tabs-active a {
+  color: #666666;
+  background: white;
+  border: 1px solid #ddd;
+  border-bottom-color: transparent;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  display: inline-block;
+  outline: none; }
+
+.ui-tabs-panel {
+  background: white;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  padding: 25px; }
+  .ui-tabs-panel::after {
+    clear: both;
+    content: "";
+    display: table; }
 
 header.navigation .inner {
   background: #ff7800; }
@@ -7249,6 +7307,23 @@ header.navigation .inner {
   .col-3:nth-child(3) {
     padding-left: 2%; }
 
+.ourway article {
+  padding: 20px;
+  border: 2px solid white; }
+  .ourway article:nth-child(1), .ourway article:nth-child(2), .ourway article:nth-child(4), .ourway article:nth-child(5) {
+    width: 50%; }
+  .ourway article:nth-child(1), .ourway article:nth-child(3), .ourway article:nth-child(5) {
+    background: #f4f4f4; }
+  .ourway article:nth-child(2), .ourway article:nth-child(4) {
+    background: #ededed; }
+  .ourway article:nth-child(3) {
+    width: 100%; }
+  .ourway article img {
+    display: inline; }
+  .ourway article:nth-child(5) ul {
+    width: 209px;
+    margin: 0 auto; }
+
 footer {
   color: white;
   font-weight: bold; }
@@ -7324,8 +7399,8 @@ header.navigation .inner {
     padding: 18px 10px; }
 header.navigation .current-menu-item-ancestor, header.navigation .current-menu-item a {
   font-weight: 600 !important;
-  color: #ff7800 !important;
-  background-color: transparent !important; }
+  background-color: transparent !important;
+  border-bottom: 1px solid #ff7800 !important; }
 header.navigation .menu-collapser {
   display: inline;
   position: relative;
@@ -7510,22 +7585,6 @@ header.navigation ul.slimmenu {
     width: 66.66667%; }
   .home .inspired .button {
     margin: 12% 0 0 6%; }
-.home .ourway article {
-  padding: 20px;
-  border: 2px solid white; }
-  .home .ourway article:nth-child(1), .home .ourway article:nth-child(2), .home .ourway article:nth-child(4), .home .ourway article:nth-child(5) {
-    width: 50%; }
-  .home .ourway article:nth-child(1), .home .ourway article:nth-child(3), .home .ourway article:nth-child(5) {
-    background: #f4f4f4; }
-  .home .ourway article:nth-child(2), .home .ourway article:nth-child(4) {
-    background: #ededed; }
-  .home .ourway article:nth-child(3) {
-    width: 100%; }
-  .home .ourway article img {
-    display: inline; }
-  .home .ourway article:nth-child(5) ul {
-    width: 209px;
-    margin: 0 auto; }
 .home .about {
   background-image: url("img/kid2.jpg");
   background-size: cover;
