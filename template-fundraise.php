@@ -2,13 +2,13 @@
 
   <h2 class="heading">Fundraise</h2>
   
-  <section>
-    <article>
-      <h1 class="heading-grey">Dedicate a Special Event</h1>
+  <section class="center black">
+    <article class="col-2 half">
+      <h2 class="heading-grey">Dedicate a Special Event</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente excepturi recusandae laborum quos ea vitae perferendis dolores molestiae neque, nesciunt eum delectus illo quo pariatur animi, nostrum iste nemo et.</p>
     </article>
-    <article>
-      <h1>Dedicate a Special Event</h1>
+    <article class="col-2 half">
+      <h2 class="heading-grey">Dedicate a Special Event</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente excepturi recusandae laborum quos ea vitae perferendis dolores molestiae neque, nesciunt eum delectus illo quo pariatur animi, nostrum iste nemo et.</p>
     </article>
   </section>
@@ -24,16 +24,17 @@
       </div>
     </div>
   </section>
-  
-  <section>
-    <h1 class="heading-grey">Dedicate a Special Event</h1>
-    <article>
-      <h1 class="heading-grey">Dedicate a Special Event</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente excepturi recusandae laborum quos ea vitae perferendis dolores molestiae neque, nesciunt eum delectus illo quo pariatur animi, nostrum iste nemo et.</p>
+
+  <div class="center black">
+    <h2 class="heading-grey">Join Existing Campaign</h2>
+  </div>
+
+  <section class="center black">
+    <article class="col-2 half">
+      <h2 class="grey">Dedicate a Special Event</h2>
     </article>
-    <article>
-      <h1>Dedicate a Special Event</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente excepturi recusandae laborum quos ea vitae perferendis dolores molestiae neque, nesciunt eum delectus illo quo pariatur animi, nostrum iste nemo et.</p>
+    <article class="col-2 half">
+      <h2 class="grey">Dedicate a Special Event</h2>
     </article>
   </section>
 

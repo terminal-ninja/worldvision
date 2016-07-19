@@ -33,17 +33,21 @@ $four-fifths: 80%
 $five-sixths: 83.33333%
 $full: 100%
 $two-thirds: 66.66667%
+
 .full
   width: 100%
 .container
   width: $container-width
   margin: 0 auto
+  +clearfix
 .quarter
   width: $quarter
   float: left
 .half
   width: $half
   float: left
+  @media screen and (max-width: 768px)
+    width: $full
 .three-quarter
   width: $three-quarter
   float: left
@@ -93,6 +97,8 @@ figure img
   display: table
 .pagination
   text-align: center
+address
+  display: inline
 
 // PARENT ELEMENTS
 header, nav, section, main, footer
@@ -110,6 +116,13 @@ article, figure, figcaption, aside, details, .item, .sub-item
   float: right
 
 // PAGE LEVEL CLEAFIX
-.page
+body, .page
   +clearfix
 
+
+@media screen and (max-width: 768px)
+  $half: 100%
+  article
+    width: $half !important
+
+  

@@ -2495,6 +2495,10 @@ li {
 .container {
   width: 80%;
   margin: 0 auto; }
+  .container::after {
+    clear: both;
+    content: "";
+    display: table; }
 
 .quarter {
   width: 25%;
@@ -2503,6 +2507,9 @@ li {
 .half {
   width: 50%;
   float: left; }
+  @media screen and (max-width: 768px) {
+    .half {
+      width: 100%; } }
 
 .three-quarter {
   width: 75%;
@@ -2542,6 +2549,9 @@ figure img {
 .pagination {
   text-align: center; }
 
+address {
+  display: inline; }
+
 header::after, nav::after, section::after, main::after, footer::after {
   clear: both;
   content: "";
@@ -2559,11 +2569,14 @@ article, figure, figcaption, aside, details, .item, .sub-item {
 .right {
   float: right; }
 
-.page::after {
+body::after, .page::after {
   clear: both;
   content: "";
   display: table; }
 
+@media screen and (max-width: 768px) {
+  article {
+    width: 100% !important; } }
 /* Bold */
 @font-face {
   font-family: Open Sans;
@@ -2665,6 +2678,9 @@ section {
   @media screen and (max-width: 480px) {
     section {
       width: 90%; } }
+
+address, time {
+  font-size: 0.8em; }
 
 ::-webkit-scrollbar {
   width: 0.7em;
@@ -6867,6 +6883,7 @@ input, select {
   width: 100%;
   display: block;
   text-align: center;
+  margin: 0 auto;
   float: none !important; }
   .full-btn a {
     display: block; }
@@ -7081,6 +7098,11 @@ h3 span {
 .heading-grey {
   background: #f4f4f4;
   border-top: 1px solid #ff7800;
+  padding: 30px 100px;
+  display: inline-block; }
+
+.grey {
+  background: #f4f4f4;
   padding: 30px 100px;
   display: inline-block; }
 
@@ -7648,5 +7670,23 @@ header.navigation ul.slimmenu {
     font-size: 0.6em;
     font-weight: 700;
     padding: 10px; }
+
+.news section figure {
+  width: 40%; }
+.news section article {
+  width: 60%; }
+  .news section article h2 {
+    margin-top: 0; }
+  .news section article p, .news section article footer .top .item a, footer .top .item .news section article a {
+    margin-top: 0;
+    color: black;
+    font-weight: 600; }
+  .news section article .button {
+    padding-top: 25px;
+    width: 60%; }
+    .news section article .button a {
+      padding: 12px 60px; }
+.news .button.full-btn {
+  width: 60%; }
 
 /*# sourceMappingURL=style.css.map */
