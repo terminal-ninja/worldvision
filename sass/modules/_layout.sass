@@ -1,12 +1,18 @@
-// 3-COL
+// 3-COL MARGIN SCHEME
 .col-3
-  width: $one-third
-  margin-bottom: 10px
+  // width: $one-third
+  // margin-bottom: 10px
   &:nth-child(1)
     padding-right: 2%
   &:nth-child(2)
     padding: 0 1%
   &:nth-child(3)
+    padding-left: 2%
+// 2-COL MARGIN SCHEME
+.col-2
+  &:nth-child(1)
+    padding-right: 2%
+  &:nth-child(2)
     padding-left: 2%
 
 // 2-COL SECTION ON HOME AND ABOUT PAGE
@@ -28,3 +34,14 @@
       ul
         width: 209px
         margin: 0 auto
+// ORANGE BANNER
+.inspired
+  width: $full
+  background-image: url('img/rectangle.jpg')
+  padding-top: 0
+  .container
+    width: 65%
+  article
+    width: $two-thirds
+  .button
+    margin: 12% 0 0 6%

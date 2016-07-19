@@ -1,7 +1,7 @@
 <?php /* Template Name: What We Believe Template */ get_header(); ?>
-  <figure>
+  <!-- <figure class="hero">
     <img src="<?php echo get_template_directory_uri(); ?>/img/believe.jpg" alt="">
-  </figure>
+  </figure> -->
 
   <h2 class="heading">What We Believe</h2>
   <section>

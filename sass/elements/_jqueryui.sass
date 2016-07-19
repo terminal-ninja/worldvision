@@ -2,31 +2,39 @@
 .ui-tabs-nav
   li
     list-style-type: none
-    display: inline-block
-    
+    display: block
+    margin: 0
+    float: left
+    &:nth-child(1) a
+      border-left: 0
     a
       text-decoration: none
       padding: 10px 15px
-      margin-bottom: -1px
+      margin: 0
+      color: black
+      border-left: 1px solid $grey1
+      @extend .inv
+
 .ui-state-default a
   @include vendor-prefix('transition','all 0.3s ease')
   outline: none
   border: 1px solid white
 .ui-tabs-active
   a
-    color: $grey
-    background: $whitest
-    border: 1px solid #ddd
-    border-bottom-color: transparent
-    @include vendor-prefix('border-radius','4px')
-    display: inline-block
+    color: black
+    background: $grey1
+    border-top: 3px solid $prime-color1
+    &:hover
+      color: black !important
+    // border-bottom-color: transparent
+    // @include vendor-prefix('border-radius','4px')
     outline: none
 .ui-tabs-panel
-  background: $whitest
-  border-left: 1px solid #ddd
-  border-right: 1px solid #ddd
-  border-bottom: 1px solid #ddd
-  border-top: 1px solid #ddd
-  @include vendor-prefix('border-radius','4px')
+  // background: $whitest
+  // border-left: 1px solid #ddd
+  // border-right: 1px solid #ddd
+  // border-bottom: 1px solid #ddd
+  // border-top: 1px solid #ddd
+  // @include vendor-prefix('border-radius','4px')
   padding: 25px
   +clearfix

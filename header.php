@@ -44,7 +44,7 @@
   <header class="navigation" role="banner">
     <div class="inner">
         <figure>
-            <a href="<?php echo get_home_url(); ?>"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/img/logo/logo.png"/></a>
+            <a href="<?php echo get_home_url(); ?>/wp-admin"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/img/logo/logo.png"/></a>
         </figure>
 
         <?php html5blank_nav(); ?>
