@@ -2577,6 +2577,10 @@ body::after, .page::after {
 @media screen and (max-width: 768px) {
   article {
     width: 100% !important; } }
+.no-margin {
+  margin: 0 auto !important;
+  padding: 0 !important; }
+
 /* Bold */
 @font-face {
   font-family: Open Sans;
@@ -7070,6 +7074,14 @@ h3 span {
   color: #ff7800;
   margin: 1em 0; }
 
+h6 {
+  color: #6f7373;
+  font-weight: 300;
+  font-size: 0.8em;
+  margin: 1em 0;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em; }
+
 .heading, .icon-heading {
   position: relative;
   text-align: center; }
@@ -7688,5 +7700,32 @@ header.navigation ul.slimmenu {
       padding: 12px 60px; }
 .news .button.full-btn {
   width: 60%; }
+
+.our-leadership .executives .item, .our-leadership .board .item {
+  width: 33.33333%;
+  padding: 0 6%; }
+  .our-leadership .executives .item .inner, .our-leadership .board .item .inner {
+    padding: 5px 12px; }
+  .our-leadership .executives .item figure, .our-leadership .board .item figure {
+    float: none; }
+    .our-leadership .executives .item figure img, .our-leadership .board .item figure img {
+      border: 1px solid #bbb; }
+  .our-leadership .executives .item h3, .our-leadership .board .item h3 {
+    color: #ff7800;
+    margin: 0; }
+  .our-leadership .executives .item h6, .our-leadership .board .item h6 {
+    margin: 0; }
+  .our-leadership .executives .item .button, .our-leadership .board .item .button {
+    margin-top: 15px;
+    padding: 13px 40px;
+    border-left: 1px solid #bbb;
+    border-right: 1px solid #bbb;
+    border-bottom: 1px solid #bbb; }
+.our-leadership .board {
+  padding-top: 0;
+  padding-bottom: 80px; }
+  .our-leadership .board .item {
+    width: 25%;
+    padding: 0 3%; }
 
 /*# sourceMappingURL=style.css.map */
