@@ -42,3 +42,33 @@
         .button
           &:nth-child(2)
             margin: 0 20px
+//RESPONSIVE
+.home 
+  .about
+    .container
+      @media screen and (max-width: 480px)
+        width: auto
+      article
+        .item
+          @media screen and (max-width: 480px)
+            width: auto
+          .button
+            @media screen and (max-width: 768px)
+              &:nth-child(2)
+                margin: 0 5px
+              a
+                padding: 7px 10px
+                font-weight: 600
+                font-size: 0.7em
+            @media screen and (max-width: 480px)
+              width: 100%
+              display: block
+              text-align: center
+              margin: 0 auto
+              float: none !important
+              &:nth-child(2)
+                margin: 0
+              a
+                display: block
+
+        

@@ -7352,6 +7352,9 @@ header.navigation .inner {
     margin: 0;
     height: 442px; }
 
+.work .bxslider li {
+  height: auto; }
+
 .hero-slider {
   width: 100%;
   padding: 0px;
@@ -7779,6 +7782,31 @@ header.navigation ul.slimmenu {
       float: none; }
       .home .about article .item .button:nth-child(2) {
         margin: 0 20px; }
+
+@media screen and (max-width: 480px) {
+  .home .about .container {
+    width: auto; } }
+@media screen and (max-width: 480px) {
+  .home .about .container article .item {
+    width: auto; } }
+@media screen and (max-width: 768px) {
+  .home .about .container article .item .button:nth-child(2) {
+    margin: 0 5px; }
+  .home .about .container article .item .button a {
+    padding: 7px 10px;
+    font-weight: 600;
+    font-size: 0.7em; } }
+@media screen and (max-width: 480px) {
+  .home .about .container article .item .button {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    float: none !important; }
+    .home .about .container article .item .button:nth-child(2) {
+      margin: 0; }
+    .home .about .container article .item .button a {
+      display: block; } }
 
 .what-we-believe::after {
   clear: both;
