@@ -13,7 +13,7 @@
 
       </div>
       <div class="item">
-        
+        <iframe src="https://www.google.com/maps/d/embed?mid=zFZufeCTwLWM.kt8PvwfSEW5U" width="100%" height="290px"></iframe>
       </div>
     </article>
     <article>

@@ -22,7 +22,7 @@
 					</div>
 					<div class="item">
 						<h3>site map</h3>
-						<a class="inv" href="">FAQ’s</a><br>
+						<a class="inv" href="">FAQ’s</a>
 						<a class="inv" href="">Press Pack</a>
 						<a class="inv" href="">Publications</a>
 						<a class="inv" href="">Legalities</a>

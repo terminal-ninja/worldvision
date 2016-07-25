@@ -2,11 +2,13 @@ footer
   +clearfix
   color: white
   font-weight: bold
+  // margin-top: 60px
   section
     width: 100%
   .top
     width: 100%
     padding: 0
+    background: $prime-color2
     .item
       min-height: 300px
       &:nth-child(1)
@@ -24,6 +26,8 @@ footer
         width: 10%
         background: $prime-color2
         padding-right: 1%
+        a
+          display: block
       &:nth-child(5)
         width: 20%
         background: $prime-color3
@@ -55,7 +59,43 @@ footer
     .item
       float: right
       padding-top: 13px
-    
+//RESPONSIVE
+footer
+  // section
+  .top
+    .item
+      @media screen and (max-width: 768px)
+        min-height: initial
+        &:nth-child(1)
+          display: none
+        &:nth-child(2)
+          width: 50%
+          padding-left: 5%
+        &:nth-child(3)
+          width: 50%
+        &:nth-child(4)
+          width: 50%
+        &:nth-child(5)
+          background: $prime-color2
+          width: 50%
+          .button
+            width: 100%
+        &:nth-child(6)
+          width: 10%
+          background: $prime-color2
+            display: none
+      @media screen and (max-width: 480px)
+        &:nth-child(2)
+          width: 100%
+          padding-left: 5%
+        &:nth-child(3)
+          width: 100%
+          padding-left: 5%
+        &:nth-child(4)
+          width: 100%
+          padding-left: 5%
+        &:nth-child(5)
+          width: 100%
 
 
     //   float: right

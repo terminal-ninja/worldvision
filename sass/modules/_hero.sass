@@ -26,15 +26,18 @@
       background: $prime-color1 !important
 .bxslider
   visibility: hidden
-  img
-    width: 100%
+  // img
+  //   width: 100%
+  li
+    margin: 0
+    height: 442px
 .hero-slider
   width: 100%
   padding: 0px
   position: relative
   visibiliy: 0
   // margin-top: 80px
-  // height: 333px
+  height: 442px
   overflow: hidden
   .bx-wrapper .bx-viewport
     // height: 700px !important
@@ -113,22 +116,28 @@
 //RESPONSIVE
 
 .hero-slider
+  // li
+  //   @media screen and (max-width: 1024px)
+  //     height: 442px
   .overlay
-    @media screen and (max-width: 1024px)
-      padding-right: 100px
-      width: 100%
-      @media screen and (max-width: 480px)
-        padding-right: 10px
-        bottom: 185px
-  .hero-carousel h2
     @media screen and (max-width: 480px)
-      font-size: 27px
+      left: 0
+      padding: 10% 5% 0 5%
+    .item:nth-child(1)
+      @media screen and (max-width: 1024px)
+        display: none
+  //     @media screen and (max-width: 480px)
+  //       padding-right: 10px
+  //       bottom: 185px
+  // .hero-carousel h2
+  //   @media screen and (max-width: 480px)
+  //     font-size: 27px
   .bx-controls-direction
     @media screen and (max-width: 480px)
       display: none
-  .bx-wrapper .bx-viewport
-    @media screen and (max-width: 1024px)
-      height: 700px !important
+  // .bx-wrapper .bx-viewport
+  //   @media screen and (max-width: 1024px)
+  //     height: 700px !important
   // .hero-carousel h2
   //   font-size: 30px
   //   line-height: 37px

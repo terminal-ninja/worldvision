@@ -1,4 +1,6 @@
 header.navigation
+  .mob-logo
+    display: none
   .inner
     background: $prime-color1
     // height: 88px
@@ -12,29 +14,75 @@ header.navigation
       height: 60px
       width: auto
     .item
-      margin: 20px 0 0 0
+      margin: 20px 20px 0 0
+      float: right
       .button
         margin: 0 10px
     figure
       padding: 10px 0px 10px 30px
       background: white
-      &:nth-child(4)
+      &:nth-child(2)
         float: right
         padding: 0 0 20px 50px
-    // a.item
-    //   height: 100%
-    // a img
-    //   height: 50px
-      
-    // .item
-    //   float: right
-    //   background: $prime-color2
-    //   margin-left: 2px
-    //   display: table
-    //   .text, span
-    //     display: table-cell
-    //     vertical-align: middle
-    //   span
-    //     padding: 0 10px
-    //   .text
-    //     padding: 10px 0px 10px 10px
+
+//RESPONSIVE
+header.navigation
+  .item, .menu-collapser
+    @media screen and (max-width: 1024px)
+      float: right
+  @media screen and (max-width: 768px)
+    .inner
+      .item, .menu-collapser
+        float: right
+      figure
+        display: none
+      .collapse-button
+        margin-top: 25px
+      .item
+        margin: 5px 5px !important
+    .mob-logo
+      display: block
+      width: 100%
+      background: white
+      a
+        background: white
+        height: 70px
+        @media screen and (max-width: 337px)
+          height: auto
+          width: 49%
+          &:nth-child(1)
+            width: 39%
+        img
+          height: 100%
+          width: auto
+          @media screen and (max-width: 337px)
+            width: 100%
+          
+        &:nth-child(1)
+          float: left
+          padding: 11px
+        &:nth-child(2)
+          float: right
+          padding: 0 0 10px 20px
+
+  @media screen and (max-width: 1215px)
+    .inner
+      .item
+        margin: 20px 0px 0 0
+        @media screen and (max-width: 1024px)
+          float: left
+        .button
+          margin: 0 6px
+      .primary
+        padding: 7px 20px
+        font-weight: 600
+        font-size: 0.7em
+      figure:nth-child(2)
+        @media screen and (max-width: 1024px)
+          float: right
+      @media screen and (max-width: 1215px)
+        .logo
+          padding: 0 15px 0 0
+        figure:nth-child(4)
+          padding: 0 0 20px 30px
+

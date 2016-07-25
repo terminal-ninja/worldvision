@@ -37,7 +37,7 @@ $(document).ready(function(){
 
   $('.slimmenu').slimmenu(
   {
-      resizeWidth: '1054',
+      resizeWidth: '1024',
       collapserTitle: '',
       animSpeed:'medium',
       indentChildren: true,
@@ -45,6 +45,20 @@ $(document).ready(function(){
       expandIcon: '<i class="fa fa-angle-down"></i>',
       collapseIcon: '<i class="fa fa-angle-up"></i>'
   });
+
+
+  $("#btnOrganization").click(function(){
+        $(".Organization").show();
+        $(".Individual").hide();
+        $(this).addClass("prime-color1-bak");
+        $("#btnIndividual").removeClass("prime-color1-bak");
+    });
+  $("#btnIndividual").click(function(){
+      $(".Organization").hide();
+      $(".Individual").show();
+      $(this).addClass("prime-color1-bak");
+      $("#btnOrganization").removeClass("prime-color1-bak");      
+    });
 
   
 });

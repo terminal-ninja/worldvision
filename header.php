@@ -42,13 +42,16 @@
         </script>
 
   <header class="navigation" role="banner">
+    <figure class="mob-logo">
+        <a href="<?php echo get_home_url(); ?>/wp-admin" target="_blank"><img class="" src="<?php echo get_template_directory_uri(); ?>/img/logo/logo.png"/></a>
+        <a href="<?php echo get_home_url(); ?>"><img class="" src="<?php echo get_template_directory_uri(); ?>/img/logo/wv-logo.jpg"/></a>
+    </figure>
     <div class="inner">
         <figure>
             <a href="<?php echo get_home_url(); ?>/wp-admin" target="_blank"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/img/logo/logo.png"/></a>
         </figure>
 
-        <?php html5blank_nav(); ?>
-
+       
         <figure>
             <a href="<?php echo get_home_url(); ?>"><img class="logo-main" src="<?php echo get_template_directory_uri(); ?>/img/logo/wv-logo.jpg"/></a>
         </figure>
@@ -61,6 +64,8 @@
                 <a href="#" class="primary primary-inv">DONATE</a>
             </div>
         </div> 
+         <?php html5blank_nav(); ?>
+
     </div>
   </header>
 
