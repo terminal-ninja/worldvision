@@ -15,11 +15,11 @@
 
   <section class="inspired">
     <div class="container">
-      <article class="white">
+      <article class="white four-fifths">
       <h2>Create your own course</h2>
         <p>World Vision's Child Sponsorship programme changes the lives of thousands of children every year. Our vision of creating a better world for our children works on the simple yet powerful principle that the best way to change the life of a needy child is to change the world in which he/she lives!</p>
       </article>
-      <div class="button">
+      <div class="button one-fifth">
         <a href="#" class="primary primary-inv lrg">DONATE</a>
       </div>
     </div>

@@ -58,10 +58,10 @@
 
         <div class="item">
             <div class="button">
-                <a href="#" class="primary">WV Login</a>
+                <a href="<?php echo get_home_url(); ?>/login" class="primary">WV Login</a>
             </div>
             <div class="button">
-                <a href="#" class="primary primary-inv">DONATE</a>
+                <a href="<?php echo get_home_url(); ?>/donate" class="primary primary-inv">DONATE</a>
             </div>
         </div> 
          <?php html5blank_nav(); ?>

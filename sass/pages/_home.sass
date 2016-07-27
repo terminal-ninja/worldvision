@@ -6,9 +6,13 @@
       &:nth-child(1)
         width: $two-thirds
         padding-right: 2%
+        .heading:before, .heading:after
+          width: 25%
       &:nth-child(2)
         width: $one-third
         padding-left: 2%
+        .heading:before, .heading:after
+          width: 10%
       .bxslider
         figure
           width: 40%
@@ -24,6 +28,19 @@
         .item
           &:nth-child(1)
             background: $prime-color1
+        .bx-controls-direction
+          display: none
+  .work
+    article
+      .item
+        &:nth-child(1)
+          .heading:before, .heading:after
+            @media screen and (max-width: 1024px)
+              width: 10%
+        &:nth-child(2)
+          .heading:before, .heading:after
+            @media screen and (max-width: 1024px)
+              display: none
   .about
     background-image: url('img/kid2.jpg')
     background-size: cover
@@ -49,6 +66,8 @@
       @media screen and (max-width: 480px)
         width: auto
       article
+        @media screen and (max-width: 768px)
+          width: auto
         .item
           @media screen and (max-width: 480px)
             width: auto

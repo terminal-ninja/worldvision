@@ -5,23 +5,24 @@
 <section class="center">
   <h2>Inspired To See No Child Without</h2>
   <p class="black">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim unde fugit nisi iure quisquam, deleniti nam maxime omnis, quam in vitae. Fugit voluptates, eum dignissimos inventore. Nesciunt nam, harum ea.</p>
+</section>
+<div class="container">
   <div class="steps center">
     <i class="fa fa-circle" aria-hidden="true"></i>
       <div class="line"></div>
     <i class="fa fa-circle-thin" aria-hidden="true"></i>
   </div>
-</section>
-
+</div>
 <section class="form">
   <h3 class="center">Donate and Help a Child</h3>
   <div class="inner">
     <h4>Donation Information</h4>
     <form action="/wvusertest/Donate/DonateIndex" class="box validate" enctype="multipart/form-data" id="form" method="post" name="form">
       <div class="row">
-        <div class="form-pg-1">
+
+        <div class="donation">
           <div class="ibox float-e-margins">
             <!-- <div class="ibox-title">
-              
             </div> -->
             <div class="ibox-content">
               <div class="row">
@@ -124,12 +125,12 @@
                 </div>
               </div>
               <div class="row Organization" style="display:none;">
-                <div class="half">
+                <div class="half col-2">
                   <div class="form-group">
                     <label>Organization Name</label><!-- <label class="required_imp"><b>*</b></label> --> <input class="required form-control" id="Sponsor_Organization_Name" maxlength="128" name="Sponsor_Organization_Name" type="text" value="">
                   </div>
                 </div>
-                <div class="half">
+                <div class="half col-2">
                   <div class="form-group">
                     <label>Organization Type</label> <select class="chosen-select form-control form-control-name" id="Sponsor_Organization_Type" name="Sponsor_Organization_Type">
                       <option value="Church">
@@ -155,31 +156,31 @@
                 </div>
               </div>
               <div class="row Organization" style="display:none;">
-                <div class="half">
+                <div class="half col-2">
                   <div class="form-group">
                     <label>Contact Person</label><!-- <label class="required_imp"><b>*</b></label> --> <input class="required form-control" id="Sponsor_Contact_Person" maxlength="128" name="Sponsor_Contact_Person" type="text" value="">
                   </div>
                 </div>
-                <div class="four-fifths">
+                <div class="half col-2">
                   <div class="form-group">
                     <label>Supporter Number</label><!-- <label class="required_imp"><b>*</b></label> --> <input class="required form-control" id="Sponsor_SupporterNumber_Org" maxlength="50" name="Sponsor_SupporterNumber_Org" type="text" value="">
                   </div>
                 </div>
               </div>
               <div class="row Individual">
-                <div class="one-fifth col-2">
+                <div class="half col-2">
                   <div class="form-group">
                     <label>Date of Birth</label> <input class="Sponsor_DateofBirth form-control" id="Sponsor_DateofBirth" maxlength="50" name="Sponsor_DateofBirth" type="text" value="">
                   </div>
                 </div>
-                <div class="four-fifths col-2">
+                <div class="half col-2">
                   <div class="form-group">
                     <label>Supporter Number</label> <input class=" form-control" id="Sponsor_SupporterNumber_Ind" maxlength="50" name="Sponsor_SupporterNumber_Ind" type="text" value="">
                   </div>
                 </div>
               </div>
               <div class="row">
-                <div class="one-fifth col-2">
+                <div class="half col-2">
                   <div class="form-group">
                     <label>Phone Type</label> <select class="chosen-select form-control form-control-name" id="Sponsor_Phone_Types" name="Sponsor_Phone_Types">
                       <option value="H">
@@ -194,7 +195,7 @@
                     </select>
                   </div>
                 </div>
-                <div class="four-fifths  col-2">
+                <div class="half col-2">
                   <div class="form-group">
                     <label>Contact Number</label> <input class="form-control" id="Sponsor_Contact_Number" maxlength="50" name="Sponsor_Contact_Number" type="text" value="">
                   </div>
@@ -204,10 +205,10 @@
           </div>
         </div>
         <!-- ADDRESS DETAILS -->
-        <div class="col-lg-6" style="display:none;">
+        <div class="col-lg-6 address" style="display:none;">
+          <h4>Address Details</h4>
           <div class="ibox float-e-margins">
             <div class="ibox-title">
-              <h2>Address Details</h2>
             </div>
             <div class="ibox-content">
               <div class="row" style="padding-top:10px">
@@ -226,42 +227,42 @@
                       </option>
                       <option value="P">
                         PO Box
-                      </option>
+                      </option> 
                     </select>
-                  </div>
-                </div>
-                <div class="col-sm-9">
-                  <div class="form-group">
-                    <label>Address Line 1</label> <input class="form-control" id="Sponsor_Address_Line1" maxlength="128" name="Sponsor_Address_Line1" type="text" value="">
                   </div>
                 </div>
               </div>
               <div class="row">
-                <div class="col-sm-12">
+                <div class="col-sm-9 half col-2">
+                  <div class="form-group">
+                    <label>Address Line 1</label> <input class="form-control" id="Sponsor_Address_Line1" maxlength="128" name="Sponsor_Address_Line1" type="text" value="">
+                  </div>
+                </div>
+                <div class="col-sm-12 half col-2">
                   <div class="form-group">
                     <label>Address Line 2</label> <input class="form-control" id="Sponsor_Address_Line2" maxlength="128" name="Sponsor_Address_Line2" type="text" value="">
                   </div>
                 </div>
               </div>
               <div class="row">
-                <div class="col-sm-6">
+                <div class="col-sm-6 half col-2">
                   <div class="form-group">
                     <label>City</label> <input class="form-control" id="Sponsor_City" maxlength="128" name="Sponsor_City" type="text" value="">
                   </div>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-6 half col-2">
                   <div class="form-group">
                     <label>State</label> <input class="form-control" id="Sponsor_State" maxlength="128" name="Sponsor_State" type="text" value="">
                   </div>
                 </div>
               </div>
               <div class="row">
-                <div class="col-sm-6">
+                <div class="col-sm-6 half col-2">
                   <div class="form-group">
                     <label>Postal Code</label> <input class="form-control" id="Sponsor_PostalCode" maxlength="50" name="Sponsor_PostalCode" type="text" value="">
                   </div>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-6 half col-2">
                   <div class="form-group">
                     <label>Country</label> <select class="chosen-select form-control form-control-name" id="Sponsor_Country" name="Sponsor_Country">
                       <option value="Aruba">
@@ -1019,7 +1020,7 @@
           </div>
         </div>
       </div>
-      <div class="row" style="display:none;">
+      <div class="row" style="">
         <div class="col-lg-12">
           <div class="ibox float-e-margins">
             <div class="ibox-content">
@@ -1038,5 +1039,13 @@
       </div>
     </form>
   </div>
+</section>
+<section>
+    <div class="button">
+      <a id="btnFormBack" class="secondary">Previous Step</a>
+    </div>
+    <div class="button">
+      <a id="btnFormNext" class="secondary">Next Step</a>
+    </div>
 </section>
 <?php get_footer(); ?>

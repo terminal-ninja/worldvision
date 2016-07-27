@@ -1,31 +1,43 @@
 //
 .news
   section
-    figure
-      width: $two-fifths
-    article
-      width: $three-fifths
-      h2
-        margin-top: 0
-      // .byline
-      p
-        margin-top: 0
-        color: black
-        font-weight: 600
-      .button
-        padding-top: 25px
-        width: 60%
-        a
-          padding: 12px 60px
+    // figure
+    //   width: $two-fifths
+    // article
+    //   width: $three-fifths
+    h2
+      margin-top: 0
+      margin-bottom: 0.5em
+    // .byline
+    p
+      margin-top: 0
+      color: black
+      font-weight: 600
+    .button
+      padding-top: 25px
+      width: 60%
+      a
+        padding: 12px 60px
   .button.full-btn
     width: 60%
+// RESPONSIVE
+.news
+  section
+    .button
+      @media screen and (max-width: 480px)
+        width: 80%
+  .button.full-btn
+    @media screen and (max-width: 480px)
+      width: 80%
+
+
 //
 .our-leadership
   .executives, .board
     h2
       // margin-bottom: 0
     .item
-      width: $one-third
+      // width: $one-third
       padding: 0 6%
       .inner
         padding: 5px 12px
@@ -48,8 +60,24 @@
     padding-top: 0
     padding-bottom: 80px
     .item
-      width: $quarter
+      // width: $quarter
       padding: 0 3%
+//RESPONSIVE
+.our-leadership
+  .executives .item
+    @media screen and (max-width: 1024px)
+      width: $half !important
+      padding: 0 6% !important
+      margin-bottom: 30px
+  .board .item
+    @media screen and (max-width: 1024px)
+      margin-bottom: 30px
+      padding: 0 6% !important
+  .executives, .board
+    .item .button
+      @media screen and (max-width: 480px)
+        padding: 13px 8px !important
+
 //
 .our-way
   section
@@ -65,26 +93,34 @@
         color: black
 //
 .donate
-  section
-    .steps
-      position: relative
+  .hero-slider
+    display: none
+  section:nth-child(1)
+    padding-top: 0
+  .container
+    width: 40%
+  .steps
+    position: relative
+    float: left
+    width: 100%
+    margin: 0 auto
+    .line
+      position: absolute
+      height: 2px
+      width: 100%
+      background: $prime-color1
+      top: 15px
+      z-index: -1
+    .fa
       float: left
-      width: 400px
-      margin: 0 auto
-      .line
-        position: absolute
-        height: 2px
-        width: 400px
-        background: $prime-color1
-        top: 15px
-        z-index: -1
-      .fa
-        float: left
-        font-size: 35px
-        color: $prime-color1
-      .fa-circle-thin
-        float: right
-        background: white
+      font-size: 35px
+      color: $prime-color1
+    .fa-circle-thin
+      float: right
+      background: white
+  section .button:nth-child(2)
+    float: right
+    // section
   .form
     background: $grey1
     padding-top: 0
@@ -109,6 +145,18 @@
       // .ibox-content .row
       //   &:nth-child(3)
       //     float: right
+//
+.buy-a-gift
+  iframe
+    height: 2000px
+    .ChooseGift
+      .post-container
+        border: 0 !important
+        border-radius: 0 !important
+        .post-image 
+          height: 240px !important
+
+
 
 
   

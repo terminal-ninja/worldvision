@@ -10,72 +10,6 @@ $home-hero-height: 462px
 $open-sans: Open Sans
 $roboto: "Roboto Condensed"
 
-
-
-// MAIN CONTAINER
-$container-width: 80%
-$margin-center: 0px auto 0px auto
-// SUBPAGE CONTAINER
-$sub-container-width: 1280px
-$sub-container-offset: 1024px
-
-// THE GRID
-$one-sixth: 16.66666%
-$one-fifth: 20%
-$quarter: 25%
-$two-sixths: 33.33333%
-$one-third: 33.33333%
-$two-fifths: 40%
-$half: 50%
-$three-fifths: 60%
-$three-quarter: 75%
-$four-fifths: 80%
-$five-sixths: 83.33333%
-$full: 100%
-$two-thirds: 66.66667%
-
-.full
-  width: 100%
-.container
-  width: $container-width
-  margin: 0 auto
-  +clearfix
-.quarter
-  width: $quarter
-  float: left
-.half
-  width: $half
-  float: left
-  @media screen and (max-width: 768px)
-    width: $full
-.three-quarter
-  width: $three-quarter
-  float: left
-.full
-  width: $full
-  float: left
-.one-third
-  width: $one-third
-  float: left
-.two-thirds
-  width: $two-thirds
-  float: left
-.one-fifth
-  width: $one-fifth
-  float: left
-.two-fifths
-  width: $two-fifths
-  float: left
-.four-fifths
-  width: $four-fifths
-  float: left
-// body
-//   @include scrollbars(.5em, slategray)
-//   background: $prime-color3
-
-
-figure img
-  width: 100%
 //
 .sub
   text-align: center
@@ -128,13 +62,11 @@ article, figure, figcaption, aside, details, .item, .sub-item
 body, .page
   +clearfix
 
-
-@media screen and (max-width: 768px)
-  $half: 100%
-  article
-    width: $half !important
-
 .no-margin
   margin: 0 auto !important
   padding: 0 !important
-  
+.margin
+  padding: 30px 0
+
+section .conainer
+  width: auto

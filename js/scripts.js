@@ -46,7 +46,6 @@ $(document).ready(function(){
       collapseIcon: '<i class="fa fa-angle-up"></i>'
   });
 
-
   $("#btnOrganization").click(function(){
         $(".Organization").show();
         $(".Individual").hide();
@@ -58,6 +57,16 @@ $(document).ready(function(){
       $(".Individual").show();
       $(this).addClass("prime-color1-bak");
       $("#btnOrganization").removeClass("prime-color1-bak");      
+    });
+
+
+  $("#btnFormBack").click(function(){
+      $(".address").hide();
+      $(".donation").show();
+    });
+  $("#btnFormNext").click(function(){
+      $(".donation").hide();
+      $(".address").show();
     });
 
   

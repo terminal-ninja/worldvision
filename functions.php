@@ -247,12 +247,12 @@ function html5wp_excerpt($length_callback = '', $more_callback = '')
     echo $output;
 }
 
-// Custom View Article link to Post
-function html5_blank_view_article($more)
-{
-    global $post;
-    return '... <a class="view-article" href="' . get_permalink($post->ID) . '">' . __('View Article', 'html5blank') . '</a>';
-}
+// // Custom View Article link to Post
+// function html5_blank_view_article($more)
+// {
+//     global $post;
+//     return '... <a class="view-article" href="' . get_permalink($post->ID) . '">' . __('View Article', 'html5blank') . '</a>';
+// }
 
 // Remove Admin bar
 function remove_admin_bar()
@@ -346,6 +346,11 @@ add_action('get_header', 'enable_threaded_comments'); // Enable Threaded Comment
 add_action('wp_enqueue_scripts', 'html5blank_styles'); // Add Theme Stylesheet
 add_action('init', 'register_html5_menu'); // Add HTML5 Blank Menu
 add_action('init', 'create_post_type_html5'); // Add our HTML5 Blank Custom Post Type
+add_action('init', 'news_post'); // Add our News Post Type
+add_action('init', 'leadership_post'); // Add our Leadership Post Type
+add_action('init', 'our_way_post'); // Add our Our Way Post Type
+add_action('init', 'petitions_post'); // Add our Petition Post Type
+add_action('init', 'fundraise_post'); // Add our Fundraise Post Type
 add_action('widgets_init', 'my_remove_recent_comments_style'); // Remove inline Recent Comment Styles from wp_head()
 add_action('init', 'html5wp_pagination'); // Add our HTML5 Pagination
 
@@ -414,11 +419,12 @@ function create_post_type_html5()
             'view_item' => __('View HTML5 Blank Custom Post', 'html5blank'),
             'search_items' => __('Search HTML5 Blank Custom Post', 'html5blank'),
             'not_found' => __('No HTML5 Blank Custom Posts found', 'html5blank'),
-            'not_found_in_trash' => __('No HTML5 Blank Custom Posts found in Trash', 'html5blank')
+            'not_found_in_trash' => __('No HTML5 Blank Custom Posts found in Trash', 'html5blank'),
         ),
         'public' => true,
         'hierarchical' => true, // Allows your posts to behave like Hierarchy Pages
         'has_archive' => true,
+        'menu_icon'   => 'dashicons-images-alt2',
         'supports' => array(
             'title',
             'editor',
@@ -433,6 +439,200 @@ function create_post_type_html5()
     ));
 }
 
+// News Custom Post
+function news_post()
+{
+    register_taxonomy_for_object_type('category', 'news-post'); // Register Taxonomies for Category
+    register_taxonomy_for_object_type('post_tag', 'news-post');
+    register_post_type('news-post', // Register Custom Post Type
+        array(
+        'labels' => array(
+            'name' => __('News', 'news-post'), // Rename these to suit
+            'singular_name' => __('News Post', 'news-post'),
+            'add_new' => __('Add New', 'news-post'),
+            'add_new_item' => __('Add New News Post', 'news-post'),
+            'edit' => __('Edit', 'news-post'),
+            'edit_item' => __('Edit News Post', 'news-post'),
+            'new_item' => __('New News Post', 'news-post'),
+            'view' => __('View News Post', 'news-post'),
+            'view_item' => __('View News Post', 'news-post'),
+            'search_items' => __('Search News Post', 'news-post'),
+            'not_found' => __('No News Posts found', 'news-post'),
+            'not_found_in_trash' => __('No News Posts found in Trash', 'news-post')
+        ),
+        'public' => true,
+        'hierarchical' => true, // Allows your posts to behave like Hierarchy Pages
+        'has_archive' => true,
+        'menu_icon'   => 'dashicons-id-alt',
+        'supports' => array(
+            'title',
+            'editor',
+            'excerpt',
+            'thumbnail'
+        ), // Go to Dashboard Custom HTML5 Blank post for supports
+        'can_export' => true, // Allows export in Tools > Export
+        'taxonomies' => array(
+            'post_tag',
+            'category'
+        ) // Add Category and Post Tags support
+    ));
+}
+
+// Leadership Custom Post
+function leadership_post()
+{
+    register_taxonomy_for_object_type('category', 'leadership'); // Register Taxonomies for Category
+    register_taxonomy_for_object_type('post_tag', 'leadership');
+    register_post_type('leadership', // Register Custom Post Type
+        array(
+        'labels' => array(
+            'name' => __('Leadership', 'leadership'), // Rename these to suit
+            'singular_name' => __('Leadership Post', 'leadership'),
+            'add_new' => __('Add New', 'leadership'),
+            'add_new_item' => __('Add New Leadership Post', 'leadership'),
+            'edit' => __('Edit', 'leadership'),
+            'edit_item' => __('Edit Leadership Post', 'leadership'),
+            'new_item' => __('New Leadership Post', 'leadership'),
+            'view' => __('View Leadership Post', 'leadership'),
+            'view_item' => __('View Leadership Post', 'leadership'),
+            'search_items' => __('Search Leadership Post', 'leadership'),
+            'not_found' => __('No Leadership Posts found', 'leadership'),
+            'not_found_in_trash' => __('No Leadership Posts found in Trash', 'leadership')
+        ),
+        'public' => true,
+        'hierarchical' => true, // Allows your posts to behave like Hierarchy Pages
+        'has_archive' => true,
+        'menu_icon'   => 'dashicons-groups',
+        'supports' => array(
+            'title',
+            'editor',
+            'excerpt',
+            'thumbnail'
+        ), // Go to Dashboard Custom HTML5 Blank post for supports
+        'can_export' => true, // Allows export in Tools > Export
+        'taxonomies' => array(
+            'post_tag',
+            'category'
+        ) // Add Category and Post Tags support
+    ));
+}
+
+// Our Way Custom Post
+function our_way_post()
+{
+    register_taxonomy_for_object_type('category', 'our-way'); // Register Taxonomies for Category
+    register_taxonomy_for_object_type('post_tag', 'our-way');
+    register_post_type('our-way', // Register Custom Post Type
+        array(
+        'labels' => array(
+            'name' => __('Our Way', 'our-way'), // Rename these to suit
+            'singular_name' => __('Our Way Post', 'our-way'),
+            'add_new' => __('Add New', 'our-way'),
+            'add_new_item' => __('Add New Our Way Post', 'our-way'),
+            'edit' => __('Edit', 'our-way'),
+            'edit_item' => __('Edit Our Way Post', 'our-way'),
+            'new_item' => __('New Our Way Post', 'our-way'),
+            'view' => __('View Our Way Post', 'our-way'),
+            'view_item' => __('View Our Way Post', 'our-way'),
+            'search_items' => __('Search Our Way Post', 'our-way'),
+            'not_found' => __('No Our Way Posts found', 'our-way'),
+            'not_found_in_trash' => __('No Our Way Posts found in Trash', 'our-way')
+        ),
+        'public' => true,
+        'hierarchical' => true, // Allows your posts to behave like Hierarchy Pages
+        'has_archive' => true,
+        'menu_icon'   => 'dashicons-playlist-video',
+        'supports' => array(
+            'title',
+            'editor',
+            'excerpt',
+            'thumbnail'
+        ), // Go to Dashboard Custom HTML5 Blank post for supports
+        'can_export' => true, // Allows export in Tools > Export
+        'taxonomies' => array(
+            'post_tag',
+            'category'
+        ) // Add Category and Post Tags support
+    ));
+}
+
+// Petitions Custom Post
+function petitions_post()
+{
+    register_taxonomy_for_object_type('category', 'petition-post'); // Register Taxonomies for Category
+    register_taxonomy_for_object_type('post_tag', 'petition-post');
+    register_post_type('petition-post', // Register Custom Post Type
+        array(
+        'labels' => array(
+            'name' => __('Petitions', 'petition-post'), // Rename these to suit
+            'singular_name' => __('Petition Post', 'petition-post'),
+            'add_new' => __('Add New', 'petition-post'),
+            'add_new_item' => __('Add New Petition Post', 'petition-post'),
+            'edit' => __('Edit', 'petition-post'),
+            'edit_item' => __('Edit Petition Post', 'petition-post'),
+            'new_item' => __('New Petition Post', 'petition-post'),
+            'view' => __('View Petition Post', 'petition-post'),
+            'view_item' => __('View Petition Post', 'petition-post'),
+            'search_items' => __('Search Petition Post', 'petition-post'),
+            'not_found' => __('No Petition Posts found', 'petition-post'),
+            'not_found_in_trash' => __('No Petition Posts found in Trash', 'petition-post')
+        ),
+        'public' => true,
+        'hierarchical' => true, // Allows your posts to behave like Hierarchy Pages
+        'has_archive' => true,
+        'menu_icon'   => 'dashicons-thumbs-up',
+        'supports' => array(
+            'title',
+            'editor',
+            'excerpt',
+            'thumbnail'
+        ), // Go to Dashboard Custom HTML5 Blank post for supports
+        'can_export' => true, // Allows export in Tools > Export
+        'taxonomies' => array(
+            'post_tag',
+            'category'
+        ) // Add Category and Post Tags support
+    ));
+}
+
+// Fundraise Custom Post
+function fundraise_post()
+{
+    register_taxonomy_for_object_type('category', 'fundraise-post'); // Register Taxonomies for Category
+    register_taxonomy_for_object_type('post_tag', 'fundraise-post');
+    register_post_type('fundraise-post', // Register Custom Post Type
+        array(
+        'labels' => array(
+            'name' => __('Fundraise', 'fundraise-post'), // Rename these to suit
+            'singular_name' => __('Fundraise Post', 'fundraise-post'),
+            'add_new' => __('Add New', 'fundraise-post'),
+            'add_new_item' => __('Add New Fundraise Post', 'fundraise-post'),
+            'edit' => __('Edit', 'fundraise-post'),
+            'edit_item' => __('Edit Fundraise Post', 'fundraise-post'),
+            'new_item' => __('New Fundraise Post', 'fundraise-post'),
+            'view' => __('View Fundraise Post', 'fundraise-post'),
+            'view_item' => __('View Fundraise Post', 'fundraise-post'),
+            'search_items' => __('Search Fundraise Post', 'fundraise-post'),
+            'not_found' => __('No Fundraise Posts found', 'fundraise-post'),
+            'not_found_in_trash' => __('No Fundraise Posts found in Trash', 'fundraise-post')
+        ),
+        'public' => true,
+        'hierarchical' => true, // Allows your posts to behave like Hierarchy Pages
+        'has_archive' => true,
+        'menu_icon'   => 'dashicons-star-filled',
+        'supports' => array(
+            'title',
+            'editor',
+            'excerpt',
+            'thumbnail'
+        ), // Go to Dashboard Custom HTML5 Blank post for supports
+        'can_export' => true, // Allows export in Tools > Export
+        'taxonomies' => array(
+            'post_tag',
+            'category'
+        ) // Add Category and Post Tags support
+    ));
+}
 /*------------------------------------*\
 	ShortCode Functions
 \*------------------------------------*/
@@ -464,7 +664,8 @@ function ninja_slider()
      }
     else 
     {
-       get_template_part('image-slider'); 
+        echo "";
+       //get_template_part('image-slider'); 
     }
 }
 

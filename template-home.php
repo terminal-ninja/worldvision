@@ -1,22 +1,13 @@
 <?php /* Template Name: Home Page Template */ get_header(); ?>
   
   <section class="work">
-    <article>
+    <article class="two-thirds">
       <h2 class="heading">Where we work</h2>
-      <div class="item">
-      
-        <?php $folio_loop = new WP_Query( array( 'portfolio_categories' => 'image-slider-1', 'post_type' => 'html5-blank', 'posts_per_page' => get_post_meta($post->ID, 'ep_portfolio_posts_per_page', true), 'orderby' => 'menu_order' ) ); ?>
-
-    <?php while ( $folio_loop->have_posts() ) : $folio_loop->the_post(); ?>
-
-    <?php endwhile; ?>
-
-      </div>
       <div class="item">
         <iframe src="https://www.google.com/maps/d/embed?mid=zFZufeCTwLWM.kt8PvwfSEW5U" width="100%" height="290px"></iframe>
       </div>
     </article>
-    <article>
+    <article class="one-third">
       <h2 class="heading">How we work</h2>
       <main class="hero-carousel">
         <ul class="bxslider">
@@ -51,11 +42,11 @@
 
   <section class="inspired">
     <div class="container">
-      <article class="white">
+      <article class="white four-fifths">
       <h2>Inspired To See No Child Without</h2>
         <p>World Vision's Child Sponsorship programme changes the lives of thousands of children every year. Our vision of creating a better world for our children works on the simple yet powerful principle that the best way to change the life of a needy child is to change the world in which he/she lives!</p>
       </article>
-      <div class="button">
+      <div class="button one-fifth">
         <a href="#" class="primary primary-inv lrg">SPONSOR</a>
       </div>
     </div>
@@ -64,7 +55,7 @@
   <h2 class="heading">Our Way</h2>
 
   <section class="ourway black">
-    <article class="center">
+    <article class="center half">
       <figure class="icon-heading">
         <img class="heading" src="<?php echo get_template_directory_uri(); ?>/img/icons/heart.png" alt="">
       </figure>
@@ -78,7 +69,7 @@
         <a href="#" class="secondary">DONATE</a>
       </div>
     </article>
-    <article class="center">
+    <article class="center half">
       <figure class="icon-heading">
         <img class="heading" src="<?php echo get_template_directory_uri(); ?>/img/icons/book.png" alt="">
       </figure>
@@ -103,7 +94,7 @@
         <a href="#" class="secondary">DONATE</a>
       </div>
     </article>
-    <article class="center">
+    <article class="center half">
       <figure class="icon-heading">
         <img class="heading" src="<?php echo get_template_directory_uri(); ?>/img/icons/child.png" alt="">
       </figure>
@@ -118,7 +109,7 @@
         <a href="#" class="secondary">DONATE</a>
       </div>
     </article>
-    <article class="center">
+    <article class="center half">
       <figure class="icon-heading">
         <img  src="<?php echo get_template_directory_uri(); ?>/img/icons/tap.png" alt="">
       </figure>

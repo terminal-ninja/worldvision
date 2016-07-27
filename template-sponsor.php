@@ -1,8 +1,8 @@
 <?php /* Template Name: Sponsor Template */ get_header(); ?>
 
   <h2 class="heading">Sponsor a Child</h2>
-  
-  <section>
+  <iframe src="http://154.0.174.147:8088/wvusertest/" width="100%" height="980" frameborder="0"> </iframe>
+  <!-- <section>
     <select name="" id=""></select>
     <select name="" id=""></select>
     <select name="" id=""></select>
@@ -58,7 +58,7 @@
           <a href="" class="secondary">View</a>
         </div>
       </div>
-    </div>
+    </div> -->
     
   </section>
 

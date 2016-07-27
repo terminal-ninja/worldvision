@@ -3,26 +3,22 @@
   <h2 class="heading">Our Way</h2>
 
   <section>
+    <?php 
+      $args = array( 'post_type' => 'our-way', 'posts_per_page' => -1 );
+      $loop = new WP_Query( $args );
+      while ( $loop->have_posts() ) : $loop->the_post(); 
+    ?>
     <div class="item col-2">
       <figure>
-        <img class="heading" src="<?php echo get_template_directory_uri(); ?>/img/kids4.jpg" alt="">
+        <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('large'); ?></a>
       </figure>
-      <h3>Health</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque dolor praesentium alias similique nam excepturi deleniti doloribus magni repellat, incidunt dolorum adipisci asperiores voluptatibus modi tempore nisi, quisquam tempora veritatis!</p>
+      <h3><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
+      <p><?php the_excerpt(); ?></p>
       <div class="button full-btn">
-        <a href="#" class="secondary">CLICK HERE TO VIEW HEALTH REPORT</a>
+        <a href="<?php the_permalink(); ?>" class="secondary">CLICK HERE TO VIEW HEALTH REPORT</a>
       </div>
     </div>
-    <div class="item col-2">
-      <figure>
-        <img class="heading" src="<?php echo get_template_directory_uri(); ?>/img/kids4.jpg" alt="">
-      </figure>
-      <h3>Health</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque dolor praesentium alias similique nam excepturi deleniti doloribus magni repellat, incidunt dolorum adipisci asperiores voluptatibus modi tempore nisi, quisquam tempora veritatis!</p>
-      <div class="button full-btn">
-        <a href="#" class="secondary">CLICK HERE TO VIEW HEALTH REPORT</a>
-      </div>
-    </div>
+    <?php endwhile; ?>
   </section> 
 
 <?php get_footer(); ?>

@@ -8,96 +8,49 @@
   <div class="container center">
     <h2 class="heading-grey">Executive Team</h2>
   </div>
+  
   <section class="executives no-margin">
-    <div class="item">
+    <?php 
+      $args = array( 'post_type' => 'leadership', 'category_name' => 'executive-team', 'posts_per_page' => -1 );
+      $loop = new WP_Query( $args );
+      while ( $loop->have_posts() ) : $loop->the_post(); 
+    ?>
+    <div class="item one-third">
       <figure>
-        <img src="<?php echo get_template_directory_uri(); ?>/img/dr-rudzani-muloiwa.jpg" alt="">
+        <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('large'); ?></a>
       </figure>
       <div class="inner">
-        <h3>Paula Barnard</h3>
+        <h3><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
         <h6>CEO</h6>
       </div>
       <div class="button full-btn">
-        <a href="#" class="secondary">View</a>
+        <a href="<?php the_permalink(); ?>" class="secondary">View</a>
       </div>
     </div>
-    <div class="item">
-      <figure>
-        <img src="<?php echo get_template_directory_uri(); ?>/img/dr-rudzani-muloiwa.jpg" alt="">
-      </figure>
-      <div class="inner">
-        <h3>Paula Barnard</h3>
-        <h6>CEO</h6>
-      </div>
-      <div class="button full-btn">
-        <a href="#" class="secondary">View</a>
-      </div>
-    </div>
-    <div class="item">
-      <figure>
-        <img src="<?php echo get_template_directory_uri(); ?>/img/dr-rudzani-muloiwa.jpg" alt="">
-      </figure>
-      <div class="inner">
-        <h3>Paula Barnard</h3>
-        <h6>CEO</h6>
-      </div>
-      <div class="button full-btn">
-        <a href="#" class="secondary">View</a>
-      </div>
-    </div>
+    <?php endwhile; ?>
   </section>
   <section class="container center">
     <h2 class="heading-grey">Our Board</h2>
   </section>
   <section class="board">
-    <div class="item">
+    <?php 
+      $args = array( 'post_type' => 'leadership', 'category_name' => 'our-board', 'posts_per_page' => -1 );
+      $loop = new WP_Query( $args );
+      while ( $loop->have_posts() ) : $loop->the_post(); 
+    ?>
+    <div class="item quarter">
       <figure>
-        <img src="<?php echo get_template_directory_uri(); ?>/img/dr-rudzani-muloiwa.jpg" alt="">
+        <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('large'); ?></a>
       </figure>
       <div class="inner">
-        <h3>Paula Barnard</h3>
+        <h3><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
         <h6>CEO</h6>
       </div>
       <div class="button full-btn">
-        <a href="#" class="secondary">View</a>
+        <a href="<?php the_permalink(); ?>" class="secondary">View</a>
       </div>
     </div>
-    <div class="item">
-      <figure>
-        <img src="<?php echo get_template_directory_uri(); ?>/img/dr-rudzani-muloiwa.jpg" alt="">
-      </figure>
-      <div class="inner">
-        <h3>Paula Barnard</h3>
-        <h6>CEO</h6>
-      </div>
-      <div class="button full-btn">
-        <a href="#" class="secondary">View</a>
-      </div>
-    </div>
-    <div class="item">
-      <figure>
-        <img src="<?php echo get_template_directory_uri(); ?>/img/dr-rudzani-muloiwa.jpg" alt="">
-      </figure>
-      <div class="inner">
-        <h3>Paula Barnard</h3>
-        <h6>CEO</h6>
-      </div>
-      <div class="button full-btn">
-        <a href="#" class="secondary">View</a>
-      </div>
-    </div>
-    <div class="item">
-      <figure>
-        <img src="<?php echo get_template_directory_uri(); ?>/img/dr-rudzani-muloiwa.jpg" alt="">
-      </figure>
-      <div class="inner">
-        <h3>Paula Barnard</h3>
-        <h6>CEO</h6>
-      </div>
-      <div class="button full-btn">
-        <a href="#" class="secondary">View</a>
-      </div>
-    </div>
+    <?php endwhile; ?>
   </section>
   
 
