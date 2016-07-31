@@ -12,7 +12,7 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente excepturi recusandae laborum quos ea vitae perferendis dolores molestiae neque, nesciunt eum delectus illo quo pariatur animi, nostrum iste nemo et.</p>
     </article>
   </section>
-
+ 
   <section class="inspired">
     <div class="container">
       <article class="white four-fifths">
@@ -30,12 +30,16 @@
   </div>
 
   <section class="center black">
+    <?php 
+      $args = array( 'post_type' => 'fundraise', 'posts_per_page' => -1 );
+      $loop = new WP_Query( $args );
+      while ( $loop->have_posts() ) : $loop->the_post(); 
+    ?>
     <article class="col-2 half">
-      <h2 class="grey">Dedicate a Special Event</h2>
+      <h2 class="grey"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+      <p><?php the_date(); ?></p>
     </article>
-    <article class="col-2 half">
-      <h2 class="grey">Dedicate a Special Event</h2>
-    </article>
+    <?php endwhile; ?>
   </section>
 
 <?php get_footer(); ?>

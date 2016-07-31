@@ -1,16 +1,20 @@
 <?php /* Template Name: Petition Template */ get_header(); ?>
 
   <h2 class="heading">Sign the Petition</h2>
-  
+  <?php 
+    $args = array( 'post_type' => 'petition', 'posts_per_page' => -1 );
+    $loop = new WP_Query( $args );
+    while ( $loop->have_posts() ) : $loop->the_post(); 
+  ?>
   <section>
     <figure class="col-3 quarter">
-      <img src="<?php echo get_template_directory_uri(); ?>/img/work.jpg" alt="">
+      <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('large'); ?></a>
     </figure>
     <article class="col-3 half">
-      <h3 class="prime-color1">Child Health Now Campaign</h3>
-      <p class="black">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit autem cumque, rem reiciendis iure molestias temporibus amet ullam non cupiditate. A praesentium autem accusamus, laborum, minus odio obcaecati officiis placeat.</p>
+      <h3 class="prime-color1"><?php the_title(); ?></h3>
+      <p class="black"><?php the_excerpt(); ?></p>
       <div class="button">
-        <a href="" class="secondary sml">READ MORE</a>
+        <a href="<?php the_permalink(); ?>" class="secondary">READ MORE</a>
       </div>
     </article>
     <aside class="col-3 center quarter">
@@ -26,5 +30,6 @@
       </div>
     </aside>
   </section>
+  <?php endwhile; ?>
 
 <?php get_footer(); ?>
