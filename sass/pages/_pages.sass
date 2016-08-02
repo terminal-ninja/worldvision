@@ -145,16 +145,45 @@
       // .ibox-content .row
       //   &:nth-child(3)
       //     float: right
-//
-.buy-a-gift
-  iframe
-    height: 2000px
-    .ChooseGift
-      .post-container
-        border: 0 !important
-        border-radius: 0 !important
-        .post-image 
-          height: 240px !important
+// 
+.buy-a-gift, .sponsor-a-child
+  .post-container
+    position: relative
+    padding: 10px
+    border: 1px solid #ccc
+    height: 300px
+    ul
+      margin-bottom: 0
+    li
+      display: inline-block
+      margin-left: 0
+    .post-meta a
+      color: $prime-color1 !important
+      font-size: 1.2em
+    .post-option
+      position: absolute
+      bottom: 0
+      left: 0
+      width: 100%
+      text-align: center
+      .list-options
+        list-style-type: none
+        margin-bottom: 10px
+        a
+          padding: 7px 20px !important
+          font-weight: 600 !important
+          font-size: 0.8em !important
+          -webkit-appearance: none !important
+          border: 0 !important
+          background: $prime-color1 !important
+          color: white !important
+          &:hover
+            background: tint($prime-color1, 40%)
+        li:first-child a
+          background: #b35b0c !important
+    .post-desc
+      font-size: 0.8em
+      color: #888
 
 
 

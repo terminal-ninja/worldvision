@@ -1,16 +1,4 @@
 @charset "UTF-8";
-/*
-Theme Name: World Vision
-Theme URI: http://www.ninjatech.marketing
-Author: Ninja
-Author URI: http://www.ninjatech.marketing
-Description: Ninja
-Version: 1.0
-License: Ninja
-License URI: Ninja
-Tags: Ninja
-Text Domain: Ninja
-*/
 /*!
  *  Font Awesome 4.5.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -2552,6 +2540,15 @@ li {
 .prime-color1-bak {
   background: #ff7800; }
 
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0; }
+
+#map {
+  width: 100%;
+  height: 400px; }
+
 .sub {
   text-align: center;
   width: 75%;
@@ -2605,6 +2602,9 @@ body::after, .page::after {
 
 section .conainer {
   width: auto; }
+
+#map {
+  height: 100%; }
 
 /* Bold */
 @font-face {
@@ -7425,11 +7425,12 @@ header.navigation .inner {
       content: "";
       display: table; }
     .hero-slider .overlay .item:nth-child(1) {
-      width: 400px;
+      width: 500px;
       margin-right: 50px; }
     .hero-slider .overlay .item:nth-child(2) {
       background: rgba(255, 255, 255, 0.8);
-      padding: 10px 10px 30px 10px; }
+      padding: 10px 10px 30px 10px;
+      width: 371px; }
       .hero-slider .overlay .item:nth-child(2) figure {
         width: 350px;
         height: 233px;
@@ -7482,7 +7483,7 @@ header.navigation .inner {
 
 .ourway article {
   padding: 20px;
-  min-height: 360px;
+  min-height: 420px;
   border: 2px solid white; }
   .ourway article .button {
     padding: 40px; }
@@ -7493,7 +7494,8 @@ header.navigation .inner {
   .ourway article:nth-child(2), .ourway article:nth-child(4) {
     background: #ededed; }
   .ourway article:nth-child(3) {
-    width: 100%; }
+    width: 100%;
+    min-height: 320px; }
   .ourway article img {
     display: inline; }
   .ourway article:nth-child(5) ul {
@@ -7819,7 +7821,12 @@ header.navigation ul.slimmenu {
   .home .work article:nth-child(2) .heading:before, .home .work article:nth-child(2) .icon-heading:before, .home .work article:nth-child(2) .heading:after, .home .work article:nth-child(2) .icon-heading:after {
     width: 10%; }
 .home .work article .bxslider figure {
-  width: 40%; }
+  width: 40%;
+  height: 120px;
+  overflow: hidden; }
+  .home .work article .bxslider figure img {
+    width: auto;
+    height: 100%; }
 .home .work article .bxslider h3 {
   width: 60%;
   float: left;
@@ -7850,6 +7857,10 @@ header.navigation ul.slimmenu {
     float: right;
     text-align: center;
     padding: 30px; }
+    .home .about article h2 {
+      margin-top: 10px; }
+    .home .about article p, .home .about article footer .top .item a, footer .top .item .home .about article a {
+      margin-top: 0; }
     .home .about article .item {
       width: 317px;
       margin: 0 auto;
@@ -8033,12 +8044,42 @@ header.navigation ul.slimmenu {
   .donate .form .form-pg-1 .row {
     padding: 50px 0; }
 
-.buy-a-gift iframe {
-  height: 2000px; }
-  .buy-a-gift iframe .ChooseGift .post-container {
-    border: 0 !important;
-    border-radius: 0 !important; }
-    .buy-a-gift iframe .ChooseGift .post-container .post-image {
-      height: 240px !important; }
+.buy-a-gift .post-container, .sponsor-a-child .post-container {
+  position: relative;
+  padding: 10px;
+  border: 1px solid #ccc;
+  height: 300px; }
+  .buy-a-gift .post-container ul, .sponsor-a-child .post-container ul {
+    margin-bottom: 0; }
+  .buy-a-gift .post-container li, .sponsor-a-child .post-container li {
+    display: inline-block;
+    margin-left: 0; }
+  .buy-a-gift .post-container .post-meta a, .sponsor-a-child .post-container .post-meta a {
+    color: #ff7800 !important;
+    font-size: 1.2em; }
+  .buy-a-gift .post-container .post-option, .sponsor-a-child .post-container .post-option {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center; }
+    .buy-a-gift .post-container .post-option .list-options, .sponsor-a-child .post-container .post-option .list-options {
+      list-style-type: none;
+      margin-bottom: 10px; }
+      .buy-a-gift .post-container .post-option .list-options a, .sponsor-a-child .post-container .post-option .list-options a {
+        padding: 7px 20px !important;
+        font-weight: 600 !important;
+        font-size: 0.8em !important;
+        -webkit-appearance: none !important;
+        border: 0 !important;
+        background: #ff7800 !important;
+        color: white !important; }
+        .buy-a-gift .post-container .post-option .list-options a:hover, .sponsor-a-child .post-container .post-option .list-options a:hover {
+          background: #ffae66; }
+      .buy-a-gift .post-container .post-option .list-options li:first-child a, .sponsor-a-child .post-container .post-option .list-options li:first-child a {
+        background: #b35b0c !important; }
+  .buy-a-gift .post-container .post-desc, .sponsor-a-child .post-container .post-desc {
+    font-size: 0.8em;
+    color: #888; }
 
 /*# sourceMappingURL=style.css.map */

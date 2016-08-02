@@ -2,7 +2,7 @@
 
   <h2 class="heading">Sign the Petition</h2>
   <?php 
-    $args = array( 'post_type' => 'petition', 'posts_per_page' => -1 );
+    $args = array( 'post_type' => 'petition-post', 'posts_per_page' => -1 );
     $loop = new WP_Query( $args );
     while ( $loop->have_posts() ) : $loop->the_post(); 
   ?>
@@ -11,7 +11,7 @@
       <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('large'); ?></a>
     </figure>
     <article class="col-3 half">
-      <h3 class="prime-color1"><?php the_title(); ?></h3>
+      <h3 class="prime-color1"><a href="<?php the_permalink(); ?>" ><?php the_title(); ?></a></h3>
       <p class="black"><?php the_excerpt(); ?></p>
       <div class="button">
         <a href="<?php the_permalink(); ?>" class="secondary">READ MORE</a>

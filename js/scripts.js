@@ -27,7 +27,7 @@ $(document).ready(function(){
     adaptiveHeight: true,
     responsive: true,
     pause: 5000,
-    auto: true,
+    auto: false,
     onSliderLoad: function(){
       $('.bxslider').css('visibility', 'visible');
     }
@@ -45,6 +45,7 @@ $(document).ready(function(){
       expandIcon: '<i class="fa fa-angle-down"></i>',
       collapseIcon: '<i class="fa fa-angle-up"></i>'
   });
+
 
   $("#btnOrganization").click(function(){
         $(".Organization").show();
@@ -71,5 +72,6 @@ $(document).ready(function(){
 
   
 });
+
 
 

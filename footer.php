@@ -75,6 +75,8 @@
 		<script src="<?php echo get_template_directory_uri(); ?>/js/smoothscroll.js"></script>
 		<script src="<?php echo get_template_directory_uri(); ?>/js/jquery.slimmenu.js"></script>
 		<script src="<?php echo get_template_directory_uri(); ?>/js/scripts.js"></script>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDICEtu1Udejl8uFqVKfY5OK6wB_7rKoME&callback=initMap"></script>
+		<script src="<?php echo get_template_directory_uri(); ?>/js/custom-map.js"></script>
 
 	</body>
 </html>

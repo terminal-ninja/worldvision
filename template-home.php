@@ -1,11 +1,29 @@
 <?php /* Template Name: Home Page Template */ get_header(); ?>
-  
+
+
+<style>
+  html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  }
+#map {
+  width: 100%;
+  height: 400px;
+  }
+</style>
+
+
+
+
+        
+
   <section class="work">
     <article class="two-thirds">
+
       <h2 class="heading">Where we work</h2>
-      <div class="item">
-        <iframe src="https://www.google.com/maps/d/embed?mid=zFZufeCTwLWM.kt8PvwfSEW5U" width="100%" height="290px"></iframe>
-      </div>
+      <div id="map"></div>
+
     </article>
     <article class="one-third">
       <h2 class="heading">How we work</h2>
@@ -47,7 +65,7 @@
         <p>World Vision's Child Sponsorship programme changes the lives of thousands of children every year. Our vision of creating a better world for our children works on the simple yet powerful principle that the best way to change the life of a needy child is to change the world in which he/she lives!</p>
       </article>
       <div class="button one-fifth">
-        <a href="#" class="primary primary-inv lrg">SPONSOR</a>
+        <a href="<?php echo get_home_url(); ?>/sponsor-a-child" class="primary primary-inv lrg">SPONSOR</a>
       </div>
     </div>
   </section>
@@ -66,7 +84,7 @@
         <li>For the Child.</li>
       </ul>
       <div class="button block">
-        <a href="#" class="secondary">DONATE</a>
+        <a href="<?php echo get_home_url(); ?>/donate" class="secondary">DONATE</a>
       </div>
     </article>
     <article class="center half">
@@ -81,7 +99,7 @@
         <li>A special focus on Early Childhood Development (ECD) in partnership with the department of Education</li>
       </ul>
       <div class="button block">
-        <a href="#" class="secondary">DONATE</a>
+        <a href="<?php echo get_home_url(); ?>/donate" class="secondary">DONATE</a>
       </div>
     </article>
     <article class="center">
@@ -91,7 +109,7 @@
       <h2>Economic Development</h2>
       <p>Building capacities of disadvantaged communities and providing initial resource for them to start small businesses like:</p>
       <div class="button block">
-        <a href="#" class="secondary">DONATE</a>
+        <a href="<?php echo get_home_url(); ?>/donate" class="secondary">DONATE</a>
       </div>
     </article>
     <article class="center half">
@@ -106,7 +124,7 @@
         <li>Building life skills and resilience to protect children (with a specific focus on the spiritual nurture and active participation of the children themselves as agents of change)</li>
       </ul>
       <div class="button block">
-        <a href="#" class="secondary">DONATE</a>
+        <a href="<?php echo get_home_url(); ?>/donate" class="secondary">DONATE</a>
       </div>
     </article>
     <article class="center half">
@@ -122,7 +140,7 @@
         <li>Global 6k Walk/Run for Water</li>
       </ul>
       <div class="button block">
-        <a href="#" class="secondary">DONATE</a>
+        <a href="<?php echo get_home_url(); ?>/donate" class="secondary">DONATE</a>
       </div>
     </article>
   </section>
@@ -134,13 +152,13 @@
         </p>
         <div class="item">
           <div class="button">
-            <a href="#" class="primary primary-inv">LEARN</a>
+            <a href="<?php echo get_home_url(); ?>/donate" class="primary primary-inv">LEARN</a>
           </div>
           <div class="button">
-            <a href="#" class="primary primary-inv">DONATE</a>
+            <a href="<?php echo get_home_url(); ?>/who-we-are" class="primary primary-inv">DONATE</a>
           </div>
           <div class="button">
-            <a href="#" class="primary primary-inv">SPONSOR</a>
+            <a href="<?php echo get_home_url(); ?>/sponsor-a-child" class="primary primary-inv">SPONSOR</a>
           </div>
         </div>
       </article>
@@ -213,4 +231,7 @@
       </figure>
     </article>
   </section> -->
+
+
+
 <?php get_footer(); ?>
