@@ -8044,29 +8044,29 @@ header.navigation ul.slimmenu {
   .donate .form .form-pg-1 .row {
     padding: 50px 0; }
 
-.buy-a-gift .post-container, .sponsor-a-child .post-container {
+.post-container {
   position: relative;
   padding: 10px;
   border: 1px solid #ccc;
   height: 300px; }
-  .buy-a-gift .post-container ul, .sponsor-a-child .post-container ul {
+  .post-container ul {
     margin-bottom: 0; }
-  .buy-a-gift .post-container li, .sponsor-a-child .post-container li {
+  .post-container li {
     display: inline-block;
     margin-left: 0; }
-  .buy-a-gift .post-container .post-meta a, .sponsor-a-child .post-container .post-meta a {
+  .post-container .post-meta a {
     color: #ff7800 !important;
     font-size: 1.2em; }
-  .buy-a-gift .post-container .post-option, .sponsor-a-child .post-container .post-option {
+  .post-container .post-option {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     text-align: center; }
-    .buy-a-gift .post-container .post-option .list-options, .sponsor-a-child .post-container .post-option .list-options {
+    .post-container .post-option .list-options {
       list-style-type: none;
       margin-bottom: 10px; }
-      .buy-a-gift .post-container .post-option .list-options a, .sponsor-a-child .post-container .post-option .list-options a {
+      .post-container .post-option .list-options a {
         padding: 7px 20px !important;
         font-weight: 600 !important;
         font-size: 0.8em !important;
@@ -8074,12 +8074,15 @@ header.navigation ul.slimmenu {
         border: 0 !important;
         background: #ff7800 !important;
         color: white !important; }
-        .buy-a-gift .post-container .post-option .list-options a:hover, .sponsor-a-child .post-container .post-option .list-options a:hover {
+        .post-container .post-option .list-options a:hover {
           background: #ffae66; }
-      .buy-a-gift .post-container .post-option .list-options li:first-child a, .sponsor-a-child .post-container .post-option .list-options li:first-child a {
+      .post-container .post-option .list-options li:first-child a {
         background: #b35b0c !important; }
-  .buy-a-gift .post-container .post-desc, .sponsor-a-child .post-container .post-desc {
+  .post-container .post-desc {
     font-size: 0.8em;
     color: #888; }
+
+.who-we-are .hero-slider {
+  display: none; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,5 +1,5 @@
 <?php /* Template Name: About Us Template */ get_header(); ?>
-
+  <img src="<?php echo get_template_directory_uri(); ?>/img/kid3.jpg" alt="">
   <h2 class="heading">About Us</h2>
   
   <section class="center">
