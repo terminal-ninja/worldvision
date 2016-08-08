@@ -1,8 +1,9 @@
 //
 .news
   section
-    // figure
-    //   width: $two-fifths
+    figure
+      height: 220px
+      overflow: hidden
     // article
     //   width: $three-fifths
     h2
@@ -64,6 +65,11 @@
       padding: 0 3%
 //RESPONSIVE
 .our-leadership
+  .executives, .board
+    .item
+      height: 450px
+      .inner
+        height: 110px
   .executives .item
     @media screen and (max-width: 1024px)
       width: $half !important
@@ -71,6 +77,7 @@
       margin-bottom: 30px
   .board .item
     @media screen and (max-width: 1024px)
+      width: $half !important
       margin-bottom: 30px
       padding: 0 6% !important
   .executives, .board

@@ -30,9 +30,10 @@
     </section>
   <?php endwhile; ?>
   <section>
-    <div class="button full-btn">
+    <?php get_template_part('pagination'); ?>
+    <!-- <div class="button full-btn">
       <a href="#" class="secondary">LOAD MORE</a>
-    </div>
+    </div> -->
   </section>
 
 <?php get_footer(); ?>

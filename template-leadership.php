@@ -11,7 +11,7 @@
   
   <section class="executives no-margin">
     <?php 
-      $args = array( 'post_type' => 'leadership', 'category_name' => 'executive-team', 'posts_per_page' => -1 );
+      $args = array( 'post_type' => 'leadership', 'category_name' => 'executive-team', 'posts_per_page' => -1, 'order' => 'DESC', 'orderby' => 'modified' );
       $loop = new WP_Query( $args );
       while ( $loop->have_posts() ) : $loop->the_post(); 
     ?>
@@ -20,11 +20,11 @@
         <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('large'); ?></a>
       </figure>
       <div class="inner">
-        <h3><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
-        <h6>CEO</h6>
+        <h4><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h4>
+        </h6>
       </div>
       <div class="button full-btn">
-        <a href="<?php the_permalink(); ?>" class="secondary">View</a>
+        <a class="eModal-post-<?php the_ID();?>" href="<?php the_permalink(); ?>" class="secondary">View</a>
       </div>
     </div>
     <?php endwhile; ?>
@@ -34,7 +34,7 @@
   </section>
   <section class="board">
     <?php 
-      $args = array( 'post_type' => 'leadership', 'category_name' => 'our-board', 'posts_per_page' => -1 );
+      $args = array( 'post_type' => 'leadership', 'category_name' => 'our-board', 'posts_per_page' => -1, 'order' => 'ASC', 'orderby' => 'modified' );
       $loop = new WP_Query( $args );
       while ( $loop->have_posts() ) : $loop->the_post(); 
     ?>
@@ -43,8 +43,8 @@
         <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('large'); ?></a>
       </figure>
       <div class="inner">
-        <h3><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
-        <h6>CEO</h6>
+        <h4><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h4>
+        <h6><?php the_field('title'); ?></h6>
       </div>
       <div class="button full-btn">
         <a href="<?php the_permalink(); ?>" class="secondary">View</a>
