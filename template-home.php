@@ -1,7 +1,7 @@
 <?php /* Template Name: Home Page Template */ get_header(); ?>
 
 
-<style>
+<!-- <style>
   html, body {
   height: 100%;
   margin: 0;
@@ -11,7 +11,7 @@
   width: 100%;
   height: 400px;
   }
-</style>
+</style> -->
 
 
 
@@ -22,37 +22,37 @@
     <article class="two-thirds">
 
       <h2 class="heading">Where we work</h2>
-      <div id="map"></div>
-
+      <!-- <div id="map"></div>
+ --><iframe src="https://www.google.com/maps/d/embed?mid=1p7gn48AbZv0yOAGmTKrG9iokOJQ" width="640" height="480"></iframe>
     </article>
     <article class="one-third">
       <h2 class="heading">How we work</h2>
       <main class="hero-carousel">
         <ul class="bxslider">
-          <?php
-            if( have_rows('custom_slider') ):
-                while ( have_rows('custom_slider') ) : the_row(); ?>
+          <?php 
+            $date = get_the_date('d M Y');
+            $args = array( 'category_name' => 'how-we-work', 'posts_per_page' => -1, 'order' => 'ASC');
+            $loop = new WP_Query( $args );
+            while ( $loop->have_posts() ) : $loop->the_post(); 
+          ?>
                   <li>
                     <div class="item">
                       <figure>
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/work.jpg" alt="">
+                        <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('medium'); ?></a>
                       </figure>
-                      <h3>Kagiso goes to parliament</h3>
+                      <h3><a class="white" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
                     </div>
                     <div class="item">
-                      <p class="black">Teenager Kagiso, previously a World Vision sponsored child from Soweto, was chosen to represent the children of Gauteng at a point sitting of the Annual Nelson Mandela Children’s Fund, and World.</p>
+                      <p class="black"><?php the_excerpt(); ?></p>
                     </div>
                     <div class="item">
-                      <time class="left">27 May 2016</time>
+                      <time class="left"><?php echo $date; ?></time>
                       <div class="button">
-                        <a href="#" class="primary primary-inv sml border">Read More</a>
+                        <a href="<?php the_permalink(); ?>" class="primary primary-inv sml border">Read More</a>
                       </div>
                     </div>
                   </li>
-              <?php endwhile;
-            else :
-            endif;
-          ?>
+              <?php endwhile; ?>
         </ul>
       </main>
     </article>
@@ -152,10 +152,10 @@
         </p>
         <div class="item">
           <div class="button">
-            <a href="<?php echo get_home_url(); ?>/donate" class="primary primary-inv">LEARN</a>
+            <a href="<?php echo get_home_url(); ?>/who-we-are" class="primary primary-inv">LEARN</a>
           </div>
           <div class="button">
-            <a href="<?php echo get_home_url(); ?>/who-we-are" class="primary primary-inv">DONATE</a>
+            <a href="<?php echo get_home_url(); ?>/donate" class="primary primary-inv">DONATE</a>
           </div>
           <div class="button">
             <a href="<?php echo get_home_url(); ?>/sponsor-a-child" class="primary primary-inv">SPONSOR</a>
@@ -164,74 +164,5 @@
       </article>
     </div>
   </section>
-
-  <!-- <section class="content services">
-    <article>
-      <figure>
-        <img src="<?php echo get_template_directory_uri(); ?>/img/icons/services-icon.png" alt="">
-        <h2 class="text">services</h2>
-      </figure>
-      <p>Assist our clients with a Dynamic Product offering, tailored to their specfic needs</p>
-      <div class="button">
-        <a href="#" class="primary">READ MORE</a>
-      </div>
-    </article>
-    <article>
-      <figure>
-        <img src="<?php echo get_template_directory_uri(); ?>/img/icons/benefits-icon.png" alt="">
-        <h2 class="text">benefits</h2>
-      </figure>
-      <p>We have an extensive network of contracted hospitals and other providers throughout Sub-Saharan Africa</p>
-      <div class="button">
-        <a href="#" class="primary">READ MORE</a>
-      </div>
-    </article>
-    <article>
-      <figure>
-        <img src="<?php echo get_template_directory_uri(); ?>/img/icons/specialists-icon.png" alt="">
-        <h2 class="text">specialists</h2>
-      </figure>
-      <p>24 hour access to  wide range of medical specialists can consult at any time of the day</p>
-      <div class="button">
-        <a href="#" class="primary">READ MORE</a>
-      </div>
-    </article>
-  </section>
-
-  <section class="content news">
-    <article>
-      <h2>latest news</h2>
-      <div class="item">
-        <figure>
-          <img src="<?php echo get_template_directory_uri(); ?>/img/news/news1.jpg" alt="">
-        </figure>
-        <h2>Heading 1</h2>
-        <p>Assist our cliebts with a Dynamic Product offering, tailored to their specfic needs</p>
-        <div class="button">
-          <a href="#" class="primary">READ MORE</a>
-        </div>
-      </div>
-    </article>
-     <article>
-      <div class="item">
-        <figure>
-          <img src="<?php echo get_template_directory_uri(); ?>/img/news/news2.jpg" alt="">
-        </figure>
-        <h2>Heading 1</h2>
-        <p>Assist our cliebts with a Dynamic Product offering, tailored to their specfic needs</p>
-        <div class="button">
-          <a href="#" class="primary">READ MORE</a>
-        </div>
-      </div>
-    </article>
-    <article>
-      <h2>areas of operation</h2>
-      <figure>
-        <img src="<?php echo get_template_directory_uri(); ?>/img/areas-operation.png" alt="">
-      </figure>
-    </article>
-  </section> -->
-
-
 
 <?php get_footer(); ?>

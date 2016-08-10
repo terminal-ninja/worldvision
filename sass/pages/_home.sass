@@ -33,10 +33,15 @@
         .item
           &:nth-child(1)
             background: $prime-color1
-      .bx-controls-direction
-        display: none !important
+        .bx-controls-direction
+          .bx-next, .bx-prev
+            background: url(img/hero/controls-work.png) no-repeat -43px -97px !important
+      // .bx-controls-direction
+      //   display: none !important
   .work
     article
+      iframe
+        width: 100% !important
       .item
         &:nth-child(1)
           .heading:before, .heading:after

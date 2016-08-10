@@ -8,17 +8,32 @@
       $loop = new WP_Query( $args );
       while ( $loop->have_posts() ) : $loop->the_post(); 
     ?>
-    <div class="item col-2">
+    <div class="item col-2 half">
       <figure>
-        <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('large'); ?></a>
+        <?php the_field('video'); ?>
       </figure>
       <h3><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
-      <p><?php the_excerpt(); ?></p>
+      <?php the_content(); ?>
       <div class="button full-btn">
-        <a href="<?php the_permalink(); ?>" class="secondary">CLICK HERE TO VIEW HEALTH REPORT</a>
+        <?php 
+          $file = get_field('file');
+          if( $file ): ?>
+            <a class="secondary" href="<?php echo $file['url']; ?>"><?php echo 'CLICK HERE TO VIEW ' . $file['title']; ?></a>
+        <?php endif; ?>
       </div>
     </div>
     <?php endwhile; ?>
   </section> 
 
 <?php get_footer(); ?>
+
+
+<!-- <?php
+if( have_rows('repeater_field_name') ):
+    while ( have_rows('repeater_field_name') ) : the_row();
+        the_sub_field('sub_field_name');
+    endwhile;
+else :
+endif;
+
+?> -->

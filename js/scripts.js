@@ -20,14 +20,14 @@ $(document).ready(function(){
     }
   }
 
-  $( "#whatwebelieve" ).tabs();
+  $( "#partnerTabs" ).tabs();
 
   $('.bxslider').bxSlider({
     pager: false, 
     adaptiveHeight: true,
     responsive: true,
     pause: 5000,
-    auto: false,
+    auto: true,
     onSliderLoad: function(){
       $('.bxslider').css('visibility', 'visible');
     }
@@ -62,12 +62,24 @@ $(document).ready(function(){
 
 
   $("#btnFormBack").click(function(){
-      $(".address").hide();
-      $(".donation").show();
+      $("#AddDet").hide();
+      $("#DonInfo").show();
+      $(this).hide();
+      $("#btnFormNext").show();
+      $('#step2').removeClass("fa-circle")
+      $('#step2').addClass("fa-circle-thin")
+      $('#step1').removeClass("fa-circle-thin")
+      $('#step1').addClass("fa-circle")
     });
   $("#btnFormNext").click(function(){
-      $(".donation").hide();
-      $(".address").show();
+      $("#DonInfo").hide();
+      $("#AddDet").show();
+      $(this).hide();
+      $("#btnFormBack").show();
+      $('#step1').removeClass("fa-circle")
+      $('#step1').addClass("fa-circle-thin")
+      $('#step2').removeClass("fa-circle-thin")
+      $('#step2').addClass("fa-circle")
     });
 
   

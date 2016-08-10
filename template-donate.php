@@ -4,13 +4,13 @@
 
 <section class="center">
   <h2>Inspired To See No Child Without</h2>
-  <p class="black">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim unde fugit nisi iure quisquam, deleniti nam maxime omnis, quam in vitae. Fugit voluptates, eum dignissimos inventore. Nesciunt nam, harum ea.</p>
+  <p class="black">Change a childs’ life today by donating or sponsoring any amount. Just a little can help transform their community and change their world. Help South Africa become a better place.</p>
 </section>
 <div class="container">
   <div class="steps center">
-    <i class="fa fa-circle" aria-hidden="true"></i>
+    <i id="step1" class="fa fa-circle" aria-hidden="true"></i>
       <div class="line"></div>
-    <i class="fa fa-circle-thin" aria-hidden="true"></i>
+    <i id="step2" class="fa fa-circle-thin" aria-hidden="true"></i>
   </div>
 </div>
 <section class="form">
@@ -20,13 +20,13 @@
     <form action="/wvusertest/Donate/DonateIndex" class="box validate" enctype="multipart/form-data" id="form" method="post" name="form">
       <div class="row">
 
-        <div class="donation">
+        <div id="DonInfo">
           <div class="ibox float-e-margins">
             <!-- <div class="ibox-title">
             </div> -->
             <div class="ibox-content">
               <div class="row">
-                <div class="half validate col-2">
+                <div class="half validate col-2" >
                   <label>Donation Amount</label><!-- <label class="required_imp"><b>*</b> --></label>
                   <div class="">
                     <span class="input-group-addon orangeBg"></span> <label>Donation Info</label> <input class="required form-control" data-val="true" data-val-number="The field Sponsor_Amount must be a number." data-val-required="The Sponsor_Amount field is required." id="Sponsor_Amount" maxlength="13" name="Sponsor_Amount" placeholder="Donation Amount" type="text" value="">
@@ -205,7 +205,7 @@
           </div>
         </div>
         <!-- ADDRESS DETAILS -->
-        <div class="col-lg-6 address" style="display:none;">
+        <div class="col-lg-6" style="display:none;" id="AddDet">
           <h4>Address Details</h4>
           <div class="ibox float-e-margins">
             <div class="ibox-title">
@@ -1042,7 +1042,7 @@
 </section>
 <section>
     <div class="button">
-      <a id="btnFormBack" class="secondary">Previous Step</a>
+      <a style="display:none;" id="btnFormBack" class="secondary">Previous Step</a>
     </div>
     <div class="button">
       <a id="btnFormNext" class="secondary">Next Step</a>

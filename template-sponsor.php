@@ -1,7 +1,10 @@
 <?php /* Template Name: Sponsor Template */ get_header(); ?>
 
   <h2 class="heading">Sponsor a Child</h2>
-  <!-- <iframe src="http://154.0.174.147:8088/wvusertest/" width="100%" height="980" frameborder="0"> </iframe> -->
+  <section>
+    <iframe src="http://154.0.174.147:8088/wvusertest/" width="100%" height="980" frameborder="0"> </iframe>
+  </section>
+  
   <section>
    <style>
         .page-heading {
@@ -22,8 +25,8 @@
         min-height: 200px;
     }*/
 </style>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
 <!-- <div class="row ">
     <nav class="navbar padding navbar-static-top white-bg" role="navigation" style="margin-bottom: 0">
         @if (Session["user_id"] != null)
@@ -47,7 +50,7 @@
         </div>
     </nav>
 </div> -->
-<div class="wrapper wrapper-content animated fadeInRight">
+<!-- <div class="wrapper wrapper-content animated fadeInRight">
     <div class="row">
         <div class="col-lg-12">
             <div class="">
@@ -334,7 +337,7 @@
          
        
     })
-</script>
+</script> -->
   <!--   <select name="" id=""></select>
     <select name="" id=""></select>
     <select name="" id=""></select>

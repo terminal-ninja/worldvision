@@ -364,6 +364,7 @@ add_action('init', 'leadership_post'); // Add our Leadership Post Type
 add_action('init', 'our_way_post'); // Add our Our Way Post Type
 add_action('init', 'petitions_post'); // Add our Petition Post Type
 add_action('init', 'fundraise_post'); // Add our Fundraise Post Type
+add_action('init', 'story_post'); // Add our Story Post Type
 add_action('widgets_init', 'my_remove_recent_comments_style'); // Remove inline Recent Comment Styles from wp_head()
 add_action('init', 'html5wp_pagination'); // Add our HTML5 Pagination
 
@@ -646,6 +647,45 @@ function fundraise_post()
         ) // Add Category and Post Tags support
     ));
 }
+
+// Story Custom Post
+function story_post()
+{
+    register_taxonomy_for_object_type('category', 'story-post'); // Register Taxonomies for Category
+    register_taxonomy_for_object_type('post_tag', 'story-post');
+    register_post_type('story-post', // Register Custom Post Type
+        array(
+        'labels' => array(
+            'name' => __('Story', 'story-post'), // Rename these to suit
+            'singular_name' => __('Story Post', 'story-post'),
+            'add_new' => __('Add New', 'story-post'),
+            'add_new_item' => __('Add New Story Post', 'story-post'),
+            'edit' => __('Edit', 'story-post'),
+            'edit_item' => __('Edit Story Post', 'story-post'),
+            'new_item' => __('New Story Post', 'story-post'),
+            'view' => __('View Story Post', 'story-post'),
+            'view_item' => __('View Story Post', 'story-post'),
+            'search_items' => __('Search Story Post', 'story-post'),
+            'not_found' => __('No Story Posts found', 'story-post'),
+            'not_found_in_trash' => __('No Story Posts found in Trash', 'story-post')
+        ),
+        'public' => true,
+        'hierarchical' => true, // Allows your posts to behave like Hierarchy Pages
+        'has_archive' => true,
+        'menu_icon'   => 'dashicons-book',
+        'supports' => array(
+            'title',
+            'editor',
+            'excerpt',
+            'thumbnail'
+        ), // Go to Dashboard Custom HTML5 Blank post for supports
+        'can_export' => true, // Allows export in Tools > Export
+        'taxonomies' => array(
+            'post_tag',
+            'category'
+        ) // Add Category and Post Tags support
+    ));
+}
 /*------------------------------------*\
 	ShortCode Functions
 \*------------------------------------*/
@@ -681,5 +721,11 @@ function ninja_slider()
        //get_template_part('image-slider'); 
     }
 }
+
+//[loop-single]
+function loop_single( $atts ){
+    return "foo and bar";
+}
+add_shortcode( 'loop-single', 'loop_single' );
 
 ?>

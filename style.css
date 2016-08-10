@@ -7381,6 +7381,31 @@ header.navigation .inner {
   -o-transition: fade 0.5s ease;
   transition: fade 0.5s ease; }
 
+.work .bx-wrapper .bx-prev {
+  background: url(img/hero/controls-work.png) no-repeat 0 -41px;
+  left: 6%;
+  height: 40px;
+  top: 305px;
+  -webkit-transition: fade 0.5s ease;
+  -moz-transition: fade 0.5s ease;
+  -ms-transition: fade 0.5s ease;
+  -o-transition: fade 0.5s ease;
+  transition: fade 0.5s ease; }
+.work .bx-wrapper .bx-next {
+  background: url(img/hero/controls-work.png) no-repeat -45px -41px;
+  right: 6%;
+  height: 40px;
+  top: 305px;
+  -webkit-transition: fade 0.5s ease;
+  -moz-transition: fade 0.5s ease;
+  -ms-transition: fade 0.5s ease;
+  -o-transition: fade 0.5s ease;
+  transition: fade 0.5s ease; }
+.work .bx-wrapper .bx-prev:hover {
+  background-position: 0 0; }
+.work .bx-wrapper .bx-next:hover {
+  background-position: -43px 0; }
+
 .bx-wrapper {
   margin: 0 auto 0; }
   .bx-wrapper .bx-viewport {
@@ -7466,6 +7491,22 @@ header.navigation .inner {
   .hero img {
     width: 100%; }
 
+.how-we-work .hero-image {
+  position: relative; }
+  .how-we-work .hero-image .overlay {
+    position: absolute;
+    bottom: 40%;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto; }
+    .how-we-work .hero-image .overlay .hero-heading {
+      color: white;
+      font-size: 70px;
+      margin-bottom: 0; }
+    .how-we-work .hero-image .overlay .sub-title {
+      color: white;
+      font-size: 22px; }
+
 .col-3:nth-child(1) {
   padding-right: 2%; }
 .col-3:nth-child(2) {
@@ -7473,9 +7514,9 @@ header.navigation .inner {
 .col-3:nth-child(3) {
   padding-left: 2%; }
 
-.col-2:nth-child(1) {
+.col-2:nth-child(odd) {
   padding-right: 2%; }
-.col-2:nth-child(2) {
+.col-2:nth-child(even) {
   padding-left: 2%; }
 @media screen and (max-width: 768px) {
   .col-2 {
@@ -7639,10 +7680,14 @@ header.navigation .inner {
         padding: 0 10px; }
   header.navigation .inner .sub-item {
     padding: 18px 10px; }
-header.navigation .current-menu-item-ancestor, header.navigation .current-menu-item a {
-  font-weight: 600 !important;
-  background-color: transparent !important;
+header.navigation .current-menu-item-ancestor a {
+  font-weight: 700 !important;
+  background-color: white !important;
   border-bottom: 1px solid #ff7800 !important; }
+header.navigation .current-menu-item a {
+  font-weight: 700 !important;
+  background-color: transparent !important;
+  border-bottom: 2px solid white !important; }
 header.navigation .menu-collapser {
   display: inline-block;
   position: relative;
@@ -7838,8 +7883,10 @@ header.navigation ul.slimmenu {
   padding: 10px 20px 0 0; }
 .home .work article .bxslider .item:nth-child(1) {
   background: #ff7800; }
-.home .work article .bx-controls-direction {
-  display: none !important; }
+.home .work article .bxslider .bx-controls-direction .bx-next, .home .work article .bxslider .bx-controls-direction .bx-prev {
+  background: url(img/hero/controls-work.png) no-repeat -43px -97px !important; }
+.home .work article iframe {
+  width: 100% !important; }
 @media screen and (max-width: 1024px) {
   .home .work article .item:nth-child(1) .heading:before, .home .work article .item:nth-child(1) .icon-heading:before, .home .work article .item:nth-child(1) .heading:after, .home .work article .item:nth-child(1) .icon-heading:after {
     width: 10%; } }
@@ -8023,13 +8070,16 @@ header.navigation ul.slimmenu {
     background: #ff7800;
     top: 15px;
     z-index: -1; }
-  .donate .steps .fa {
+  .donate .steps #step1 {
     float: left;
     font-size: 35px;
+    background: white;
     color: #ff7800; }
-  .donate .steps .fa-circle-thin {
+  .donate .steps #step2 {
     float: right;
-    background: white; }
+    background: white;
+    font-size: 35px;
+    color: #ff7800; }
 .donate section .button:nth-child(2) {
   float: right; }
 .donate .form {
@@ -8092,5 +8142,33 @@ header.navigation ul.slimmenu {
 
 .who-we-are .hero-slider {
   display: none; }
+
+.how-we-work section .item p, .how-we-work section footer .top .item a, footer .top .how-we-work section .item a {
+  height: 120px; }
+.how-we-work section .item .button a {
+  text-transform: uppercase; }
+.how-we-work section figure {
+  float: none; }
+  .how-we-work section figure iframe {
+    width: 100% !important;
+    height: 290px !important; }
+
+.partner-with-us section figure {
+  width: 300px;
+  margin-bottom: 40px; }
+.partner-with-us section .form {
+  width: 80%;
+  margin: 0 auto; }
+  .partner-with-us section .form #caldera_form_1 {
+    background: #f4f4f4;
+    padding-top: 0;
+    padding: 50px 20%; }
+  .partner-with-us section .form h3 {
+    font-weight: normal;
+    color: white;
+    background: #ff7800;
+    padding: 10px 0;
+    text-align: center;
+    margin: 0; }
 
 /*# sourceMappingURL=style.css.map */

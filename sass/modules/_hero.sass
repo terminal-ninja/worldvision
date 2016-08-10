@@ -13,6 +13,23 @@
     background: url(img/hero/controls.png) no-repeat -43px -97px
     right: 6%
     @include vendor-prefix('transition','fade 0.5s ease')
+.work .bx-wrapper
+  .bx-prev
+    background: url(img/hero/controls-work.png) no-repeat 0 -41px
+    left: 6%
+    height: 40px
+    top: 305px
+    @include vendor-prefix('transition','fade 0.5s ease')
+  .bx-next
+    background: url(img/hero/controls-work.png) no-repeat -45px -41px
+    right: 6%
+    height: 40px
+    top: 305px
+    @include vendor-prefix('transition','fade 0.5s ease')
+  .bx-prev:hover
+    background-position: 0 0
+  .bx-next:hover
+    background-position: -43px 0
 .bx-wrapper
   margin: 0 auto 0
   .bx-viewport
@@ -152,6 +169,22 @@
   padding: 0
   img
     width: 100%
+.how-we-work
+  .hero-image
+    position: relative
+    .overlay
+      position: absolute
+      bottom: 40%
+      text-align: center
+      width: 100%
+      margin: 0 auto
+      .hero-heading
+        color: white
+        font-size: 70px
+        margin-bottom: 0
+      .sub-title
+        color: white
+        font-size: 22px
   // .hero-image
   //   .overlay
   //     @media screen and (max-width: 480px)
