@@ -2606,6 +2606,9 @@ section .conainer {
 #map {
   height: 100%; }
 
+iframe, embed, video {
+  width: 100% !important; }
+
 /* Bold */
 @font-face {
   font-family: Open Sans;
@@ -6917,19 +6920,19 @@ input, select {
   .full-btn a {
     display: block; }
 
-.button, .wysija-submit {
+.button, .wysija-submit, .button div {
   float: left;
   padding: 9px 0px; }
-  .button a, .button button, .button input, .button submit, .wysija-submit a, .wysija-submit button, .wysija-submit input, .wysija-submit submit {
+  .button a, .button button, .button input, .button submit, .wysija-submit a, .wysija-submit button, .wysija-submit input, .wysija-submit submit, .button div a, .button div button, .button div input, .button div submit {
     padding: 12px 18px;
     text-decoration: none;
     font-weight: 700;
     font-size: 0.8em;
     -webkit-appearance: none;
     border: 0; }
-    .button a:hover, .button button:hover, .button input:hover, .button submit:hover, .wysija-submit a:hover, .wysija-submit button:hover, .wysija-submit input:hover, .wysija-submit submit:hover {
+    .button a:hover, .button button:hover, .button input:hover, .button submit:hover, .wysija-submit a:hover, .wysija-submit button:hover, .wysija-submit input:hover, .wysija-submit submit:hover, .button div a:hover, .button div button:hover, .button div input:hover, .button div submit:hover {
       cursor: pointer; }
-    .button a.primary, .button button.primary, .button input.primary, .button submit.primary, .wysija-submit a.primary, .wysija-submit button.primary, .wysija-submit input.primary, .wysija-submit submit.primary {
+    .button a.primary, .button button.primary, .button input.primary, .button submit.primary, .wysija-submit a.primary, .wysija-submit button.primary, .wysija-submit input.primary, .wysija-submit submit.primary, .button div a.primary, .button div button.primary, .button div input.primary, .button div submit.primary {
       background: #ff7800;
       color: #F7F7F7;
       border: 2px solid white;
@@ -6943,25 +6946,25 @@ input, select {
       -ms-transition: all 0.3s ease;
       -o-transition: all 0.3s ease;
       transition: all 0.3s ease; }
-      .button a.primary a, .button button.primary a, .button input.primary a, .button submit.primary a, .wysija-submit a.primary a, .wysija-submit button.primary a, .wysija-submit input.primary a, .wysija-submit submit.primary a {
+      .button a.primary a, .button button.primary a, .button input.primary a, .button submit.primary a, .wysija-submit a.primary a, .wysija-submit button.primary a, .wysija-submit input.primary a, .wysija-submit submit.primary a, .button div a.primary a, .button div button.primary a, .button div input.primary a, .button div submit.primary a {
         text-decoration: none;
         color: white; }
-      .button a.primary:hover, .button button.primary:hover, .button input.primary:hover, .button submit.primary:hover, .wysija-submit a.primary:hover, .wysija-submit button.primary:hover, .wysija-submit input.primary:hover, .wysija-submit submit.primary:hover {
+      .button a.primary:hover, .button button.primary:hover, .button input.primary:hover, .button submit.primary:hover, .wysija-submit a.primary:hover, .wysija-submit button.primary:hover, .wysija-submit input.primary:hover, .wysija-submit submit.primary:hover, .button div a.primary:hover, .button div button.primary:hover, .button div input.primary:hover, .button div submit.primary:hover {
         background: #ffa14d; }
-    .button a.sml, .button button.sml, .button input.sml, .button submit.sml, .wysija-submit a.sml, .wysija-submit button.sml, .wysija-submit input.sml, .wysija-submit submit.sml {
+    .button a.sml, .button button.sml, .button input.sml, .button submit.sml, .wysija-submit a.sml, .wysija-submit button.sml, .wysija-submit input.sml, .wysija-submit submit.sml, .button div a.sml, .button div button.sml, .button div input.sml, .button div submit.sml {
       padding: 7px 20px;
       font-weight: 600;
       font-size: 0.7em; }
-    .button a.lrg, .button button.lrg, .button input.lrg, .button submit.lrg, .wysija-submit a.lrg, .wysija-submit button.lrg, .wysija-submit input.lrg, .wysija-submit submit.lrg {
+    .button a.lrg, .button button.lrg, .button input.lrg, .button submit.lrg, .wysija-submit a.lrg, .wysija-submit button.lrg, .wysija-submit input.lrg, .wysija-submit submit.lrg, .button div a.lrg, .button div button.lrg, .button div input.lrg, .button div submit.lrg {
       padding: 16px 24px;
       font-size: 1.2em; }
-    .button a.primary-inv, .button button.primary-inv, .button input.primary-inv, .button submit.primary-inv, .wysija-submit a.primary-inv, .wysija-submit button.primary-inv, .wysija-submit input.primary-inv, .wysija-submit submit.primary-inv {
+    .button a.primary-inv, .button button.primary-inv, .button input.primary-inv, .button submit.primary-inv, .wysija-submit a.primary-inv, .wysija-submit button.primary-inv, .wysija-submit input.primary-inv, .wysija-submit submit.primary-inv, .button div a.primary-inv, .button div button.primary-inv, .button div input.primary-inv, .button div submit.primary-inv {
       background: white !important;
       color: #ff7800 !important; }
-      .button a.primary-inv:hover, .button button.primary-inv:hover, .button input.primary-inv:hover, .button submit.primary-inv:hover, .wysija-submit a.primary-inv:hover, .wysija-submit button.primary-inv:hover, .wysija-submit input.primary-inv:hover, .wysija-submit submit.primary-inv:hover {
+      .button a.primary-inv:hover, .button button.primary-inv:hover, .button input.primary-inv:hover, .button submit.primary-inv:hover, .wysija-submit a.primary-inv:hover, .wysija-submit button.primary-inv:hover, .wysija-submit input.primary-inv:hover, .wysija-submit submit.primary-inv:hover, .button div a.primary-inv:hover, .button div button.primary-inv:hover, .button div input.primary-inv:hover, .button div submit.primary-inv:hover {
         background: #ffa14d !important;
         color: white !important; }
-    .button a.primary-outline, .button button.primary-outline, .button input.primary-outline, .button submit.primary-outline, .wysija-submit a.primary-outline, .wysija-submit button.primary-outline, .wysija-submit input.primary-outline, .wysija-submit submit.primary-outline {
+    .button a.primary-outline, .button button.primary-outline, .button input.primary-outline, .button submit.primary-outline, .wysija-submit a.primary-outline, .wysija-submit button.primary-outline, .wysija-submit input.primary-outline, .wysija-submit submit.primary-outline, .button div a.primary-outline, .button div button.primary-outline, .button div input.primary-outline, .button div submit.primary-outline {
       background: transparent;
       box-shadow: 0 0 0 2px #ff7800 inset;
       color: #ff7800;
@@ -6970,11 +6973,11 @@ input, select {
       -ms-transition: all 0.3s ease;
       -o-transition: all 0.3s ease;
       transition: all 0.3s ease; }
-      .button a.primary-outline:hover, .button button.primary-outline:hover, .button input.primary-outline:hover, .button submit.primary-outline:hover, .wysija-submit a.primary-outline:hover, .wysija-submit button.primary-outline:hover, .wysija-submit input.primary-outline:hover, .wysija-submit submit.primary-outline:hover {
+      .button a.primary-outline:hover, .button button.primary-outline:hover, .button input.primary-outline:hover, .button submit.primary-outline:hover, .wysija-submit a.primary-outline:hover, .wysija-submit button.primary-outline:hover, .wysija-submit input.primary-outline:hover, .wysija-submit submit.primary-outline:hover, .button div a.primary-outline:hover, .button div button.primary-outline:hover, .button div input.primary-outline:hover, .button div submit.primary-outline:hover {
         background: #ff7800;
         color: white;
         box-shadow: 0 0 0 2px #ff7800 inset; }
-    .button a.secondary, .button button.secondary, .button input.secondary, .button submit.secondary, .wysija-submit a.secondary, .wysija-submit button.secondary, .wysija-submit input.secondary, .wysija-submit submit.secondary {
+    .button a.secondary, .button button.secondary, .button input.secondary, .button submit.secondary, .wysija-submit a.secondary, .wysija-submit button.secondary, .wysija-submit input.secondary, .wysija-submit submit.secondary, .button div a.secondary, .button div button.secondary, .button div input.secondary, .button div submit.secondary {
       background: #ff7800;
       color: #F7F7F7;
       -webkit-transition: all 0.3s ease;
@@ -6982,10 +6985,10 @@ input, select {
       -ms-transition: all 0.3s ease;
       -o-transition: all 0.3s ease;
       transition: all 0.3s ease; }
-      .button a.secondary:hover, .button button.secondary:hover, .button input.secondary:hover, .button submit.secondary:hover, .wysija-submit a.secondary:hover, .wysija-submit button.secondary:hover, .wysija-submit input.secondary:hover, .wysija-submit submit.secondary:hover {
+      .button a.secondary:hover, .button button.secondary:hover, .button input.secondary:hover, .button submit.secondary:hover, .wysija-submit a.secondary:hover, .wysija-submit button.secondary:hover, .wysija-submit input.secondary:hover, .wysija-submit submit.secondary:hover, .button div a.secondary:hover, .button div button.secondary:hover, .button div input.secondary:hover, .button div submit.secondary:hover {
         background: #ffa14d !important;
         color: #F7F7F7; }
-    .button a.tertiary, .button button.tertiary, .button input.tertiary, .button submit.tertiary, .wysija-submit a.tertiary, .wysija-submit button.tertiary, .wysija-submit input.tertiary, .wysija-submit submit.tertiary {
+    .button a.tertiary, .button button.tertiary, .button input.tertiary, .button submit.tertiary, .wysija-submit a.tertiary, .wysija-submit button.tertiary, .wysija-submit input.tertiary, .wysija-submit submit.tertiary, .button div a.tertiary, .button div button.tertiary, .button div input.tertiary, .button div submit.tertiary {
       background: white;
       color: #ff7800;
       border: 0px;
@@ -6994,20 +6997,20 @@ input, select {
       -ms-transition: all 0.3s ease;
       -o-transition: all 0.3s ease;
       transition: all 0.3s ease; }
-      .button a.tertiary:hover, .button button.tertiary:hover, .button input.tertiary:hover, .button submit.tertiary:hover, .wysija-submit a.tertiary:hover, .wysija-submit button.tertiary:hover, .wysija-submit input.tertiary:hover, .wysija-submit submit.tertiary:hover {
+      .button a.tertiary:hover, .button button.tertiary:hover, .button input.tertiary:hover, .button submit.tertiary:hover, .wysija-submit a.tertiary:hover, .wysija-submit button.tertiary:hover, .wysija-submit input.tertiary:hover, .wysija-submit submit.tertiary:hover, .button div a.tertiary:hover, .button div button.tertiary:hover, .button div input.tertiary:hover, .button div submit.tertiary:hover {
         background: #4554DA;
         color: white; }
-    .button a.rounded, .button button.rounded, .button input.rounded, .button submit.rounded, .wysija-submit a.rounded, .wysija-submit button.rounded, .wysija-submit input.rounded, .wysija-submit submit.rounded {
+    .button a.rounded, .button button.rounded, .button input.rounded, .button submit.rounded, .wysija-submit a.rounded, .wysija-submit button.rounded, .wysija-submit input.rounded, .wysija-submit submit.rounded, .button div a.rounded, .button div button.rounded, .button div input.rounded, .button div submit.rounded {
       -webkit-border-radius: 5px;
       -moz-border-radius: 5px;
       -ms-border-radius: 5px;
       -o-border-radius: 5px;
       border-radius: 5px; }
-    .button a.block, .button button.block, .button input.block, .button submit.block, .wysija-submit a.block, .wysija-submit button.block, .wysija-submit input.block, .wysija-submit submit.block {
+    .button a.block, .button button.block, .button input.block, .button submit.block, .wysija-submit a.block, .wysija-submit button.block, .wysija-submit input.block, .wysija-submit submit.block, .button div a.block, .button div button.block, .button div input.block, .button div submit.block {
       display: block; }
-    .button a.border, .button button.border, .button input.border, .button submit.border, .wysija-submit a.border, .wysija-submit button.border, .wysija-submit input.border, .wysija-submit submit.border {
+    .button a.border, .button button.border, .button input.border, .button submit.border, .wysija-submit a.border, .wysija-submit button.border, .wysija-submit input.border, .wysija-submit submit.border, .button div a.border, .button div button.border, .button div input.border, .button div submit.border {
       border: 1px solid #ff7800 !important; }
-  .button .has-icon, .wysija-submit .has-icon {
+  .button .has-icon, .wysija-submit .has-icon, .button div .has-icon {
     background: #ff7800;
     color: #F7F7F7;
     -webkit-transition: all 0.3s ease;
@@ -7018,18 +7021,18 @@ input, select {
     padding: 11px;
     border-left: 1px solid #F7F7F7;
     height: 42px; }
-    .button .has-icon::after, .wysija-submit .has-icon::after {
+    .button .has-icon::after, .wysija-submit .has-icon::after, .button div .has-icon::after {
       clear: both;
       content: "";
       display: table; }
-    .button .has-icon:hover, .wysija-submit .has-icon:hover {
+    .button .has-icon:hover, .wysija-submit .has-icon:hover, .button div .has-icon:hover {
       background: #F7F7F7;
       color: #ff7800; }
-      .button .has-icon:hover > .icon.login, .wysija-submit .has-icon:hover > .icon.login {
+      .button .has-icon:hover > .icon.login, .wysija-submit .has-icon:hover > .icon.login, .button div .has-icon:hover > .icon.login {
         background-image: url("../images/icons/login-hover.png"); }
-      .button .has-icon:hover > .icon.cart, .wysija-submit .has-icon:hover > .icon.cart {
+      .button .has-icon:hover > .icon.cart, .wysija-submit .has-icon:hover > .icon.cart, .button div .has-icon:hover > .icon.cart {
         background-image: url("../images/icons/cart-hover.png"); }
-    .button .has-icon .icon, .wysija-submit .has-icon .icon {
+    .button .has-icon .icon, .wysija-submit .has-icon .icon, .button div .has-icon .icon {
       width: 19px;
       height: 16px;
       background-repeat: no-repeat;
@@ -7040,11 +7043,11 @@ input, select {
       -ms-transition: all 0.3s ease;
       -o-transition: all 0.3s ease;
       transition: all 0.3s ease; }
-      .button .has-icon .icon.login, .wysija-submit .has-icon .icon.login {
+      .button .has-icon .icon.login, .wysija-submit .has-icon .icon.login, .button div .has-icon .icon.login {
         background-image: url("../images/icons/login.png"); }
-      .button .has-icon .icon.cart, .wysija-submit .has-icon .icon.cart {
+      .button .has-icon .icon.cart, .wysija-submit .has-icon .icon.cart, .button div .has-icon .icon.cart {
         background-image: url("../images/icons/cart.png"); }
-    .button .has-icon p, .button .has-icon footer .top .item a, footer .top .item .button .has-icon a, .wysija-submit .has-icon p, .wysija-submit .has-icon footer .top .item a, footer .top .item .wysija-submit .has-icon a {
+    .button .has-icon p, .button .has-icon footer .top .item a, footer .top .item .button .has-icon a, .wysija-submit .has-icon p, .wysija-submit .has-icon footer .top .item a, footer .top .item .wysija-submit .has-icon a, .button div .has-icon p, .button div .has-icon footer .top .item a, footer .top .item .button div .has-icon a {
       display: inline-block;
       -webkit-margin-before: 0em;
       -webkit-margin-after: 0em;
@@ -7198,13 +7201,16 @@ li {
   font-weight: normal;
   margin-left: 2.5em; }
 
+ul {
+  color: #514b47; }
+
 ul.navigation li {
   list-style-type: none; }
 
-.tick li {
+.tick li, .ourway article .inner ul li {
   list-style-type: none;
   text-align: left; }
-  .tick li:before {
+  .tick li:before, .ourway article .inner ul li:before {
     content: "";
     font-family: "FontAwesome";
     float: left;
@@ -7215,7 +7221,7 @@ ul.navigation li {
 p, footer .top .item a {
   font-size: 0.8em;
   font-weight: normal;
-  color: #6f7373;
+  color: #514b47;
   -webkit-margin-before: 0em;
   -webkit-margin-after: 0em;
   margin: 1em 0;
@@ -7383,7 +7389,7 @@ header.navigation .inner {
 
 .work .bx-wrapper .bx-prev {
   background: url(img/hero/controls-work.png) no-repeat 0 -41px;
-  left: 6%;
+  left: 74%;
   height: 40px;
   top: 305px;
   -webkit-transition: fade 0.5s ease;
@@ -7528,6 +7534,11 @@ header.navigation .inner {
   border: 2px solid white; }
   .ourway article .button {
     padding: 40px; }
+  .ourway article .inner {
+    height: 230px; }
+    .ourway article .inner ul {
+      width: 69% !important;
+      margin: 0 auto; }
   .ourway article:nth-child(1), .ourway article:nth-child(2), .ourway article:nth-child(4), .ourway article:nth-child(5) {
     width: 50%; }
   .ourway article:nth-child(1), .ourway article:nth-child(3), .ourway article:nth-child(5) {
@@ -7538,7 +7549,22 @@ header.navigation .inner {
     width: 100%;
     min-height: 320px; }
   .ourway article img {
-    display: inline; }
+    display: inline;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+    .ourway article img:hover {
+      opacity: 0.6; }
+  .ourway article h2 {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+    .ourway article h2:hover {
+      color: #ffae66; }
   .ourway article:nth-child(5) ul {
     width: 209px;
     margin: 0 auto; }
@@ -7598,8 +7624,7 @@ footer {
         background: #58524e;
         padding-left: 5%; }
         footer .top .item:nth-child(5) input {
-          height: 40px;
-          margin: 20px 0; }
+          height: 40px; }
         footer .top .item:nth-child(5) .button {
           float: right; }
       footer .top .item:nth-child(6) {
@@ -8022,6 +8047,12 @@ header.navigation ul.slimmenu {
   padding-bottom: 80px; }
   .our-leadership .board .item {
     padding: 0 3%; }
+    .our-leadership .board .item figure {
+      height: 205px;
+      overflow: hidden; }
+.our-leadership .executives .item figure {
+  height: 231px;
+  overflow: hidden; }
 
 .our-leadership .executives .item, .our-leadership .board .item {
   height: 450px; }
@@ -8102,29 +8133,38 @@ header.navigation ul.slimmenu {
   .donate .form .form-pg-1 .row {
     padding: 50px 0; }
 
-.post-container {
+.buy-a-gift iframe {
+  height: 1131px; }
+
+.sponsor-a-child iframe {
+  height: 980px; }
+
+.donate iframe {
+  height: 1139px; }
+
+.buy-a-gift .post-container, .sponsor-a-child .post-container {
   position: relative;
   padding: 10px;
   border: 1px solid #ccc;
   height: 300px; }
-  .post-container ul {
+  .buy-a-gift .post-container ul, .sponsor-a-child .post-container ul {
     margin-bottom: 0; }
-  .post-container li {
+  .buy-a-gift .post-container li, .sponsor-a-child .post-container li {
     display: inline-block;
     margin-left: 0; }
-  .post-container .post-meta a {
+  .buy-a-gift .post-container .post-meta a, .sponsor-a-child .post-container .post-meta a {
     color: #ff7800 !important;
     font-size: 1.2em; }
-  .post-container .post-option {
+  .buy-a-gift .post-container .post-option, .sponsor-a-child .post-container .post-option {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     text-align: center; }
-    .post-container .post-option .list-options {
+    .buy-a-gift .post-container .post-option .list-options, .sponsor-a-child .post-container .post-option .list-options {
       list-style-type: none;
       margin-bottom: 10px; }
-      .post-container .post-option .list-options a {
+      .buy-a-gift .post-container .post-option .list-options a, .sponsor-a-child .post-container .post-option .list-options a {
         padding: 7px 20px !important;
         font-weight: 600 !important;
         font-size: 0.8em !important;
@@ -8132,16 +8172,18 @@ header.navigation ul.slimmenu {
         border: 0 !important;
         background: #ff7800 !important;
         color: white !important; }
-        .post-container .post-option .list-options a:hover {
+        .buy-a-gift .post-container .post-option .list-options a:hover, .sponsor-a-child .post-container .post-option .list-options a:hover {
           background: #ffae66; }
-      .post-container .post-option .list-options li:first-child a {
+      .buy-a-gift .post-container .post-option .list-options li:first-child a, .sponsor-a-child .post-container .post-option .list-options li:first-child a {
         background: #b35b0c !important; }
-  .post-container .post-desc {
+  .buy-a-gift .post-container .post-desc, .sponsor-a-child .post-container .post-desc {
     font-size: 0.8em;
     color: #888; }
 
 .who-we-are .hero-slider {
   display: none; }
+.who-we-are section h2 {
+  height: 80px; }
 
 .how-we-work section .item p, .how-we-work section footer .top .item a, footer .top .how-we-work section .item a {
   height: 120px; }
@@ -8170,5 +8212,15 @@ header.navigation ul.slimmenu {
     padding: 10px 0;
     text-align: center;
     margin: 0; }
+
+.fundraise section p, .fundraise section footer .top .item a, footer .top .item .fundraise section a {
+  text-align: justify; }
+.fundraise section .heading:before, .fundraise section .icon-heading:before {
+  width: 30%; }
+.fundraise section .heading:after, .fundraise section .icon-heading:after {
+  width: 30%; }
+.fundraise section article figure {
+  height: 340px;
+  overflow: hidden; }
 
 /*# sourceMappingURL=style.css.map */

@@ -3,7 +3,12 @@
   <h2 class="heading">Our Leadership</h2>
 
   <section class="center no-margin">
-    <p class="black">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur omnis, minima ea praesentium nam amet aliquid ratione recusandae facilis eos nihil fugit in numquam iusto voluptas officia odit, totam repudiandae!</p>
+    <?php if (have_posts()): while (have_posts()) : the_post(); ?>
+    <p class="black"><?php the_content(); ?></p>
+
+  <?php endwhile; ?>
+
+  <?php endif ?>
   </section>
   <div class="container center">
     <h2 class="heading-grey">Executive Team</h2>
@@ -21,10 +26,10 @@
       </figure>
       <div class="inner">
         <h4><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h4>
-        </h6>
+        <h6><?php the_field('title'); ?></h6>
       </div>
       <div class="button full-btn">
-        <a class="eModal-post-<?php the_ID();?>" href="<?php the_permalink(); ?>" class="secondary">View</a>
+        <a href="<?php the_permalink(); ?>" class="secondary">View</a>
       </div>
     </div>
     <?php endwhile; ?>

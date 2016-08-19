@@ -18,18 +18,8 @@
       </div>
     </article>
     <aside class="col-3 center quarter">
-    <?php echo do_shortcode( get_sub_field( 'email_petition' ) ); ?>
     
-    <?php  
-       //the_field('email_petition');
-    ?>
-      <?php get_sidebar(); 
-      echo //do_shortcode( get_field( 'email_petition' ) );
-?>
-      <?php //echo do_shortcode( '[acf field="email_petition"]' ); ?>
-      <?php //echo do_shortcode('[emailpetition id="1"]'); ?>
-      <?php //echo do_shortcode('[signaturelist id="1"]'); ?>
-      <!-- <div class="inner">
+      <div class="inner">
         <h5 class="white">PETITION</h5>
         <p>SUPPORT THE CHILD HEALTH NOW CAMPAIGN</p>
         <div class="button full-btn">
@@ -38,7 +28,7 @@
         <div class="signatures">
           52 SIGNATURES
         </div>
-      </div> -->
+      </div>
     </aside>
   </section>
   <?php endwhile; ?>

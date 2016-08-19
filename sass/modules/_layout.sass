@@ -24,6 +24,12 @@
     min-height: 420px
     .button
       padding: 40px
+    .inner
+      height: 230px
+      ul
+        @extend .tick
+        width: 69% !important
+        margin: 0 auto
     &:nth-child(1), &:nth-child(2), &:nth-child(4), &:nth-child(5)
       width: $half
     &:nth-child(1), &:nth-child(3), &:nth-child(5)
@@ -36,6 +42,13 @@
       min-height: 320px
     img
       display: inline
+      @include vendor-prefix('transition','all 0.3s ease')
+      &:hover
+        opacity: 0.6
+    h2
+      @include vendor-prefix('transition','all 0.3s ease')
+      &:hover
+        color: tint($prime-color1, 40%)
     &:nth-child(5)
       ul
         width: 209px

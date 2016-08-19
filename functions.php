@@ -19,11 +19,13 @@
 define( 'WP_DEBUG', true );
 
 // Enable Debug logging to the /wp-content/debug.log file
-define( 'WP_DEBUG_LOG', true );
+define( 'WP_DEBUG_LOG', false );
 
 // Disable display of errors and warnings 
-define( 'WP_DEBUG_DISPLAY', false );
-@ini_set( 'display_errors', 0 );
+define( 'WP_DEBUG_DISPLAY', true );
+//@ini_set( 'display_errors', 0 );
+// ini_set('display_errors', 'On');
+// error_reporting(E_ALL);
 
 // Use dev versions of core JS and CSS files (only needed if you are modifying these core files)
 define( 'SCRIPT_DEBUG', true );
@@ -358,7 +360,7 @@ add_action('wp_print_scripts', 'html5blank_conditional_scripts'); // Add Conditi
 add_action('get_header', 'enable_threaded_comments'); // Enable Threaded Comments
 add_action('wp_enqueue_scripts', 'html5blank_styles'); // Add Theme Stylesheet
 add_action('init', 'register_html5_menu'); // Add HTML5 Blank Menu
-add_action('init', 'create_post_type_html5'); // Add our HTML5 Blank Custom Post Type
+//add_action('init', 'create_post_type_html5'); // Add our HTML5 Blank Custom Post Type
 add_action('init', 'news_post'); // Add our News Post Type
 add_action('init', 'leadership_post'); // Add our Leadership Post Type
 add_action('init', 'our_way_post'); // Add our Our Way Post Type
@@ -415,43 +417,43 @@ add_shortcode('html5_shortcode_demo_2', 'html5_shortcode_demo_2'); // Place [htm
 \*------------------------------------*/
 
 // Create 1 Custom Post type for a Demo, called HTML5-Blank
-function create_post_type_html5()
-{
-    register_taxonomy_for_object_type('category', 'html5-blank'); // Register Taxonomies for Category
-    register_taxonomy_for_object_type('post_tag', 'html5-blank');
-    register_post_type('html5-blank', // Register Custom Post Type
-        array(
-        'labels' => array(
-            'name' => __('Ninja Slider', 'html5blank'), // Rename these to suit
-            'singular_name' => __('HTML5 Blank Custom Post', 'html5blank'),
-            'add_new' => __('Add New', 'html5blank'),
-            'add_new_item' => __('Add New HTML5 Blank Custom Post', 'html5blank'),
-            'edit' => __('Edit', 'html5blank'),
-            'edit_item' => __('Edit HTML5 Blank Custom Post', 'html5blank'),
-            'new_item' => __('New HTML5 Blank Custom Post', 'html5blank'),
-            'view' => __('View HTML5 Blank Custom Post', 'html5blank'),
-            'view_item' => __('View HTML5 Blank Custom Post', 'html5blank'),
-            'search_items' => __('Search HTML5 Blank Custom Post', 'html5blank'),
-            'not_found' => __('No HTML5 Blank Custom Posts found', 'html5blank'),
-            'not_found_in_trash' => __('No HTML5 Blank Custom Posts found in Trash', 'html5blank'),
-        ),
-        'public' => true,
-        'hierarchical' => true, // Allows your posts to behave like Hierarchy Pages
-        'has_archive' => true,
-        'menu_icon'   => 'dashicons-images-alt2',
-        'supports' => array(
-            'title',
-            'editor',
-            'excerpt',
-            'thumbnail'
-        ), // Go to Dashboard Custom HTML5 Blank post for supports
-        'can_export' => true, // Allows export in Tools > Export
-        'taxonomies' => array(
-            'post_tag',
-            'category'
-        ) // Add Category and Post Tags support
-    ));
-}
+// function create_post_type_html5()
+// {
+//     register_taxonomy_for_object_type('category', 'html5-blank'); // Register Taxonomies for Category
+//     register_taxonomy_for_object_type('post_tag', 'html5-blank');
+//     register_post_type('html5-blank', // Register Custom Post Type
+//         array(
+//         'labels' => array(
+//             'name' => __('Ninja Slider', 'html5blank'), // Rename these to suit
+//             'singular_name' => __('HTML5 Blank Custom Post', 'html5blank'),
+//             'add_new' => __('Add New', 'html5blank'),
+//             'add_new_item' => __('Add New HTML5 Blank Custom Post', 'html5blank'),
+//             'edit' => __('Edit', 'html5blank'),
+//             'edit_item' => __('Edit HTML5 Blank Custom Post', 'html5blank'),
+//             'new_item' => __('New HTML5 Blank Custom Post', 'html5blank'),
+//             'view' => __('View HTML5 Blank Custom Post', 'html5blank'),
+//             'view_item' => __('View HTML5 Blank Custom Post', 'html5blank'),
+//             'search_items' => __('Search HTML5 Blank Custom Post', 'html5blank'),
+//             'not_found' => __('No HTML5 Blank Custom Posts found', 'html5blank'),
+//             'not_found_in_trash' => __('No HTML5 Blank Custom Posts found in Trash', 'html5blank'),
+//         ),
+//         'public' => true,
+//         'hierarchical' => true, // Allows your posts to behave like Hierarchy Pages
+//         'has_archive' => true,
+//         'menu_icon'   => 'dashicons-images-alt2',
+//         'supports' => array(
+//             'title',
+//             'editor',
+//             'excerpt',
+//             'thumbnail'
+//         ), // Go to Dashboard Custom HTML5 Blank post for supports
+//         'can_export' => true, // Allows export in Tools > Export
+//         'taxonomies' => array(
+//             'post_tag',
+//             'category'
+//         ) // Add Category and Post Tags support
+//     ));
+// }
 
 // News Custom Post
 function news_post()
@@ -724,7 +726,27 @@ function ninja_slider()
 
 //[loop-single]
 function loop_single( $atts ){
-    return "foo and bar";
+    // $pull_quote_atts = shortcode_atts( array(
+    //     'id' => '1',
+    // ), $args );
+    //print_r ($atts);
+    //$pull_quote_atts = array ('id' => $args ['id']);
+ 
+    $args = array( 'post_type' => 'leadership', 'posts_per_page' => 1, 'p' => $atts ['id'] );
+    $loop = new WP_Query( $args );
+    //print_r($loop);
+    $loop->the_post();
+    //print_r ($loop);
+    //if ( $loop->have_posts() ) {
+        // The Loop
+        //while ( $query1->have_posts() ) {
+            //$loop->the_post();
+
+            echo  '<h3>' . get_the_title() . '</h3>';
+            echo get_the_content();
+        //}
+    //}
+                      
 }
 add_shortcode( 'loop-single', 'loop_single' );
 

@@ -63,6 +63,12 @@
     .item
       // width: $quarter
       padding: 0 3%
+      figure
+        height: 205px
+        overflow: hidden
+  .executives .item figure
+    height: 231px
+    overflow: hidden
 //RESPONSIVE
 .our-leadership
   .executives, .board
@@ -156,48 +162,60 @@
       //   &:nth-child(3)
       //     float: right
 // 
-// .buy-a-gift, .sponsor-a-child
-.post-container
-  position: relative
-  padding: 10px
-  border: 1px solid #ccc
-  height: 300px
-  ul
-    margin-bottom: 0
-  li
-    display: inline-block
-    margin-left: 0
-  .post-meta a
-    color: $prime-color1 !important
-    font-size: 1.2em
-  .post-option
-    position: absolute
-    bottom: 0
-    left: 0
-    width: 100%
-    text-align: center
-    .list-options
-      list-style-type: none
-      margin-bottom: 10px
-      a
-        padding: 7px 20px !important
-        font-weight: 600 !important
-        font-size: 0.8em !important
-        -webkit-appearance: none !important
-        border: 0 !important
-        background: $prime-color1 !important
-        color: white !important
-        &:hover
-          background: tint($prime-color1, 40%)
-      li:first-child a
-        background: #b35b0c !important
-  .post-desc
-    font-size: 0.8em
-    color: #888
+.buy-a-gift
+  iframe
+    height: 1131px
+.sponsor-a-child
+  iframe
+    height: 980px
+.donate
+  iframe
+    height: 1139px
+.buy-a-gift, .sponsor-a-child
+  .post-container
+    position: relative
+    padding: 10px
+    border: 1px solid #ccc
+    height: 300px
+    ul
+      margin-bottom: 0
+    li
+      display: inline-block
+      margin-left: 0
+    .post-meta a
+      color: $prime-color1 !important
+      font-size: 1.2em
+    .post-option
+      position: absolute
+      bottom: 0
+      left: 0
+      width: 100%
+      text-align: center
+      .list-options
+        list-style-type: none
+        margin-bottom: 10px
+        a
+          padding: 7px 20px !important
+          font-weight: 600 !important
+          font-size: 0.8em !important
+          -webkit-appearance: none !important
+          border: 0 !important
+          background: $prime-color1 !important
+          color: white !important
+          &:hover
+            background: tint($prime-color1, 40%)
+        li:first-child a
+          background: #b35b0c !important
+    .post-desc
+      font-size: 0.8em
+      color: #888
 //
 .who-we-are
   .hero-slider
     display: none
+  section
+    h2
+      height: 80px
 //
 .how-we-work
   section
@@ -232,5 +250,18 @@
         padding: 10px 0
         text-align: center
         margin: 0
-
+//
+.fundraise
+  section
+    p
+      text-align: justify
+    .heading
+      &:before
+        width: 30%
+      &:after
+        width: 30%
+    article
+      figure
+        height: 340px
+        overflow: hidden
   

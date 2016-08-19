@@ -43,12 +43,12 @@
 
   <header class="navigation" role="banner">
     <figure class="mob-logo">
-        <a href="<?php echo get_home_url(); ?>/wp-admin" target="_blank"><img class="" src="<?php echo get_template_directory_uri(); ?>/img/logo/logo.png"/></a>
+        <a href="<?php echo get_home_url(); ?>" target="_blank"><img class="" src="<?php echo get_template_directory_uri(); ?>/img/logo/logo.png"/></a>
         <a href="<?php echo get_home_url(); ?>"><img class="" src="<?php echo get_template_directory_uri(); ?>/img/logo/wv-logo.jpg"/></a>
     </figure>
     <div class="inner">
         <figure>
-            <a href="<?php echo get_home_url(); ?>/wp-admin" target="_blank"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/img/logo/logo.png"/></a>
+            <a href="<?php echo get_home_url(); ?>" target="_blank"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/img/logo/logo.png"/></a>
         </figure>
 
        
@@ -58,7 +58,7 @@
 
         <div class="item">
             <div class="button">
-                <a href="<?php echo get_home_url(); ?>/login" class="primary">WV Login</a>
+                <a href="http://154.0.174.147:8088/wvusertest/User/Login" class="primary">WV Login</a>
             </div>
             <div class="button">
                 <a href="<?php echo get_home_url(); ?>/donate" class="primary primary-inv">DONATE</a>

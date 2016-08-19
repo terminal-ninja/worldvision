@@ -1,4 +1,4 @@
-$(document).ready(function(){
+jQuery(document).ready(function(){
   function svgasimg() {
     return document.implementation.hasFeature(
       "http://www.w3.org/TR/SVG11/feature#Image", "1.1");
@@ -20,22 +20,23 @@ $(document).ready(function(){
     }
   }
 
-  $( "#partnerTabs" ).tabs();
+  jQuery( "#partnerTabs" ).tabs();
+  jQuery( "#tabs" ).tabs();
 
-  $('.bxslider').bxSlider({
+  jQuery('.bxslider').bxSlider({
     pager: false, 
     adaptiveHeight: true,
     responsive: true,
     pause: 5000,
     auto: true,
     onSliderLoad: function(){
-      $('.bxslider').css('visibility', 'visible');
+      jQuery('.bxslider').css('visibility', 'visible');
     }
   });
 
  
 
-  $('.slimmenu').slimmenu(
+  jQuery('.slimmenu').slimmenu(
   {
       resizeWidth: '1024',
       collapserTitle: '',
@@ -47,39 +48,39 @@ $(document).ready(function(){
   });
 
 
-  $("#btnOrganization").click(function(){
-        $(".Organization").show();
-        $(".Individual").hide();
-        $(this).addClass("prime-color1-bak");
-        $("#btnIndividual").removeClass("prime-color1-bak");
+  jQuery("#btnOrganization").click(function(){
+        jQuery(".Organization").show();
+        jQuery(".Individual").hide();
+        jQuery(this).addClass("prime-color1-bak");
+        jQuery("#btnIndividual").removeClass("prime-color1-bak");
     });
-  $("#btnIndividual").click(function(){
-      $(".Organization").hide();
-      $(".Individual").show();
-      $(this).addClass("prime-color1-bak");
-      $("#btnOrganization").removeClass("prime-color1-bak");      
+  jQuery("#btnIndividual").click(function(){
+      jQuery(".Organization").hide();
+      jQuery(".Individual").show();
+      jQuery(this).addClass("prime-color1-bak");
+      jQuery("#btnOrganization").removeClass("prime-color1-bak");      
     });
 
 
-  $("#btnFormBack").click(function(){
-      $("#AddDet").hide();
-      $("#DonInfo").show();
-      $(this).hide();
-      $("#btnFormNext").show();
-      $('#step2').removeClass("fa-circle")
-      $('#step2').addClass("fa-circle-thin")
-      $('#step1').removeClass("fa-circle-thin")
-      $('#step1').addClass("fa-circle")
+  jQuery("#btnFormBack").click(function(){
+      jQuery("#AddDet").hide();
+      jQuery("#DonInfo").show();
+      jQuery(this).hide();
+      jQuery("#btnFormNext").show();
+      jQuery('#step2').removeClass("fa-circle")
+      jQuery('#step2').addClass("fa-circle-thin")
+      jQuery('#step1').removeClass("fa-circle-thin")
+      jQuery('#step1').addClass("fa-circle")
     });
-  $("#btnFormNext").click(function(){
-      $("#DonInfo").hide();
-      $("#AddDet").show();
-      $(this).hide();
-      $("#btnFormBack").show();
-      $('#step1').removeClass("fa-circle")
-      $('#step1').addClass("fa-circle-thin")
-      $('#step2').removeClass("fa-circle-thin")
-      $('#step2').addClass("fa-circle")
+  jQuery("#btnFormNext").click(function(){
+      jQuery("#DonInfo").hide();
+      jQuery("#AddDet").show();
+      jQuery(this).hide();
+      jQuery("#btnFormBack").show();
+      jQuery('#step1').removeClass("fa-circle")
+      jQuery('#step1').addClass("fa-circle-thin")
+      jQuery('#step2').removeClass("fa-circle-thin")
+      jQuery('#step2').addClass("fa-circle")
     });
 
   

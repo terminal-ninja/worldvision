@@ -15,25 +15,25 @@
 					</div>
 					<div class="item">
 						<h3>latest news</h3>
-						<p>Support drought relief in KwaZulu-Natal with World
-						 Vision’s FLOW – for love of water – campaign<br><br>
-
-						Flash Display boosts economic development</p>
+						<?php 
+					    $args = array( 'category_name' => 'latest-news', 'posts_per_page' => 2 );
+					    $loop = new WP_Query( $args );
+					    while ( $loop->have_posts() ) : $loop->the_post(); 
+					  ?>
+						<a class="inv" href="<?php the_permalink(); ?>"><?php the_title(); ?></a><br><br>
+						<?php endwhile; ?>
 					</div>
 					<div class="item">
 						<h3>site map</h3>
-						<a class="inv" href="">FAQ’s</a>
-						<a class="inv" href="">Press Pack</a>
-						<a class="inv" href="">Publications</a>
-						<a class="inv" href="">Legalities</a>
+						<a class="inv" href="<?php echo get_home_url(); ?>/faqs">FAQ’s</a>
+						<a class="inv" href="<?php echo get_home_url(); ?>/press-pack">Press Pack</a>
+						<a class="inv" href="<?php echo get_home_url(); ?>/publications">Publications</a>
+						<a class="inv" href="<?php echo get_home_url(); ?>/legalities">Legalities</a>
 					</div>
 					<div class="item">
 						<h3>newsletter</h3>
 						<p>Subscribe to our Newsletter</p>
-						<input type="text">
-						<div class="button">
-                <a href="#" class="primary primary-inv sml">SUBSCRIBE</a>
-            </div>
+							<?php echo do_shortcode('[caldera_form id="CF57aaf1b2c08e3"]'); ?>
 					</div>
 					<div class="item"><br></div>
 				</section>
@@ -45,9 +45,9 @@
 							<a class="inv" href="http://www.esoft.co.za/" title="eSoft">Powered by eSoft Development & Technologies</a> 
 						</p>
 						<div class="item">
-							<a href=""><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-							<a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
-							<a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+							<a target="_blank" href="https://www.facebook.com/WorldVisionSA"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+							<a target="_blank" href="https://twitter.com/WorldVisionSA"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+							<a target="_blank" href="https://www.youtube.com/user/WorldVisionSA"><i class="fa fa-facebook" aria-hidden="true"></i></a>
 						</div>
 					</div>
 				</section>

@@ -1,11 +1,12 @@
 <?php /* Template Name: About Us Template */ get_header(); ?>
-  <img src="<?php echo get_template_directory_uri(); ?>/img/kid3.jpg" alt="">
+  <img style="width:100%;" src="<?php echo get_template_directory_uri(); ?>/img/kid3.jpg" alt="">
   <h2 class="heading">About Us</h2>
   
   <section class="center">
     <h2 class="heading-grey">World Vision International</h2>
-    <p>World Vision is a Christian humanitarian organization dedicated to working with children, families, and their communities worldwide to reach their full potential by tac1kling the root causes of poverty and injustice. Working in nearly 100 countries around the world, we serve all people, regardless of religion, race, ethnicity, or gender. 
-    <a href="">Click here for World Vision International</a>
+    <p>World Vision is a Christian humanitarian organization dedicated to working with children, families, and their communities worldwide to reach their full potential by tackling the root causes of poverty and injustice. Working in nearly 100 countries around the world, we serve all people, regardless of religion, race, ethnicity, or gender. 
+    <br><br>
+    <a blank="_blank" href="http://www.wvi.org/">Click here for World Vision International</a>
     </p>
     <h2 class="heading-grey">World Vision South Africa</h2>
   </section>
@@ -16,11 +17,11 @@
     </article>
     <article class="center">
       <h2>We believe in people power</h2>
-      <p>Child sponsorship connects people to fight poverty enabling sponsors to make a positive and real difference to the life of the sponsored child within their family and community and gain an insight into the reality of life in developing countries. People's lives are changed on either side of the child sponsorship connection.</p>
+      <p>Child sponsorship connects people to fight poverty enabling sponsors to make a positive and real difference to the life of the sponsored child within their families and communities and gain an insight into the reality of life in developing countries. People's lives are changed on either side of the child sponsorship connection.</p>
     </article>
     <article class="center">
       <h2>Three million people can't be wrong!</h2>
-      <p>Globally, World Vision supporters currently sponsor 3.4 million children in almost 100 countries, with over 54,000 children supported in South Africa.</p>
+      <p>Globally, World Vision supporters currently sponsor 3.4 million children in over 100 countries, with over 40,000 children supported in South Africa.</p>
     </article>
     <article class="center">
       <h2>Our people do their job very well</h2>
