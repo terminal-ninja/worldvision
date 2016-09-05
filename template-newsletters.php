@@ -1,39 +1,50 @@
 <?php /* Template Name: Newsletters Template */ get_header(); ?>
 
-  <h2 class="heading">Newsletters</h2>
+  <h2 class="heading">News</h2>
 
-  <?php 
-    $args = array( 'post_type' => 'news-post', 'posts_per_page' => -1 );
-    $loop = new WP_Query( $args );
-    while ( $loop->have_posts() ) : $loop->the_post(); 
-  ?>
-    <section>
-      <figure class="col-2 two-fifths">
-        <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('large'); ?></a>
-      </figure>
-      <article class="col-2 three-fifths">
-        <h2><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
-        <p><?php the_excerpt(); ?></p>
-      
-        <div class="byline">
+  <section class="ourway black">
+    <article class="center">
+      <h2 class="heading prime-color1">News</h2>
+      <div class="inner">
+        <ul class="tick"> 
           <?php 
-          //$arg1 = array('Y-m-d');
-          $date = get_the_date('d/m/y');  ?>
-
-          <address class="author">By <a rel="author" href="<?php the_author_link(); ?> "><?php the_author(); ?></a></address> 
-          | <time pubdate datetime="<?php echo $date;//the_date('Y-m-d'); ?>" title="<?php echo $date;//the_date('F jS, Y'); ?>"><?php echo $date;//the_date('d/m/y'); ?></time>
-        </div>
-        <div class="button">
-          <a href="<?php the_permalink(); ?>" class="secondary">READ MORE</a>
-        </div>
-      </article>
-    </section>
-  <?php endwhile; ?>
-  <section>
-    <?php get_template_part('pagination'); ?>
-    <!-- <div class="button full-btn">
-      <a href="#" class="secondary">LOAD MORE</a>
-    </div> -->
+            $args = array( 'post_type' => 'news-post', 'posts_per_page' => 5, 'category_name' => 'latest-news' );
+            $loop = new WP_Query( $args );
+            while ( $loop->have_posts() ) : $loop->the_post(); 
+          ?>
+            <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+          <?php endwhile; ?>
+        </ul>  
+      </div>
+    </article>
+    <article class="center">
+      <h2 class="heading prime-color1">Newsletters</h2>
+      <div class="inner">
+        <ul class="tick"> 
+          <?php 
+            $args = array( 'post_type' => 'news-post', 'posts_per_page' => 5, 'category_name' => 'newsletters' );
+            $loop = new WP_Query( $args );
+            while ( $loop->have_posts() ) : $loop->the_post(); 
+          ?>
+            <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+          <?php endwhile; ?>
+        </ul>  
+      </div>
+    </article>
+    <article class="center">
+      <h2 class="heading prime-color1">Media Pack</h2>
+      <div class="inner">
+        <ul class="tick"> 
+          <?php 
+            $args = array( 'post_type' => 'news-post', 'posts_per_page' => 5, 'category_name' => 'media-pack' );
+            $loop = new WP_Query( $args );
+            while ( $loop->have_posts() ) : $loop->the_post(); 
+          ?>
+            <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+          <?php endwhile; ?>
+        </ul>  
+      </div>
+    </article>
   </section>
 
 <?php get_footer(); ?>

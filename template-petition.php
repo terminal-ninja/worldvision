@@ -18,8 +18,8 @@
       </div>
     </article>
     <aside class="col-3 center quarter">
-    
-      <div class="inner">
+    <?php the_field('email_petition'); ?>
+      <!-- <div class="inner">
         <h5 class="white">PETITION</h5>
         <p>SUPPORT THE CHILD HEALTH NOW CAMPAIGN</p>
         <div class="button full-btn">
@@ -28,7 +28,7 @@
         <div class="signatures">
           52 SIGNATURES
         </div>
-      </div>
+      </div> -->
     </aside>
   </section>
   <?php endwhile; ?>

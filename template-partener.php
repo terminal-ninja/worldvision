@@ -1,6 +1,6 @@
 <?php /* Template Name: Partener Template */ get_header(); ?>
   
-  <h2 class="heading">Parter with Us</h2>
+  <h2 class="heading">Partner with Us</h2>
   <section>
     <div id="partnerTabs">
     <ul>
@@ -15,6 +15,9 @@
         <p>As a prominent, well respected Christian humanitarian organization, World Vision South Africa invites applications from interested candidates for the position of Non-Executive Director. 
         <br><br>
         Applications will go before a Board Nomination Committee and interviews will take place. Candidates, if selected, would be contacted. </p>
+        <div class="button">
+          <a class="secondary popmake-register-your-interest">APPLY NOW</a>
+        </div>
       </article>
       <article>
         <h3 class="prime-color1">Partners</h3>
@@ -62,13 +65,13 @@
     </div>
   </div>
 </section>
-<h2 class="heading">Register Your Interest</h2>
+<!-- <h2 class="heading">Register Your Interest</h2>
 <section>
   <div class="form">
     <h3>Apply</h3>
-    <?php echo do_shortcode('[caldera_form id="CF57aa0f09e0a46"]'); ?>
+    <?php //echo do_shortcode('[caldera_form id="CF57aa0f09e0a46"]'); ?>
   </div>
-</section>
+</section> -->
 
 
 <?php get_footer(); ?>

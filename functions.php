@@ -16,19 +16,19 @@
 \*------------------------------------*/
 
  // Enable WP_DEBUG mode
-define( 'WP_DEBUG', true );
+//define( 'WP_DEBUG', true );
 
 // Enable Debug logging to the /wp-content/debug.log file
-define( 'WP_DEBUG_LOG', false );
+//define( 'WP_DEBUG_LOG', false );
 
 // Disable display of errors and warnings 
-define( 'WP_DEBUG_DISPLAY', true );
+//define( 'WP_DEBUG_DISPLAY', true );
 //@ini_set( 'display_errors', 0 );
 // ini_set('display_errors', 'On');
 // error_reporting(E_ALL);
 
 // Use dev versions of core JS and CSS files (only needed if you are modifying these core files)
-define( 'SCRIPT_DEBUG', true );
+//define( 'SCRIPT_DEBUG', true );
 
 if (!isset($content_width))
 {
@@ -203,6 +203,198 @@ if (function_exists('register_sidebar'))
         'name' => __('Widget Area 2', 'html5blank'),
         'description' => __('Description for this widget-area...', 'html5blank'),
         'id' => 'widget-area-2',
+        'before_widget' => '<div id="%1$s" class="%2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>'
+    ));
+
+    // Define Sidebar Widget Area 2
+    register_sidebar(array(
+        'name' => __('Widget Area 3', 'html5blank'),
+        'description' => __('Description for this widget-area...', 'html5blank'),
+        'id' => 'widget-area-3',
+        'before_widget' => '<div id="%1$s" class="%2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>'
+    ));
+
+    // Define Sidebar Widget Area 2
+    register_sidebar(array(
+        'name' => __('Widget Area 4', 'html5blank'),
+        'description' => __('Description for this widget-area...', 'html5blank'),
+        'id' => 'widget-area-4',
+        'before_widget' => '<div id="%1$s" class="%2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>'
+    ));
+    // Define Sidebar Widget Area 2
+    register_sidebar(array(
+        'name' => __('Widget Area 5', 'html5blank'),
+        'description' => __('Description for this widget-area...', 'html5blank'),
+        'id' => 'widget-area-5',
+        'before_widget' => '<div id="%1$s" class="%2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>'
+    ));
+    // Define Sidebar Widget Area 2
+    register_sidebar(array(
+        'name' => __('Widget Area 6', 'html5blank'),
+        'description' => __('Description for this widget-area...', 'html5blank'),
+        'id' => 'widget-area-6',
+        'before_widget' => '<div id="%1$s" class="%2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>'
+    ));
+    // Define Sidebar Widget Area 2
+    register_sidebar(array(
+        'name' => __('Widget Area 7', 'html5blank'),
+        'description' => __('Description for this widget-area...', 'html5blank'),
+        'id' => 'widget-area-7',
+        'before_widget' => '<div id="%1$s" class="%2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>'
+    ));
+    // Define Sidebar Widget Area 2
+    register_sidebar(array(
+        'name' => __('Widget Area 8', 'html5blank'),
+        'description' => __('Description for this widget-area...', 'html5blank'),
+        'id' => 'widget-area-4',
+        'before_widget' => '<div id="%1$s" class="%2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>'
+    ));
+    // Define Sidebar Widget Area 2
+    register_sidebar(array(
+        'name' => __('Widget Area 8', 'html5blank'),
+        'description' => __('Description for this widget-area...', 'html5blank'),
+        'id' => 'widget-area-4',
+        'before_widget' => '<div id="%1$s" class="%2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>'
+    ));
+    // Define Sidebar Widget Area 2
+    register_sidebar(array(
+        'name' => __('Widget Area 9', 'html5blank'),
+        'description' => __('Description for this widget-area...', 'html5blank'),
+        'id' => 'widget-area-9',
+        'before_widget' => '<div id="%1$s" class="%2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>'
+    ));
+    // Define Sidebar Widget Area 2
+    register_sidebar(array(
+        'name' => __('Widget Area 10', 'html5blank'),
+        'description' => __('Description for this widget-area...', 'html5blank'),
+        'id' => 'widget-area-10',
+        'before_widget' => '<div id="%1$s" class="%2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>'
+    ));
+    // Define Sidebar Widget Area 2
+    register_sidebar(array(
+        'name' => __('Widget Area 11', 'html5blank'),
+        'description' => __('Description for this widget-area...', 'html5blank'),
+        'id' => 'widget-area-11',
+        'before_widget' => '<div id="%1$s" class="%2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>'
+    ));
+    // Define Sidebar Widget Area 2
+    register_sidebar(array(
+        'name' => __('Widget Area 12', 'html5blank'),
+        'description' => __('Description for this widget-area...', 'html5blank'),
+        'id' => 'widget-area-12',
+        'before_widget' => '<div id="%1$s" class="%2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>'
+    ));
+    // Define Sidebar Widget Area 2
+    register_sidebar(array(
+        'name' => __('Widget Area 13', 'html5blank'),
+        'description' => __('Description for this widget-area...', 'html5blank'),
+        'id' => 'widget-area-13',
+        'before_widget' => '<div id="%1$s" class="%2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>'
+    ));
+    // Define Sidebar Widget Area 2
+    register_sidebar(array(
+        'name' => __('Widget Area 14', 'html5blank'),
+        'description' => __('Description for this widget-area...', 'html5blank'),
+        'id' => 'widget-area-14',
+        'before_widget' => '<div id="%1$s" class="%2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>'
+    ));
+    // Define Sidebar Widget Area 2
+    register_sidebar(array(
+        'name' => __('Widget Area 15', 'html5blank'),
+        'description' => __('Description for this widget-area...', 'html5blank'),
+        'id' => 'widget-area-15',
+        'before_widget' => '<div id="%1$s" class="%2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>'
+    ));
+    // Define Sidebar Widget Area 2
+    register_sidebar(array(
+        'name' => __('Widget Area 16', 'html5blank'),
+        'description' => __('Description for this widget-area...', 'html5blank'),
+        'id' => 'widget-area-16',
+        'before_widget' => '<div id="%1$s" class="%2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>'
+    ));
+    // Define Sidebar Widget Area 2
+    register_sidebar(array(
+        'name' => __('Widget Area 17', 'html5blank'),
+        'description' => __('Description for this widget-area...', 'html5blank'),
+        'id' => 'widget-area-17',
+        'before_widget' => '<div id="%1$s" class="%2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>'
+    ));
+    // Define Sidebar Widget Area 2
+    register_sidebar(array(
+        'name' => __('Widget Area 18', 'html5blank'),
+        'description' => __('Description for this widget-area...', 'html5blank'),
+        'id' => 'widget-area-18',
+        'before_widget' => '<div id="%1$s" class="%2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>'
+    ));
+    // Define Sidebar Widget Area 2
+    register_sidebar(array(
+        'name' => __('Widget Area 19', 'html5blank'),
+        'description' => __('Description for this widget-area...', 'html5blank'),
+        'id' => 'widget-area-19',
+        'before_widget' => '<div id="%1$s" class="%2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>'
+    ));
+    // Define Sidebar Widget Area 2
+    register_sidebar(array(
+        'name' => __('Widget Area 20', 'html5blank'),
+        'description' => __('Description for this widget-area...', 'html5blank'),
+        'id' => 'widget-area-20',
         'before_widget' => '<div id="%1$s" class="%2$s">',
         'after_widget' => '</div>',
         'before_title' => '<h3>',

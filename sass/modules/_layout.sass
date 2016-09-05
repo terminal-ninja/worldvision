@@ -25,13 +25,18 @@
     .button
       padding: 40px
     .inner
-      height: 230px
+      height: 260px
       ul
         @extend .tick
         width: 69% !important
         margin: 0 auto
     &:nth-child(1), &:nth-child(2), &:nth-child(4), &:nth-child(5)
       width: $half
+      @media screen and (max-width: 768px)
+        width: $full
+      .inner
+        @media screen and (max-width: 768px)
+          height: auto
     &:nth-child(1), &:nth-child(3), &:nth-child(5)
       background: $grey1
     &:nth-child(2), &:nth-child(4)
@@ -40,6 +45,8 @@
     &:nth-child(3)
       width: 100%
       min-height: 320px
+      @media screen and (max-width: 768px)
+        height: auto
     img
       display: inline
       @include vendor-prefix('transition','all 0.3s ease')

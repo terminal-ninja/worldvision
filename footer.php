@@ -69,7 +69,7 @@
 		ga('create', 'UA-XXXXXXXX-XX', 'yourdomain.com');
 		ga('send', 'pageview');
 		</script>
-		<script src="<?php echo get_template_directory_uri(); ?>/js/jquery-2.2.0.min.js"></script>
+		<!-- <script src="<?php //echo get_template_directory_uri(); ?>/js/jquery-2.2.0.min.js"></script> -->
 		<script src="<?php echo get_template_directory_uri(); ?>/js/jquery-ui.min.js"></script>
 		<script src="<?php echo get_template_directory_uri(); ?>/js/jquery.bxslider.min.js"></script>
 		<script src="<?php echo get_template_directory_uri(); ?>/js/smoothscroll.js"></script>
