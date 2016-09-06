@@ -14,7 +14,7 @@
             <div class="inner">  
               <?php the_sub_field('paragraph'); ?>
             </div>
-            <div class="button center">
+            <div class="button block center">
               <a href="<?php the_sub_field('page'); ?>" class="primary"><?php the_sub_field('button_text'); ?></a>
             </div>
           </article>
@@ -46,10 +46,11 @@
             $args = array( 'post_type' => 'fundraise-post', 'posts_per_page' => -1 );
             $loop = new WP_Query( $args );
             while ( $loop->have_posts() ) : $loop->the_post(); 
+
           ?>
           <article class="center">
-            <h2 class="heading"><?php the_title(); ?></h2>
-            <div class="inner">   
+            <h2><?php the_title(); ?></h2>
+            <div class="inner center">   
             <?php the_content(); ?>         
             </div>
           </article>

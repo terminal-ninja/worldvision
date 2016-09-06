@@ -8229,8 +8229,16 @@ header.navigation ul.slimmenu {
   width: 30%; }
 .fundraise section .heading:after, .fundraise section .icon-heading:after {
   width: 30%; }
+.fundraise section article .inner {
+  height: 250px; }
 .fundraise section article figure {
   height: 340px;
   overflow: hidden; }
+  .fundraise section article figure p, .fundraise section article figure footer .top .item a, footer .top .item .fundraise section article figure a {
+    text-align: center; }
+.fundraise .our-way article {
+  min-height: 220px; }
+  .fundraise .our-way article .inner {
+    height: 140px; }
 
 /*# sourceMappingURL=style.css.map */

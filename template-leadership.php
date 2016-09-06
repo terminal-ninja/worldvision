@@ -56,6 +56,15 @@
       </div>
     </div>
     <?php endwhile; ?>
+    <article class="two-thirds">
+        <h3 class="prime-color1">Serve as Board Members</h3>
+        <p>As a prominent, well respected Christian humanitarian organization, World Vision South Africa invites applications from interested candidates for the position of Non-Executive Director. 
+        <br><br>
+        Applications will go before a Board Nomination Committee and interviews will take place. Candidates, if selected, would be contacted. </p>
+        <div class="button">
+          <a class="secondary popmake-register-your-interest">APPLY NOW</a>
+        </div>
+      </article>
   </section>
   
 
